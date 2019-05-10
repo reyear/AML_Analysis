@@ -162,4 +162,4 @@ for(predictor in predictors){
                                                                                    ifelse(use_ntree,ntree,"")),sep="_")
 }
 
-write.table(unlist(rescv),"test.tsv",quote=F,sep='\t')
+write.table(unlist(rescv),"eln_gene.tsv",quote=F,sep='\t')
