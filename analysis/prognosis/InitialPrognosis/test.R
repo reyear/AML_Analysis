@@ -5,6 +5,7 @@ library(data.table)
 library(mltools)
 library(CoxBoost)
 library(randomForestSRC)
+library(CoxHD)
 
 df_all <-read.table("df_prognosis.tsv",sep = '\t' , header = T) 
 
@@ -22,11 +23,12 @@ df_all$predicted_component <- as.factor(df_all$predicted_component)
 df_final <- as.data.frame(one_hot(as.data.table(df_all),cols="predicted_component"))
 rownames(df_final) <- name
 
-predictorRidge <- function(designTrain, designTest, responseTrain, alpha=0.9, ninternalfolds=10) {
+### Predictors
+predictorGLM <- function(designTrain, designTest, responseTrain, alpha, ninternalfolds=10) {
     # alpha=1 --> l1 penalty
     # alpha=0 --> l2 penalty
     # alpha=1/2 --> elastic net
-
+    set.seed(1010)
     # Train
     cvfit = cv.glmnet(designTrain, responseTrain, family="cox", alpha=alpha, nfolds=ninternalfolds, grouped=TRUE)
     # Predict
@@ -36,7 +38,8 @@ predictorRidge <- function(designTrain, designTest, responseTrain, alpha=0.9, ni
     return(risk.predict)
 }    
 
-predictorBOOST<-function(designTrain, designTest, responseTrain){
+predictorBoost<-function(designTrain, designTest, responseTrain){
+  set.seed(1010)
   cvfit<-CoxBoost(time=responseTrain[,1],
                   status=responseTrain[,2],
                   x=designTrain)
@@ -45,8 +48,8 @@ predictorBOOST<-function(designTrain, designTest, responseTrain){
   
   return(as.vector(risk.predict))
 }
-predictorRF <- function(designTrain, designTest, responseTrain, ntree=5, importance="none") {
-    
+predictorRF <- function(designTrain, designTest, responseTrain, ntree=ntree, importance="none") {
+    set.seed(1010)
     # Train
     cvfit = rfsrc(Surv(time, status) ~ ., data=data.frame(designTrain,responseTrain), ntree=ntree, importance=importance)
     
@@ -56,7 +59,7 @@ predictorRF <- function(designTrain, designTest, responseTrain, ntree=5, importa
     return(risk.predict)
 } 
 predictorAIC <- function(designTrain, designTest, responseTrain) {
-    
+    set.seed(1010)
     # Train
     c <- coxph(Surv(time, status) ~ ., data=data.frame(designTrain,responseTrain))
     scopeStep <- as.formula(paste("Surv(time,status) ~", paste(colnames(designTrain), collapse="+")))
@@ -66,37 +69,97 @@ predictorAIC <- function(designTrain, designTest, responseTrain) {
     
     return(risk.predict)
 }
-
-set.seed(17)
-x <- data.matrix(df_final[,1:177])
-y <- data.matrix(df_final[,c("os","os_status")])
-colnames(y) = c("time","status")
-#y <- Surv(time = df_final$os, event = df_final$os_status)
-nrepeats=1
-nfolds=5 # to do 80% vs 20%
-    # Make folds
-n = nrow(x)
-folds <- list()
-# This splits the dataset into nfolds folds without repetition
-for (i in seq(nrepeats)) {
-    folds <- c(folds,split(sample(seq(n)), rep(1:nfolds, length = n)))
+predictorRFX <- function(designTrain, designTest, responseTrain, max.iter = 500) {
+    set.seed(1010)
+    # Train
+    cvfit = CoxRFX(data.frame(designTrain), Surv(time=responseTrain[,1],event =responseTrain[,2]) , max.iter =max.iter)
+    cvfit$Z <- NULL
+    # Predict
+    risk.predict<-predict(cvfit,data.frame(designTest))
+    
+    return(risk.predict)
 }
 
-nexp=length(folds)
-print("start CV")
-rescv = mclapply(seq(nexp),
-               FUN=function(iexp) {
-                   cat(".")
-                   vTrain = x[-folds[[iexp]],,drop=F]
-                   vTest = x[folds[[iexp]],,drop=F]
-                   lTrain = y[-folds[[iexp]],]
-                   lTest = y[folds[[iexp]],]
-                   # Train and Predcit
-                   predict.test = predictorRidge(designTrain=vTrain, designTest=vTest, responseTrain=lTrain)
-                   # Evaluate CI on the test
-                   ci.test = survConcordance(Surv(time,status) ~ predict.test, as.data.frame(lTest))
-                   print(as.vector(ci.test$concordance))
-               },
-               mc.cores=50
-               )
+### End Predictors
+
+### Cross Validation
+
+runCV <- function(mypredictor, response, design, nfolds=nfolds, nrepeats=nrepeats, seed=seed, mc.cores=mc.cores,alpha=alpha,use_alpha=FALSE,use_ntree=FALSE,ntree, ...) {
+    # function that run "mypredictor" on a CV setting
+    #
+    # output a list of size the number of CV experiments (eg 50) (= nfolds x nrepeats)
+    
+    # "ref" contains the responses of the fold test set
+
+    #  random number generator seed
+    set.seed(seed)
+
+    # Make folds
+    n = nrow(design)
+    folds <- list()
+    for (i in seq(nrepeats)) {
+        folds <- c(folds,split(sample(seq(n)), rep(1:nfolds, length = n)))
+    }
+    nexp = length(folds) # the total number CV of experiments
+
+    # Parallel CV
+    print("start CV")
+    rescv = mclapply(seq(nexp),
+                   FUN=function(iexp) {
+                       cat(".")
+                       vTrain = design[-folds[[iexp]],,drop=F]
+                       vTest = design[folds[[iexp]],,drop=F]
+                       lTrain = response[-folds[[iexp]],]
+                       lTest = response[folds[[iexp]],]
+                       # Train and Predcit
+                       #predict.test = ifelse(use_alpha==TRUE,mypredictor(designTrain=vTrain, designTest=vTest, response=lTrain,alpha=alpha, ...),mypredictor(designTrain=vTrain, designTest=vTest, response=lTrain, ...))
+                       if(use_alpha){
+                           predict.test = mypredictor(designTrain=vTrain, designTest=vTest, response=lTrain,alpha=alpha, ...)
+                       }else if(use_ntree) {
+                           predict.test = mypredictor(designTrain=vTrain, designTest=vTest, response=lTrain,ntree=ntree, ...)
+                       }else{
+                           predict.test = mypredictor(designTrain=vTrain, designTest=vTest, response=lTrain, ...)
+                       }
+                       #predict.test = mypredictor(designTrain=vTrain, designTest=vTest, response=lTrain,alpha=alpha, ...)
+                       # Evaluate CI on the test
+                       ci.test = suppressWarnings(survConcordance(Surv(time,status) ~ predict.test, as.data.frame(lTest)))
+                       return(as.vector(ci.test$concordance))
+                   },
+                   mc.cores=mc.cores
+                   )
+
+    return(unlist(rescv))
+
+}
+
+### End Cross Validation
+
+x <- data.matrix(df_final[,1:84])
+y <- data.matrix(df_final[,c("os","os_status")])
+colnames(y) = c("time","status")
+
+predictors <- c(rep(list(predictorGLM),10),rep(list(predictorRF),10),predictorBoost,predictorRFX)
+str_predictors <-c(rep("CoxMod",10),rep("RFS",10),"CoxBoost","RFX")
+res.CLIN_DEMO_CYTO <- c()
+l_alpha <-seq(0.1,1,0.1)
+l_ntree <- seq(100,1000,100)
+i<-0
+j<-0
+k<-0
+for(predictor in predictors){
+    use_alpha<-ifelse(identical(predictorGLM,predictor),TRUE,FALSE)
+    use_ntree<-ifelse(identical(predictorRF,predictor),TRUE,FALSE)
+    i <- i+1
+    j <-ifelse(use_alpha,j+1,j)
+    k <-ifelse(use_ntree,k+1,k)
+    alpha <- l_alpha[j]
+    ntree <-l_ntree[k]
+    tmp <- runCV(mypredictor=predictor,
+          response=y, design=x,
+          nfolds=5, nrepeats=10, seed=233,use_alpha=use_alpha,alpha=alpha,use_ntree=use_ntree,ntree=ntree, mc.cores=1)
+    res.CLIN_DEMO_CYTO <- cbind(res.CLIN_DEMO_CYTO,tmp)
+    colnames(res.CLIN_DEMO_CYTO) [i] <-paste(str_predictors[i],ifelse(use_alpha,alpha,
+                                                                                   ifelse(use_ntree,ntree,"")),sep="_")
+}
+
 write.table(unlist(rescv),"test.tsv",quote=F,sep='\t')
