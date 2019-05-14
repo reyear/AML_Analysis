@@ -33,10 +33,10 @@ predictorBoost<-function(designTrain, designTest, responseTrain){
   
   return(as.vector(risk.predict))
 }
-predictorRF <- function(designTrain, designTest, responseTrain, ntree=ntree, importance="none") {
+predictorRF <- function(designTrain, designTest, responseTrain, ntree=ntree, importance="none",nodesize=nodesize) {
     set.seed(17)
     # Train
-    cvfit = rfsrc(Surv(time, status) ~ ., data=data.frame(designTrain,responseTrain), ntree=ntree, importance=importance)
+    cvfit = rfsrc(Surv(time, status) ~ ., data=data.frame(designTrain,responseTrain), ntree=ntree, importance=importance,nodesize=nodesize)
     
     # Predict
     risk.predict = predict(cvfit, data.frame(designTest), importance=importance)$predicted
@@ -54,10 +54,10 @@ predictorAIC <- function(designTrain, designTest, responseTrain) {
     
     return(risk.predict)
 }
-predictorRFX <- function(designTrain, designTest, responseTrain, max.iter = 500) {
+predictorRFX <- function(designTrain, designTest, responseTrain, max.iter = 500,tol=0.01) {
     set.seed(17)
     # Train
-    cvfit = CoxRFX(data.frame(designTrain), Surv(time=responseTrain[,1],event =responseTrain[,2]) , max.iter =max.iter)
+    cvfit = CoxRFX(data.frame(designTrain), Surv(time=responseTrain[,1],event =responseTrain[,2]) , max.iter =max.iter,tol=tol)
     cvfit$Z <- NULL
     # Predict
     risk.predict<-predict(cvfit,data.frame(designTest))
@@ -78,7 +78,7 @@ predictorCPSS <- function(designTrain, designTest, responseTrain, bootstrap.samp
 ###---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Cross Validation Function
 ###---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-runCV <- function(mypredictor, response, design, nfolds=nfolds, nrepeats=nrepeats, seed=seed, mc.cores=mc.cores,alpha=alpha,use_alpha=FALSE,use_ntree=FALSE,ntree, ...) {
+runCV <- function(mypredictor, response, design, nfolds=nfolds, nrepeats=nrepeats, seed=seed, mc.cores=mc.cores,alpha=alpha,use_alpha=FALSE,use_ntree=FALSE,ntree=ntree,nodesize=nodesize, ...) {
     # function that run "mypredictor" on a CV setting
     #
     # output a list of size the number of CV experiments (eg 50) (= nfolds x nrepeats)
@@ -87,7 +87,6 @@ runCV <- function(mypredictor, response, design, nfolds=nfolds, nrepeats=nrepeat
 
     #  random number generator seed
     set.seed(seed)
-
     # Make folds
     n = nrow(design)
     folds <- list()
@@ -110,7 +109,8 @@ runCV <- function(mypredictor, response, design, nfolds=nfolds, nrepeats=nrepeat
                        if(use_alpha){
                            predict.test = mypredictor(designTrain=vTrain, designTest=vTest, response=lTrain,alpha=alpha, ...)
                        }else if(use_ntree) {
-                           predict.test = mypredictor(designTrain=vTrain, designTest=vTest, response=lTrain,ntree=ntree, ...)
+                           predict.test = mypredictor(designTrain=vTrain, designTest=vTest, response=lTrain,ntree=ntree,nodesize=nodesize, ...)
+                           print(nodesize)
                        }else{
                            predict.test = mypredictor(designTrain=vTrain, designTest=vTest, response=lTrain, ...)
                        }
@@ -128,9 +128,9 @@ runCV <- function(mypredictor, response, design, nfolds=nfolds, nrepeats=nrepeat
 ###---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Launch prognosis
 ###---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-launch_prognosis <- function(x,y,predictors,str_predictors,l_alpha,l_ntree,nfolds=5,nrepeats=5,mc.cores=25,seed=17){
+launch_prognosis <- function(x,y,predictors,str_predictors,l_alpha,l_ntree,nfolds=5,nrepeats=5,mc.cores=25,seed=17,nodesize=c(15)){
     set.seed(seed)
-    i<-0
+    i<-1
     j<-0
     k<-0
     colnames(y) = c("time","status")
@@ -138,17 +138,30 @@ launch_prognosis <- function(x,y,predictors,str_predictors,l_alpha,l_ntree,nfold
     for(predictor in predictors){
         use_alpha<-ifelse(identical(predictorGLM,predictor),TRUE,FALSE)
         use_ntree<-ifelse(identical(predictorRF,predictor),TRUE,FALSE)
-        i <- i+1
         j <-ifelse(use_alpha,j+1,j)
         k <-ifelse(use_ntree,k+1,k)
         alpha <- l_alpha[j]
         ntree <-l_ntree[k]
-        tmp <- runCV(mypredictor=predictor,
-              response=y, design=x,
-              nfolds=nfolds, nrepeats=nrepeats, seed=233,use_alpha=use_alpha,alpha=alpha,use_ntree=use_ntree,ntree=ntree, mc.cores=mc.cores)
-        table_w_c_i <- cbind(table_w_c_i,tmp)
-        colnames(table_w_c_i) [i] <-paste(str_predictors[i],ifelse(use_alpha,alpha,
-                                                                                       ifelse(use_ntree,ntree,"")),sep="_")
+        if (use_ntree){
+            for (nodes in nodesize){
+                tmp <- runCV(mypredictor=predictor,
+                              response=y, design=x,
+                              nfolds=nfolds, nrepeats=nrepeats, seed=233,use_alpha=use_alpha,alpha=alpha,use_ntree=use_ntree,ntree=ntree, mc.cores=mc.cores,nodesize=nodes)
+                table_w_c_i <- cbind(table_w_c_i,tmp)
+                colnames(table_w_c_i) [i] <-paste(str_predictors[i],ifelse(use_alpha,alpha,
+                                                                                       ifelse(use_ntree,paste(ntree,nodes,sep="_"),"")),sep="_")
+                i <- i+1
+                }
+                
+        }else{
+           tmp <- runCV(mypredictor=predictor,
+                              response=y, design=x,
+                              nfolds=nfolds, nrepeats=nrepeats, seed=233,use_alpha=use_alpha,alpha=alpha,use_ntree=use_ntree,ntree=ntree, mc.cores=mc.cores)
+                table_w_c_i <- cbind(table_w_c_i,tmp)
+                colnames(table_w_c_i) [i] <-paste(str_predictors[i],ifelse(use_alpha,alpha,
+                                                                                           ifelse(use_ntree,ntree,"")),sep="_") 
+                 i <- i+1
+        }
         }
     
     return (table_w_c_i)
