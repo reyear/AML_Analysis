@@ -48,14 +48,14 @@ prognosis_features<- list(all_features=all_features,eln_clin=eln_clin,eln_clin_d
 ###--------------------------------------------------
 y <- data.matrix(df_final[,c("os","os_status")])
 
-#predictors <- c(rep(list(predictorGLM),20),rep(list(predictorRF),15),predictorBoost,predictorRFX)
-predictors <- c(predictorBoost,predictorRFX)
-prognosis_features<- list(eln_clin=eln_clin,eln_clin_demo=eln_clin_demo)
-str_predictors <-c(rep("CoxGLM",20),rep("RFS",105),"CoxBoost","RFX")
-l_alpha <-seq(0.05,1,0.05)
-l_ntree <- seq(100,1500,100)
-mc.cores <- 8
-nodesize <- c(5,10,15,20,30,40,50)
+predictors <- c(rep(list(predictorGLM),10),rep(list(predictorRF),6),predictorBoost,predictorRFX)
+#predictors <- c(predictorBoost,predictorRFX)
+#prognosis_features<- list(eln_clin=eln_clin,eln_clin_demo=eln_clin_demo)
+str_predictors <-c(rep("CoxGLM",10),rep("RFS",24),"CoxBoost","RFX")
+l_alpha <-seq(0.1,1,0.1)
+l_ntree <- seq(500,1500,200)
+mc.cores <- 32
+nodesize <- c(5,15,25,50)
 for (i in 1:length(prognosis_features)){
     print("DONE")
     x <- data.matrix(df_final[,prognosis_features[[i]]])
