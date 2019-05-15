@@ -43,7 +43,7 @@ comp<-c(154:168)
 #    eln_gen_comp=eln_gen_comp,clin_demo=clin_demo,clin_demo_cyto=clin_demo_cyto,clin_demo_gen=clin_demo_gen,
 #    clin_demo_cyto_gen=clin_demo_cyto_gen,clin_demo_comp=clin_demo_comp,cyto_gen=cyto_gen,cyto_gen_comp=cyto_gen_comp,
 #    cyto_comp=cyto_comp,gen_comp=gen_comp,clin_demo_cyto_gen_comp=clin_demo_cyto_gen_comp,gen=gen,cyto=cyto,comp=comp
-prognosis_features<- list(all_features=all_features,eln_clin=eln_clin,eln_clin_demo=eln_clin_demo,
+prognosis_features<- list(eln_clin=eln_clin,eln_clin_demo=eln_clin_demo,
     eln_clin_demo_cyto=eln_clin_demo_cyto,eln_clin_demo_gen=eln_clin_demo_gen)
 ###--------------------------------------------------
 y <- data.matrix(df_final[,c("os","os_status")])
@@ -54,7 +54,7 @@ predictors <- c(rep(list(predictorGLM),10),rep(list(predictorRF),6),predictorBoo
 str_predictors <-c(rep("CoxGLM",10),rep("RFS",24),"CoxBoost","RFX")
 l_alpha <-seq(0.1,1,0.1)
 l_ntree <- seq(500,1500,200)
-mc.cores <- 32
+mc.cores <- 8
 nodesize <- c(5,15,25,50)
 for (i in 1:length(prognosis_features)){
     print("DONE")
