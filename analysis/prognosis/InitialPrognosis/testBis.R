@@ -43,23 +43,28 @@ comp<-c(154:168)
 #    eln_gen_comp=eln_gen_comp,clin_demo=clin_demo,clin_demo_cyto=clin_demo_cyto,clin_demo_gen=clin_demo_gen,
 #    clin_demo_cyto_gen=clin_demo_cyto_gen,clin_demo_comp=clin_demo_comp,cyto_gen=cyto_gen,cyto_gen_comp=cyto_gen_comp,
 #    cyto_comp=cyto_comp,gen_comp=gen_comp,clin_demo_cyto_gen_comp=clin_demo_cyto_gen_comp,gen=gen,cyto=cyto,comp=comp
-prognosis_features<- list(eln_clin=eln_clin,eln_clin_demo=eln_clin_demo,
-    eln_clin_demo_cyto=eln_clin_demo_cyto,eln_clin_demo_gen=eln_clin_demo_gen)
+prognosis_features<- list(all_features=all_features,eln_clin=eln_clin,eln_clin_demo=eln_clin_demo,
+    eln_clin_demo_cyto=eln_clin_demo_cyto,eln_clin_demo_gen=eln_clin_demo_gen,eln_clin_demo_cyto_gen=eln_clin_demo_cyto_gen,eln_clin_demo_comp=eln_clin_demo_comp,
+    eln_cyto_gen=eln_cyto_gen,eln_cyto_gen_comp=eln_cyto_gen_comp,eln_cyto_comp=eln_cyto_comp,
+    eln_gen_comp=eln_gen_comp,clin_demo=clin_demo,clin_demo_cyto=clin_demo_cyto,clin_demo_gen=clin_demo_gen,
+    clin_demo_cyto_gen=clin_demo_cyto_gen,clin_demo_comp=clin_demo_comp,cyto_gen=cyto_gen,cyto_gen_comp=cyto_gen_comp,
+    cyto_comp=cyto_comp,gen_comp=gen_comp,clin_demo_cyto_gen_comp=clin_demo_cyto_gen_comp,gen=gen,cyto=cyto,comp=comp)
 ###--------------------------------------------------
 y <- data.matrix(df_final[,c("os","os_status")])
 
-predictors <- c(rep(list(predictorGLM),10),rep(list(predictorRF),6),predictorBoost,predictorRFX)
-#predictors <- c(predictorBoost,predictorRFX)
-#prognosis_features<- list(eln_clin=eln_clin,eln_clin_demo=eln_clin_demo)
-str_predictors <-c(rep("CoxGLM",10),rep("RFS",24),"CoxBoost","RFX")
+
+predictors <- c(predictorCPSS)
+str_predictors <-prognosis_features
 l_alpha <-seq(0.1,1,0.1)
 l_ntree <- seq(500,1500,200)
 mc.cores <- 8
 nodesize <- c(5,15,25,50)
+table_w_c_i <- c()
 for (i in 1:length(prognosis_features)){
     print("DONE")
     x <- data.matrix(df_final[,prognosis_features[[i]]])
-    write.table(launch_prognosis(x=x,y=y,predictors=predictors,str_predictors=str_predictors,l_alpha=l_alpha,
-                l_ntree=l_ntree,mc.cores=mc.cores,nodesize=nodesize),paste(names(prognosis_features)[i],".tsv",sep=""),quote=F,sep='\t')
+    table_w_c_i <- cbind(table_w_c_i,launch_prognosis(x=x,y=y,predictors=predictors,str_predictors=str_predictors,l_alpha=l_alpha,
+                l_ntree=l_ntree,mc.cores=mc.cores,nodesize=nodesize))
+    
     print("DONE")
-    }
+   }
