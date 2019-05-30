@@ -37,15 +37,14 @@ clin_demo_cyto_gen_comp<-c(2:180)
 gen<-c(2:84)
 cyto<-c(85:153)
 comp<-c(154:171)
-
+clin <- c(172:178)
+demo <- c(179:180)
 #    eln_clin_demo_cyto_gen=eln_clin_demo_cyto_gen,eln_clin_demo_comp=eln_clin_demo_comp,
 ##    eln_cyto_gen=eln_cyto_gen,eln_cyto_gen_comp=eln_cyto_gen_comp,eln_cyto_comp=eln_cyto_comp,
 #    eln_gen_comp=eln_gen_comp,clin_demo=clin_demo,clin_demo_cyto=clin_demo_cyto,clin_demo_gen=clin_demo_gen,
 #    clin_demo_cyto_gen=clin_demo_cyto_gen,clin_demo_comp=clin_demo_comp,cyto_gen=cyto_gen,cyto_gen_comp=cyto_gen_comp,
 #    cyto_comp=cyto_comp,gen_comp=gen_comp,clin_demo_cyto_gen_comp=clin_demo_cyto_gen_comp,gen=gen,cyto=cyto,comp=comp
-prognosis_features<- list(eln_clin_demo_comp=eln_clin_demo_comp,eln_cyto_gen_comp=eln_cyto_gen_comp,eln_cyto_comp=eln_cyto_comp,eln_gen_comp=eln_gen_comp,
-                         clin_demo_comp=clin_demo_comp,cyto_gen_comp=cyto_gen_comp,cyto_comp=cyto_comp,gen_comp=gen_comp,
-                          clin_demo_cyto_gen_comp=clin_demo_cyto_gen_comp,comp=comp)
+prognosis_features<- list(clin=clin,demo=demo)
 ###--------------------------------------------------
 y <- data.matrix(df_final[,c("os","os_status")])
 
@@ -61,6 +60,6 @@ for (i in 1:length(prognosis_features)){
     print("DONE")
     x <- data.matrix(df_final[,prognosis_features[[i]]])
     write.table(launch_prognosis(x=x,y=y,predictors=predictors,str_predictors=str_predictors,l_alpha=l_alpha,
-                l_ntree=l_ntree,mc.cores=mc.cores,nodesize=nodesize),paste(names(prognosis_features)[i],"_final_comp.tsv",sep=""),quote=F,sep='\t')
+                l_ntree=l_ntree,mc.cores=mc.cores,nodesize=nodesize),paste(names(prognosis_features)[i],".tsv",sep=""),quote=F,sep='\t')
     print("DONE")
     }
