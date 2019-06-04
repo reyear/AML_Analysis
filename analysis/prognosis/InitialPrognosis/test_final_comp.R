@@ -49,7 +49,7 @@ demo <- c(179:180)
 #    eln_gen_comp=eln_gen_comp,clin_demo=clin_demo,clin_demo_cyto=clin_demo_cyto,clin_demo_gen=clin_demo_gen,
 #    clin_demo_cyto_gen=clin_demo_cyto_gen,clin_demo_comp=clin_demo_comp,cyto_gen=cyto_gen,cyto_gen_comp=cyto_gen_comp,
 #    cyto_comp=cyto_comp,gen_comp=gen_comp,clin_demo_cyto_gen_comp=clin_demo_cyto_gen_comp,gen=gen,cyto=cyto,comp=comp
-prognosis_features<- list(all_features=all_features,clin_demo_cyto_gen_comp_final_comp=clin_demo_cyto_gen_comp_final_comp,eln_clin_demo_cyto_gen=eln_clin_demo_cyto_gen)
+prognosis_features<- list(all_features=all_features,clin_demo_cyto_gen_comp=clin_demo_cyto_gen_comp,eln_clin_demo_cyto_gen=eln_clin_demo_cyto_gen)
 ###--------------------------------------------------
 y <- data.matrix(df_final[,c("os","os_status")])
 
