@@ -39,6 +39,11 @@ cyto<-c(85:153)
 comp<-c(154:171)
 clin <- c(172:178)
 demo <- c(179:180)
+gen
+clin_gen
+clin_cyto
+demo_gen
+demo_cyto
 #    eln_clin_demo_cyto_gen=eln_clin_demo_cyto_gen,eln_clin_demo_comp=eln_clin_demo_comp,
 ##    eln_cyto_gen=eln_cyto_gen,eln_cyto_gen_comp=eln_cyto_gen_comp,eln_cyto_comp=eln_cyto_comp,
 #    eln_gen_comp=eln_gen_comp,clin_demo=clin_demo,clin_demo_cyto=clin_demo_cyto,clin_demo_gen=clin_demo_gen,
@@ -48,18 +53,18 @@ prognosis_features<- list(clin=clin,demo=demo)
 ###--------------------------------------------------
 y <- data.matrix(df_final[,c("os","os_status")])
 
-predictors <- c(rep(list(predictorGLM),10),rep(list(predictorRF),6),predictorBoost,predictorRFX)
+predictors <- c(rep(list(predictorRF),8))
 #predictors <- c(predictorBoost,predictorRFX)
 #prognosis_features<- list(eln_clin=eln_clin,eln_clin_demo=eln_clin_demo)
 str_predictors <-c(rep("CoxGLM",10),rep("RFS",24),"CoxBoost","RFX")
 l_alpha <-seq(0.1,1,0.1)
-l_ntree <- seq(500,1500,200)
+l_ntree <- seq(80,640,80)
 mc.cores <- 8
-nodesize <- c(5,15,25,50)
+nodesize <- c(5,10,20)
 for (i in 1:length(prognosis_features)){
     print("DONE")
     x <- data.matrix(df_final[,prognosis_features[[i]]])
-    write.table(launch_prognosis(x=x,y=y,predictors=predictors,str_predictors=str_predictors,l_alpha=l_alpha,
+    write.table(launch_prognosis(x=x,y=y,predictors=predictors,str_predictors=str_predictors,l_alpha=l_alpha,nrepeats=1,
                 l_ntree=l_ntree,mc.cores=mc.cores,nodesize=nodesize),paste(names(prognosis_features)[i],".tsv",sep=""),quote=F,sep='\t')
     print("DONE")
     }
