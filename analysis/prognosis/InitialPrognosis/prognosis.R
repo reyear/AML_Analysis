@@ -9,25 +9,7 @@ library(CoxHD)
 source('run_prognosis.R')
 # RFS=105=15*7 for str but only right rep(list(predictorRF),length(l_ntree)) because there is an inside for loop
 
-correlates <- c("ahd","perf_status","bm_blasts","secondary","wbc","hb","plt","gender","age","os","os_status")
-
-df_all_components <- read.table("../../../data/updated_dataset/refined_components_updated.tsv",sep = '\t' , header = T)
-df_initial <- read.table("../../../data/initial_dataset/Master_04_10_2019.csv",sep = ',' , header = T)
-df_initial <- read.table("../../../data/initial_dataset/Master_04_10_2019.csv",sep = ',' , header = T)
-rownames(df_initial) <- df_initial$data_pd
-df_initial <- df_initial[,-1:-4]
-df_eln <- read.table("../../../data/updated_dataset/eln_ratio.tsv",sep = '\t' , header = T)
-rownames(df_eln) <- df_eln$X
-df_eln <- df_eln[-1]
-df <- merge(df_eln,df_all_components,by=0)
-rownames(df) <- df$Row.names
-df <- df[-1]
-df <- merge(df,df_initial[,correlates],by=0)
-rownames(df) <- df$Row.names
-df <- df[-1]
-df <- df[,c(1:151,157,156,166:176)]
-df <- na.omit(df)
-df <- df[df$os>0,]
+df_final <- read.table("prognosis_without_comp.tsv",sep='\t',header=T)
 
 ### To try when component availables: ###
 
