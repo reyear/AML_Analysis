@@ -13,21 +13,29 @@ df_final <- read.table("prognosis_without_comp.tsv",sep='\t',header=T)
 
 ### To try when component availables: ###
 
-all_features <-c(1:100) #not used
-clin_demo_comp <-c(1:100) #not used
-clin_demo_cyto_gen_comp <- c(1:100) #not used
-comp <- c(1:100) #not used
-cyto_comp <-c(1:100) #not used
-cyto_gen_comp <- c(1:100) #not used
-eln_clin_demo_comp <- c(1:100) #not used
-eln_cyto_comp <- c(1:100) #not used
-eln_cyto_gen_comp <- c(1:100) #not used
-eln_gen_comp <- c(1:100) #not used
-gen_comp <- c(1:100) #not used
-clin_comp <- c(1:100) #not used
-clin_cyto_comp <- c(1:100) #not used
-clin_gen_comp <- c(1:100) #not used
-eln_clin_comp <- c(1:100) #not used
+all_features <-c(1:181) #not used
+clin_demo_comp <-c(154:181) #not used
+clin_demo_cyto_gen_comp <- c(2:181) #not used
+comp <- c(163:181) #not used
+cyto_comp <-c(85:153,163:181) #not used
+cyto_gen_comp <- c(2:153,163:181) #not used
+eln_clin_demo_comp <- c(1,154:181) #not used
+eln_cyto_comp <- c(1,85:153,163:181) #not used
+eln_cyto_gen_comp <- c(1:153,163:181) #not used
+eln_gen_comp <- c(1:84,163:181) #not used
+gen_comp <- c(2:84,163:181) #not used
+clin_comp <- c(153:160,163:181) #not used
+clin_cyto_comp <- c(85:160,163:181) #not used
+clin_gen_comp <- c(2:84,154:160,163:181) #not used
+eln_clin_comp <- c(1,154:160,163:181) #not used
+
+#Without age
+all_features_without_age <-c(1:161,163:181) #not used
+clin_demo_comp_without_age <-c(154:161,163:181) #not used
+clin_demo_cyto_gen_comp_without_age <- c(2:161,163:181) #not used
+eln_clin_demo_comp_without_age <- c(1,154:161,163:181) #not used
+
+
 ### To try now: ###
 
 ###With age:
@@ -49,7 +57,7 @@ gen <- c(2:84)
 clin_gen <- c(2:84,154:160)
 clin_cyto <- c(85:160)
 demo_gen <- c(2:84,161:162)
-demo_cyto <- c(85,153,161:162)
+demo_cyto <- c(85,153,161:162)   #PROBLEMMMM c(85:153,161:162)
 
 ###Without age:
 eln_demo_gen_without_age <- c(1:84,161)
