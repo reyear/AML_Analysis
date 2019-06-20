@@ -16,10 +16,10 @@ library(dplyr)
 library(broom)
 library(tidyr)
 library(tidyverse)
-source("../../../src/tools.R")
-source('run_prognosis.R')
+source("../../../../src/tools.R")
+source('../run_prognosis.R')
 
-df_final <- read.table("prognosis_comp_final.tsv",sep='\t',header=T)
+df_final <- read.table("../prognosis_comp_final.tsv",sep='\t',header=T)
 ### Features that we can use
 ###-----------------------------------------------------------------------------
 all_features <-c(1:180) #not used
