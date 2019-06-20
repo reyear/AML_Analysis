@@ -13,7 +13,7 @@ library(Hmisc)
 library(gridExtra)
 library("survminer")
 library(dplyr)
-library(broom)
+library(broom)√
 library(tidyr)
 library(tidyverse)
 source("../../../../src/tools.R")
@@ -176,9 +176,13 @@ for (i in 1:length(prognosis_features)){
             }
         } else {
                 print(algo)
-                bootstrap <- bootstrapping(prognosis_features[[i]],x,y,100,0.7,8,algo)
-                tmp_1 <- bootstrap  %>% group_by(feature) %>% summarise_all(sum)
-                tmp_2 <- bootstrap  %>% group_by(feature) %>% count(feature)
+                if(algo=="rfs"){
+                    bootstrap <- bootstrapping(prognosis_features[[i]],x,y,10,0.7,8,algo)
+                }else {
+                    bootstrap <- bootstrapping(prognosis_features[[i]],x,y,100,0.7,8,algo)
+                    tmp_1 <- bootstrap  %>% group_by(feature) %>% summarise_all(sum)
+                    tmp_2 <- bootstrap  %>% group_by(feature) %>% count(feature)
+                    }
 
                 write.table(data.frame(merge(tmp_1,tmp_2,by='feature')),paste(paste(names(prognosis_features)[i],algo,sep="_bootstrap_"),".tsv",sep=""),quote=F,sep='\t')
     print ('next')
