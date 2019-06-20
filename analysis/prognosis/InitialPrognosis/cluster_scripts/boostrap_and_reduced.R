@@ -142,10 +142,47 @@ prognosis_features<- list(all_features=all_features,clin_demo_comp=clin_demo_com
                          eln_cyto_comp=eln_cyto_comp,eln_cyto_gen_comp=eln_cyto_gen_comp,eln_gen_comp=eln_gen_comp,gen_comp=gen_comp,clin_comp=clin_comp,clin_cyto_comp=clin_cyto_comp,clin_gen_comp=clin_gen_comp,eln_clin_comp=eln_clin_comp,age=age)
 
 
-predictors <- c(rep(list(predictorGLM),3),rep(list(predictorRF),1),predictorBoost,predictorRFX)
-str_predictors <-c(rep("CoxGLM",3),rep("RFS",1),"CoxBoost","RFX")
-l_alpha <-c(0,0.7,1)
-l_ntree <- c(1050)
-mc.cores <- 8
-nodesize <- c(20)
+algos <-c("glm","rfs","boost","rfx")
+alphas=c(0,0.7,1)
+for (i in 1:length(prognosis_features)){
+    for (algo in algos){
+        if (algo=="glm"){
+            for (alpha in alphas){
+                print(alpha)
+                print(algo)
+                bootstrap <- bootstrapping(prognosis_features[[i]],x,y,100,alpha,8,algo)
+                tmp_1 <- bootstrap  %>% group_by(feature) %>% summarise_all(sum)
+                tmp_2 <- bootstrap  %>% group_by(feature) %>% count(feature)
+                print(paste(paste(names(prognosis_features)[i],paste(algo,alpha,sep="_"),sep="_bootstrap_"),".tsv",sep=""))
+                write.table(data.frame(merge(tmp_1,tmp_2,by='feature')),paste(paste(names(prognosis_features)[i],paste(algo,alpha,sep="_"),sep="_bootstrap_"),".tsv",sep=""),quote=F,sep='\t')
 
+                if (alpha==0.7){
+                    tmp_1_pos <- tmp_1[tmp_1$coef>0,]
+                    tmp_1_neg <-  tmp_1[tmp_1$coef<0,]
+                    features_reduced <- union(union(tmp_1_pos[tmp_1_pos$coef > quantile(tmp_1_pos$coef,0.90),]$feature,tmp_1_neg[tmp_1_neg$coef < quantile(tmp_1_neg$coef,0.15),]$feature),tmp_2[tmp_2$n > quantile(tmp_2$n,0.85),]$feature)
+                    if (length(features_reduced)<2){features_reduced <- union(union(tmp_1_pos[tmp_1_pos$coef > quantile(tmp_1_pos$coef,0.90),]$feature,tmp_1_neg[tmp_1_neg$coef < quantile(tmp_1_neg$coef,0.15),]$feature),tmp_2[tmp_2$n > 0,]$feature)}
+                    print(features_reduced)
+
+                    predictors <- c(rep(list(predictorGLM),11),rep(list(predictorRF),1),predictorBoost,predictorRFX)
+                    str_predictors <-c(rep("CoxGLM",11),"RFS","CoxBoost","RFX")
+                    l_alpha <-seq(0,1,0.1)
+                    l_ntree <- c(1050)
+                    mc.cores <- 50
+                    nodesize <- c(20)
+                    print("DONE")
+                    write.table(launch_prognosis(data.matrix(df_final[,features_reduced]),y=y,predictors=predictors,str_predictors=str_predictors,l_alpha=l_alpha,nrepeats=2,l_ntree=l_ntree,nodesize=nodesize,
+                                mc.cores=mc.cores),paste(names(prognosis_features)[i],"_reduced.tsv",sep=""),quote=F,sep='\t')
+                    print("DONE")
+                }
+            }
+        } else {
+                print(algo)
+                bootstrap <- bootstrapping(prognosis_features[[i]],x,y,100,0.7,8,algo)
+                tmp_1 <- bootstrap  %>% group_by(feature) %>% summarise_all(sum)
+                tmp_2 <- bootstrap  %>% group_by(feature) %>% count(feature)
+
+                write.table(data.frame(merge(tmp_1,tmp_2,by='feature')),paste(paste(names(prognosis_features)[i],algo,sep="_bootstrap_"),".tsv",sep=""),quote=F,sep='\t')
+    print ('next')
+        }
+    }
+}
