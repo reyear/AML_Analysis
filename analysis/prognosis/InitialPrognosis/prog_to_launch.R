@@ -70,7 +70,7 @@ clin_demo_cyto_without_age <- c(85:161)
 clin_demo_gen_without_age <- c(2:84,154:161)
 clin_demo_without_age <- c(154:161)
 demo_gen_without_age <- c(2:84,161)
-demo_cyto_without_age <- c(85,153,161)
+demo_cyto_without_age <- c(85,153,161)  ####PROBLEM
 
 
 y <- data.matrix(df_final[,c("os","os_status")])
