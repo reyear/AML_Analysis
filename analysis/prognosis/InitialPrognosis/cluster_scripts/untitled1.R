@@ -138,7 +138,7 @@ y <- data.matrix(df_final[,c("os","os_status")])
 colnames(y) = c("time","status")
 response=y
 
-prognosis_features<- list(eln_clin_gen=eln_clin_gen)
+prognosis_features<- list(clin_gen_comp=clin_gen_comp)
 
 
 algos <-c("glm","rfs","boost","rfx")
