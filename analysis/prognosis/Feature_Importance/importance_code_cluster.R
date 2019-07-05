@@ -80,19 +80,16 @@ eln_cyto <- c(1,86:154)
 ##---------------------------------------------------------------------------------PREPARING MODELS and ALGOS
 df_final <- read.table("prognosis_comp_final.tsv",sep='\t',header=T)
 
-prognosis_features<- list(all_features=all_features,clin_demo_comp=clin_demo_comp,clin_demo_cyto_gen_comp=clin_demo_cyto_gen_comp,comp=comp,cyto_comp=cyto_comp,cyto_gen_comp=cyto_gen_comp,
-                          eln_clin_demo_comp=eln_clin_demo_comp,eln_cyto_comp=eln_cyto_comp,eln_cyto_gen_comp=eln_cyto_gen_comp,eln_gen_comp=eln_gen_comp,gen_comp=gen_comp,
-                          clin_comp=clin_comp,clin_cyto_comp=clin_cyto_comp,clin_gen_comp=clin_gen_comp,eln_clin_comp=eln_clin_comp,all_features_without_age=all_features_without_age,
-                          clin_demo_comp_without_age=clin_demo_comp_without_age,clin_demo_cyto_gen_comp_without_age=clin_demo_cyto_gen_comp_without_age,
-                          eln_clin_demo_comp_without_age=eln_clin_demo_comp_without_age,eln_clin_gen=eln_clin_gen,eln_demo_gen=eln_demo_gen,eln_clin_demo_cyto_gen=eln_clin_demo_cyto_gen,
-                          eln_clin_demo_cyto=eln_clin_demo_cyto,eln_clin_demo_gen=eln_clin_demo_gen,eln_clin_demo=eln_clin_demo,eln_clin=eln_clin,eln_cyto_gen=eln_cyto_gen,
-                          clin_demo_cyto_gen=clin_demo_cyto_gen,clin_demo_cyto=clin_demo_cyto,clin_demo_gen=clin_demo_gen,clin_demo=clin_demo,cyto_gen=cyto_gen,cyto=cyto,gen=gen,
-                          clin_gen=clin_gen,clin_cyto=clin_cyto,demo_gen=demo_gen,demo_cyto=demo_cyto,eln_demo_gen_without_age=eln_demo_gen_without_age,
+prognosis_features<- list(all_features=all_features,clin_demo_comp=clin_demo_comp,clin_demo_cyto_gen_comp=clin_demo_cyto_gen_comp,comp=comp,cyto_comp=cyto_comp,cyto_gen_comp=cyto_gen_comp,eln_clin_demo_comp=eln_clin_demo_comp,eln_cyto_comp=eln_cyto_comp,eln_cyto_gen_comp=eln_cyto_gen_comp,eln_gen_comp=eln_gen_comp,gen_comp=gen_comp, clin_comp=clin_comp,clin_cyto_comp=clin_cyto_comp,clin_gen_comp=clin_gen_comp,eln_clin_comp=eln_clin_comp,all_features_without_age=all_features_without_age,clin_demo_comp_without_age=clin_demo_comp_without_age,clin_demo_cyto_gen_comp_without_age=clin_demo_cyto_gen_comp_without_age,       eln_clin_demo_comp_without_age=eln_clin_demo_comp_without_age,eln_clin_gen=eln_clin_gen,eln_demo_gen=eln_demo_gen,eln_clin_demo_cyto_gen=eln_clin_demo_cyto_gen,    eln_clin_demo_cyto=eln_clin_demo_cyto,eln_clin_demo_gen=eln_clin_demo_gen,eln_clin_demo=eln_clin_demo,eln_clin=eln_clin,eln_cyto_gen=eln_cyto_gen,                         clin_demo_cyto_gen=clin_demo_cyto_gen,clin_demo_cyto=clin_demo_cyto,clin_demo_gen=clin_demo_gen,clin_demo=clin_demo,cyto_gen=cyto_gen,cyto=cyto,gen=gen,
+clin_gen=clin_gen,clin_cyto=clin_cyto,demo_gen=demo_gen,demo_cyto=demo_cyto,eln_demo_gen_without_age=eln_demo_gen_without_age,
                           eln_clin_demo_cyto_gen_without_age=eln_clin_demo_cyto_gen_without_age,eln_clin_demo_cyto_without_age=eln_clin_demo_cyto_without_age,
                           eln_clin_demo_gen_without_age=eln_clin_demo_gen_without_age,eln_clin_demo_without_age=eln_clin_demo_without_age,
                           clin_demo_cyto_gen_without_age=clin_demo_cyto_gen_without_age,clin_demo_cyto_without_age=clin_demo_cyto_without_age,
                           clin_demo_gen_without_age=clin_demo_gen_without_age,clin_demo_without_age=clin_demo_without_age,demo_gen_without_age=demo_gen_without_age,
                           demo_cyto_without_age=demo_cyto_without_age,gen_age=gen_age,eln_comp=eln_comp,eln_age=eln_age,eln_gen=eln_gen,eln_cyto=eln_cyto)
+
+                         
+ 
 
 ### PARAMETERS OF ANALYSIS:
 nrepeats=5
@@ -114,6 +111,7 @@ colnames(response) <- c("time","status")
 ##---------------------------------------------------------------------------------PREPARING MODELS and ALGOS
 
 for (j in 1:length(prognosis_features)){
+    print(prognosis_features[[j]])
     for(i in (length(algorithms))){
         design <- data.matrix(data.frame(df_final[,prognosis_features[[j]]]))
         res_data <- data.frame('feature'=character(),'ref_CI'=numeric(),'permuted_CI'=numeric(),'algo'=character(),'model'=character())
