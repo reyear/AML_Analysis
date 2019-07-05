@@ -31,6 +31,7 @@ l_alpha <-seq(0,1,0.1)
 l_ntree <- seq(300,1200,150)
 mc.cores <- 50
 nodesize <- c(5,10,20,30)
+y <- data.matrix(df_final[,c("os","os_status")])
 for (i in 1:length(prognosis_features)){
     print("DONE")
     x <- data.matrix(data.frame(df_final[,prognosis_features[[i]]]))
