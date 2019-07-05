@@ -110,7 +110,7 @@ colnames(response) <- c("time","status")
 ##---------------------------------------------------------------------------------PREPARING MODELS and ALGOS
 
 for (j in 1:length(prognosis_features)){
-    print(prognosis_features[[j]])
+    print(names(prognosis_features[j]))
     for(i in (length(algorithms))){
         design <- data.matrix(data.frame(df_final[,prognosis_features[[j]]]))
         res_data <- data.frame('feature'=character(),'ref_CI'=numeric(),'permuted_CI'=numeric(),'algo'=character(),'model'=character())
@@ -122,5 +122,5 @@ for (j in 1:length(prognosis_features)){
         tmp$model <- names(prognosis_features[j])
         res_data <- rbind(res_data,tmp)
     }
-    write.table(res_data,paste(names(prognosis_features)[i],".tsv",sep="_reshuffle_importance"),quote=F,sep='\t')
+    write.table(res_data,paste(names(prognosis_features)[j],".tsv",sep="_reshuffle_importance"),quote=F,sep='\t')
 }
