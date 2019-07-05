@@ -111,7 +111,7 @@ colnames(response) <- c("time","status")
 
 for (j in 1:length(prognosis_features)){
     print(names(prognosis_features[j]))
-    for(i in (length(algorithms))){
+    for(i in 1:length(algorithms)){
         design <- data.matrix(data.frame(df_final[,prognosis_features[[j]]]))
         res_data <- data.frame('feature'=character(),'ref_CI'=numeric(),'permuted_CI'=numeric(),'algo'=character(),'model'=character())
         
