@@ -125,5 +125,5 @@ for (j in 1:length(prognosis_features)){
         tmp$model <- names(prognosis_features[j])
         res_data <- rbind(res_data,tmp)
     }
-    write.table(res_data,paste("data_feature_importance/",paste(names(prognosis_features)[i],".tsv",sep="_reshuffle_importance"),sep=""),quote=F,sep='\t')
+    write.table(res_data,paste(names(prognosis_features)[i],".tsv",sep="_reshuffle_importance"),quote=F,sep='\t')
 }
