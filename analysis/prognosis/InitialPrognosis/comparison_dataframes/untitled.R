@@ -76,6 +76,11 @@ clin_demo_without_age <- c(155:162)
 demo_gen_without_age <- c(2:85,162)
 demo_cyto_without_age <- c(86:154,162) 
 
+eln_comp <-c(1,164:180)
+eln_age <- c(1,163)
+eln_gen <- c(1:85)
+eln_cyto <- c(1,86:154)
+
 
 
 
@@ -138,7 +143,7 @@ y <- data.matrix(df_final[,c("os","os_status")])
 colnames(y) = c("time","status")
 response=y
 
-prognosis_features<- list(gen_age=gen_age)
+prognosis_features<- list(eln_comp=eln_comp,eln_age=eln_age,eln_gen=eln_gen,eln_cyto=eln_cyto)
 
 
 algos <-c("glm","rfs","boost","rfx")
