@@ -80,7 +80,8 @@ eln_cyto <- c(1,86:154)
 ##---------------------------------------------------------------------------------PREPARING MODELS and ALGOS
 df_final <- read.table("prognosis_comp_final.tsv",sep='\t',header=T)
 
-prognosis_features<- list(clin_demo_cyto_gen_comp_without_age=clin_demo_cyto_gen_comp_without_age,eln_clin_demo_comp_without_age=eln_clin_demo_comp_without_age,eln_clin_gen=eln_clin_gen,eln_demo_gen=eln_demo_gen,eln_clin_demo_cyto_gen=eln_clin_demo_cyto_gen,   eln_clin_demo_cyto=eln_clin_demo_cyto,eln_clin_demo_gen=eln_clin_demo_gen,eln_clin_demo=eln_clin_demo,eln_clin=eln_clin,eln_cyto_gen=eln_cyto_gen,clin_demo_cyto_gen=clin_demo_cyto_gen,clin_demo_cyto=clin_demo_cyto,clin_demo_gen=clin_demo_gen,clin_demo=clin_demo,cyto_gen=cyto_gen,cyto=cyto,gen=gen)
+prognosis_features<- list(clin_gen=clin_gen,clin_cyto=clin_cyto,demo_gen=demo_gen,demo_cyto=demo_cyto,eln_demo_gen_without_age=eln_demo_gen_without_age, eln_clin_demo_cyto_gen_without_age=eln_clin_demo_cyto_gen_without_age,eln_clin_demo_cyto_without_age=eln_clin_demo_cyto_without_age,
+eln_clin_demo_gen_without_age=eln_clin_demo_gen_without_age,eln_clin_demo_without_age=eln_clin_demo_without_age)
 
 
                          
