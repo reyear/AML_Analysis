@@ -80,9 +80,8 @@ eln_cyto <- c(1,86:154)
 ##---------------------------------------------------------------------------------PREPARING MODELS and ALGOS
 df_final <- read.table("prognosis_comp_final.tsv",sep='\t',header=T)
 
-prognosis_features<- list(clin_gen=clin_gen,clin_cyto=clin_cyto,demo_gen=demo_gen,demo_cyto=demo_cyto,eln_demo_gen_without_age=eln_demo_gen_without_age, eln_clin_demo_cyto_gen_without_age=eln_clin_demo_cyto_gen_without_age,eln_clin_demo_cyto_without_age=eln_clin_demo_cyto_without_age,
-eln_clin_demo_gen_without_age=eln_clin_demo_gen_without_age,eln_clin_demo_without_age=eln_clin_demo_without_age)
-
+prognosis_features<-list(eln_clin_demo_comp_without_age=eln_clin_demo_comp_without_age,eln_clin_gen=eln_clin_gen,eln_demo_gen=eln_demo_gen,eln_clin_demo_cyto_gen=eln_clin_demo_cyto_gen,   eln_clin_demo_cyto=eln_clin_demo_cyto,eln_clin_demo_gen=eln_clin_demo_gen,eln_clin_demo=eln_clin_demo,eln_clin=eln_clin,eln_cyto_gen=eln_cyto_gen,                   clin_demo_cyto_gen=clin_demo_cyto_gen,clin_demo_cyto=clin_demo_cyto,clin_demo_gen=clin_demo_gen,clin_demo=clin_demo,cyto_gen=cyto_gen,cyto=cyto,gen=gen,
+clin_gen=clin_gen,clin_cyto=clin_cyto,demo_gen=demo_gen,demo_cyto=demo_cyto,eln_demo_gen_without_age=eln_demo_gen_without_age)
 
                          
  
@@ -94,9 +93,9 @@ mc.cores=30
 npermutations=4
 nfolds=5
 
-algorithms<-c(algo_Lasso, algo_Ridge, algo_Elastic_net,  algo_RFX, algo_RFS, algo_BOOST, algo_Cox)
+algorithms<-c(algo_Lasso, algo_Ridge, algo_Elastic_net,  algo_RFX, algo_RFS, algo_Cox)
 predictors<-c(predictor_Lasso, predictor_Ridge, predictor_Elastic_net,  predictor_RFX, predictor_RFS, predictor_BOOST, predictor_Cox)
-algo_names<-c('Lasso','Ridge','Elastic_net','RFX','RFS','Boost','Cox')
+algo_names<-c('Lasso','Ridge','Elastic_net','RFX','RFS','Cox')
 
 
 response <- data.matrix(df_final[,c("os","os_status")])
@@ -108,10 +107,9 @@ colnames(response) <- c("time","status")
 
 for (j in 1:length(prognosis_features)){
     print(names(prognosis_features[j]))
+    res_data <- data.frame('feature'=character(),'ref_CI'=numeric(),'permuted_CI'=numeric(),'algo'=character(),'model'=character())
     for(i in 1:length(algorithms)){
-        design <- data.matrix(data.frame(df_final[,prognosis_features[[j]]]))
-        res_data <- data.frame('feature'=character(),'ref_CI'=numeric(),'permuted_CI'=numeric(),'algo'=character(),'model'=character())
-        
+        design <- data.matrix(data.frame(df_final[,prognosis_features[[j]]]))      
         tmp <- runCV_CI_with_test(response=response, design=design,
               nfolds=nfolds, nrepeats=nrepeats, seed=seed, mc.cores=mc.cores, features=colnames(design), npermutations=npermutations, 
                                   algorithm=algorithms[i][[1]], predictor=predictors[i][[1]])
