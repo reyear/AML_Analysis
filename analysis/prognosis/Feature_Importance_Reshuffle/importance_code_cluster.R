@@ -93,7 +93,7 @@ npermutations=4
 nfolds=5
 
 algorithms<-c(algo_Lasso, algo_Ridge, algo_Elastic_net,  algo_RFX, algo_RFS, algo_Cox)
-predictors<-c(predictor_Lasso, predictor_Ridge, predictor_Elastic_net,  predictor_RFX, predictor_RFS, predictor_BOOST, predictor_Cox)
+predictors<-c(predictor_Lasso, predictor_Ridge, predictor_Elastic_net,  predictor_RFX, predictor_RFS,  predictor_Cox)
 algo_names<-c('Lasso','Ridge','Elastic_net','RFX','RFS','Cox')
 
 
