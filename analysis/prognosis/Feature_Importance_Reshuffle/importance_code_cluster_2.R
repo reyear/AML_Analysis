@@ -78,7 +78,7 @@ eln_gen <- c(1:85)
 eln_cyto <- c(1,86:154)
 
 ##---------------------------------------------------------------------------------PREPARING MODELS and ALGOS
-df_final <- read.table("prognosis_comp_final.tsv",sep='\t',header=T)
+df_final <- read.table("../InitialPrognosis/prognosis_comp_final.tsv",sep='\t',header=T)
 
 prognosis_features<-list(eln_clin_demo_cyto_gen_without_age=eln_clin_demo_cyto_gen_without_age,eln_clin_demo_cyto_without_age=eln_clin_demo_cyto_without_age,
 eln_clin_demo_gen_without_age=eln_clin_demo_gen_without_age,eln_clin_demo_without_age=eln_clin_demo_without_age,
