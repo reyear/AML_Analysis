@@ -138,7 +138,7 @@ prognosis_features<- list(gen=gen,eln_gen=eln_gen,
 predictors <- c(rep(list(predictorGLM),6),rep(list(predictorRF),1),predictorBoost,predictorRFX)
 str_predictors <-c(rep("CoxGLM",6),rep("RFS",1),"CoxBoost","RFX")
 l_alpha <-seq(0,1,0.2)
-l_ntree <- seq(1050)
+l_ntree <- c(1050)
 mc.cores <- 16
 nodesize <- c(20)
 for (i in 1:length(prognosis_features)){

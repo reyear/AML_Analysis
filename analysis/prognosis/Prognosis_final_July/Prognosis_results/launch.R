@@ -14,7 +14,9 @@ df_final <- read.table("../data_frame_final_prognosis.tsv")
 eln <- c(1)
 comp <- c(164:178)
 age <- c(163)
-gen <- c(2:85)
+all_gen <- c(2:85)
+vect <- apply(X=df_final[,all_gen],2,FUN=function(x) 100*length(which(x==1))/dim(df_final)[1])
+gen <- match(names(vect[vect>=2]),names(df_final))
 cyto <- c(86:154)
 clin <- c(155:161)
 demo <- c(162:163)
@@ -131,8 +133,8 @@ prognosis_features<- list(comp=comp,gen=gen,cyto=cyto,clin=clin,demo=demo,eln_co
 predictors <- c(rep(list(predictorGLM),6),rep(list(predictorRF),1),predictorBoost,predictorRFX)
 str_predictors <-c(rep("CoxGLM",6),rep("RFS",1),"CoxBoost","RFX")
 l_alpha <-seq(0,1,0.2)
-l_ntree <- seq(1050)
-mc.cores <- 30
+l_ntree <- c(1050)
+mc.cores <- 20
 nodesize <- c(20)
 for (i in 1:length(prognosis_features)){
     print("DONE")
