@@ -182,7 +182,12 @@ bootstrapping <- function(features=all_features,x,y,n_exp=100,alpha=0.7,mc.cores
     res_bootstrap <- res_bootstrap[res_bootstrap$coef != 0,]
     return (res_bootstrap)
     }
-          
+              
+x <- data.matrix(df_final)
+y <- data.matrix(df_final[,c("os","os_status")])
+
+colnames(y) = c("time","status")
+response=y          
               
 prognosis_features <- list(eln_age_gen=eln_age_gen,eln_age_cyto=eln_age_cyto,eln_age_clin=eln_age_clin,eln_gen_cyto=eln_gen_cyto,eln_gen_clin=eln_gen_clin,eln_gen_demo=eln_gen_demo,eln_gen_demo_without_age=eln_gen_demo_without_age,
                           eln_cyto_clin=eln_cyto_clin,eln_cyto_demo=eln_cyto_demo,eln_cyto_demo_without_age=eln_cyto_demo_without_age,eln_clin_demo=eln_clin_demo,eln_clin_demo_without_age=eln_clin_demo_without_age,
@@ -196,7 +201,7 @@ for (i in 1:length(prognosis_features)){
             for (alpha in alphas){
                 print(alpha)
                 print(algo)
-                bootstrap <- bootstrapping(prognosis_features[[i]],x,y,100,alpha,16,algo)
+                bootstrap <- bootstrapping(prognosis_features[[i]],x,y,100,alpha,24,algo)
                 tmp_1 <- bootstrap  %>% group_by(feature) %>% summarise_all(sum)
                 tmp_2 <- bootstrap  %>% group_by(feature) %>% count(feature)
                 print(paste(paste(names(prognosis_features)[i],paste(algo,alpha,sep="_"),sep="_bootstrap_"),".tsv",sep=""))
