@@ -128,7 +128,7 @@ prognosis_features<- list(comp=comp,gen=gen,cyto=cyto,clin=clin,demo=demo,eln_co
                          eln_comp_age_cyto=eln_comp_age_cyto,eln_comp_age_clin=eln_comp_age_clin,eln_comp_gen_cyto=eln_comp_gen_cyto,eln_comp_gen_clin=eln_comp_gen_clin,eln_comp_gen_demo=eln_comp_gen_demo,
                           eln_comp_gen_demo_without_age=eln_comp_gen_demo_without_age,eln_comp_cyto_clin=eln_comp_cyto_clin,eln_comp_cyto_demo=eln_comp_cyto_demo,eln_comp_cyto_demo_without_age=eln_comp_cyto_demo_without_age,
                          eln_comp_clin_demo=eln_comp_clin_demo,eln_comp_clin_demo_without_age=eln_comp_clin_demo_without_age,eln_comp_age_gen_cyto=eln_comp_age_gen_cyto,eln_comp_age_gen_clin=eln_comp_age_gen_clin,
-                         eln_comp_age_gen_demo=eln_comp_age_gen_demo,eln_comp_age_gen_demo_without_age=eln_comp_age_gen_demo_without_age,eln_comp_gen_cyto_clin_demo)
+                         eln_comp_age_gen_demo=eln_comp_age_gen_demo,eln_comp_age_gen_demo_without_age=eln_comp_age_gen_demo_without_age,eln_comp_gen_cyto_clin_demo=eln_comp_gen_cyto_clin_demo)
 
 predictors <- c(rep(list(predictorGLM),6),rep(list(predictorRF),1),predictorBoost,predictorRFX)
 str_predictors <-c(rep("CoxGLM",6),rep("RFS",1),"CoxBoost","RFX")
