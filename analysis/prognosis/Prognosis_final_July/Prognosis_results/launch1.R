@@ -123,7 +123,7 @@ y <- data.matrix(df_final[,c("os","os_status")])
 
 prognosis_features<- list(eln_age_gen=eln_age_gen,eln_age_cyto=eln_age_cyto,eln_age_clin=eln_age_clin,eln_gen_cyto=eln_gen_cyto,eln_gen_clin=eln_gen_clin,eln_gen_demo=eln_gen_demo,eln_gen_demo_without_age=eln_gen_demo_without_age,
                           eln_cyto_clin=eln_cyto_clin,eln_cyto_demo=eln_cyto_demo,eln_cyto_demo_without_age=eln_cyto_demo_without_age,eln_clin_demo=eln_clin_demo,eln_clin_demo_without_age=eln_clin_demo_without_age,
-                          eln_age_gen_cyto=eln_age_gen_cyto,eln_age_gen_clin=eln_age_gen_clin,eln_age_gen_demo=eln_age_gen_demo,eln_age_gen_demo_without_age=eln_age_gen_demo_without_age,eln_gen_cyto_clin_demo)
+                          eln_age_gen_cyto=eln_age_gen_cyto,eln_age_gen_clin=eln_age_gen_clin,eln_age_gen_demo=eln_age_gen_demo,eln_age_gen_demo_without_age=eln_age_gen_demo_without_age,eln_gen_cyto_clin_demo=eln_gen_cyto_clin_demo)
                
 predictors <- c(rep(list(predictorGLM),6),rep(list(predictorRF),1),predictorBoost,predictorRFX)
 str_predictors <-c(rep("CoxGLM",6),rep("RFS",1),"CoxBoost","RFX")
