@@ -194,7 +194,7 @@ prognosis_features <- list(comp=comp,gen=gen,cyto=cyto,clin=clin,demo=demo,eln_c
                          eln_comp_age_cyto=eln_comp_age_cyto,eln_comp_age_clin=eln_comp_age_clin,eln_comp_gen_cyto=eln_comp_gen_cyto,eln_comp_gen_clin=eln_comp_gen_clin,eln_comp_gen_demo=eln_comp_gen_demo,
                           eln_comp_gen_demo_without_age=eln_comp_gen_demo_without_age,eln_comp_cyto_clin=eln_comp_cyto_clin,eln_comp_cyto_demo=eln_comp_cyto_demo,eln_comp_cyto_demo_without_age=eln_comp_cyto_demo_without_age,
                          eln_comp_clin_demo=eln_comp_clin_demo,eln_comp_clin_demo_without_age=eln_comp_clin_demo_without_age,eln_comp_age_gen_cyto=eln_comp_age_gen_cyto,eln_comp_age_gen_clin=eln_comp_age_gen_clin,
-                         eln_comp_age_gen_demo=eln_comp_age_gen_demo,eln_comp_age_gen_demo_without_age=eln_comp_age_gen_demo_without_age,eln_comp_gen_cyto_clin_demo)
+                         eln_comp_age_gen_demo=eln_comp_age_gen_demo,eln_comp_age_gen_demo_without_age=eln_comp_age_gen_demo_without_age,eln_comp_gen_cyto_clin_demo=eln_comp_gen_cyto_clin_demo)
 
 algos <-c("glm","rfs","boost","rfx")
 alphas=c(0,0.7,1)
