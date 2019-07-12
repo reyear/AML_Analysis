@@ -127,19 +127,19 @@ prognosis_features<- list(gen=gen,eln_gen=eln_gen,
                          eln_comp_gen=eln_comp_gen,eln_comp_age_gen=eln_comp_age_gen,
                          eln_comp_gen_cyto=eln_comp_gen_cyto,eln_comp_gen_clin=eln_comp_gen_clin,eln_comp_gen_demo=eln_comp_gen_demo,
                           eln_comp_gen_demo_without_age=eln_comp_gen_demo_without_age,eln_comp_age_gen_cyto=eln_comp_age_gen_cyto,eln_comp_age_gen_clin=eln_comp_age_gen_clin,
-                         eln_comp_age_gen_demo=eln_comp_age_gen_demo,eln_comp_age_gen_demo_without_age=eln_comp_age_gen_demo_without_age,eln_comp_gen_cyto_clin_demo=eln_comp_gen_cyto_clin_demo,
+                         eln_comp_age_gen_demo=eln_comp_age_gen_demo,eln_comp_age_gen_demo_without_age=eln_comp_age_gen_demo_without_age,
                          eln_age_gen=eln_age_gen,eln_gen_cyto=eln_gen_cyto,eln_gen_clin=eln_gen_clin,eln_gen_demo=eln_gen_demo,eln_gen_demo_without_age=eln_gen_demo_without_age,
                           eln_age_gen_cyto=eln_age_gen_cyto,eln_age_gen_clin=eln_age_gen_clin,eln_age_gen_demo=eln_age_gen_demo,eln_age_gen_demo_without_age=eln_age_gen_demo_without_age,eln_gen_cyto_clin_demo=eln_gen_cyto_clin_demo,
                          comp_gen=comp_gen,comp_gen_cyto=comp_gen_cyto,
                          comp_gen_cyto_clin_demo,gen_age=gen_age,gen_cyto=gen_cyto,gen_clin=gen_clin,gen_demo=gen_demo,gen_demo_without_age=gen_demo_without_age,gen_clin_demo=gen_clin_demo,gen_cyto_clin_demo=gen_cyto_clin_demo,
                          cyto_demo=cyto_demo,gen_demo_without_age=gen_demo_without_age,cyto_gen_demo=cyto_gen_demo,clin_age=clin_age)
 
-prognosis_features<- list(eln_comp_gen_cyto_clin_demo=eln_comp_gen_cyto_clin_demo)
+
 predictors <- c(rep(list(predictorGLM),6),rep(list(predictorRF),1),predictorBoost,predictorRFX)
 str_predictors <-c(rep("CoxGLM",6),rep("RFS",1),"CoxBoost","RFX")
 l_alpha <-seq(0,1,0.2)
 l_ntree <- seq(1050)
-mc.cores <- 8
+mc.cores <- 16
 nodesize <- c(20)
 for (i in 1:length(prognosis_features)){
     print("DONE")
