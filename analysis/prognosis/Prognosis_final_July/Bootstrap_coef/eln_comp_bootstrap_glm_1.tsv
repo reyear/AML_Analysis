@@ -1,0 +1,17 @@
+feature	coef	n
+1	eln_2017_ratio	-31.7901140696723	100
+2	final_component_BAGE3_KMT2C	-9.9595412790453	78
+3	final_component_CEBPA_bi	-12.3901256850682	51
+4	final_component_DNMT3A_IDH1_2	-11.3495223990704	69
+5	final_component_KIT_NRAS	-19.9633492579707	63
+6	final_component_NPM1	9.18319543583968	68
+7	final_component_TP53_complex	91.9350847251912	100
+8	final_component_WT1_t_6_9_ITD	18.2296435805211	80
+9	final_component_additions	-46.2137804068338	98
+10	final_component_chr_splicing_1	-11.0778799242562	73
+11	final_component_chr_splicing_multiple	33.7991375366397	100
+12	final_component_inv_3	58.2711434862416	100
+13	final_component_not_assigned	-29.4571759805835	98
+14	final_component_t_11	-9.69338752195974	61
+15	final_component_t_15_17	-152.556510197518	98
+16	final_component_t_8_21	-69.2717097063665	100

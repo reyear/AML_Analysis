@@ -1,0 +1,17 @@
+feature	coef	n
+1	final_component_BAGE3_KMT2C	0.00853509538538958	22
+2	final_component_CEBPA_bi	-0.207127240099509	49
+3	final_component_DNMT3A_IDH1_2	0.113605647587916	29
+4	final_component_KIT_NRAS	-0.0446247017938543	32
+5	final_component_NPM1	-0.55728818503188	42
+6	final_component_TP53_complex	11.0500988175584	100
+7	final_component_WT1_t_6_9_ITD	0.774302019272695	95
+8	final_component_additions	-0.457535795810813	75
+9	final_component_chr_splicing_1	0.167619972930469	26
+10	final_component_chr_splicing_multiple	9.67624984935716	100
+11	final_component_inv_3	0.428039189019775	100
+12	final_component_not_assigned	-0.873990938979748	85
+13	final_component_t_11	0.00430725034845878	14
+14	final_component_t_15_17	-0.569672809771558	97
+15	final_component_t_8_21	-3.17717409878355	100
+16	gender	0.513137231140713	49
