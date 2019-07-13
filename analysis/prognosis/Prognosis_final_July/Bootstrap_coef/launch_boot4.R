@@ -204,7 +204,7 @@ for (i in 1:length(prognosis_features)){
             for (alpha in alphas){
                 print(alpha)
                 print(algo)
-                bootstrap <- bootstrapping(prognosis_features[[i]],x,y,100,alpha,24,algo)
+                bootstrap <- bootstrapping(prognosis_features[[i]],x,y,100,alpha,30,algo)
                 tmp_1 <- bootstrap  %>% group_by(feature) %>% summarise_all(sum)
                 tmp_2 <- bootstrap  %>% group_by(feature) %>% count(feature)
                 print(paste(paste(names(prognosis_features)[i],paste(algo,alpha,sep="_"),sep="_bootstrap_"),".tsv",sep=""))
