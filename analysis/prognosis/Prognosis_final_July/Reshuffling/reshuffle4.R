@@ -68,7 +68,7 @@ eln_comp_age_gen_clin <- c(eln_comp_age_gen,clin)
 eln_comp_age_gen_demo <- c(eln_comp_age_gen,demo)
 
 eln_comp_gen_cyto_clin_demo <- c(eln_comp_gen_cyto,clin,demo)
-
+eln_comp_gen_cyto_clin_demo_without_age <- c(eln_comp_gen_cyto,clin,demo_without_age)
 # without comp
 
 eln_age_gen <- c(eln_age,gen)
@@ -127,8 +127,8 @@ clin_age <-c(clin,age)
 ##---------------------------------------------------------------------------------PREPARING MODELS and ALGOS
 
 
-prognosis_features<-list(eln_comp_gen_demo_without_age=eln_comp_gen_demo_without_age,eln_comp_cyto_clin=eln_comp_cyto_clin,eln_comp_cyto_demo=eln_comp_cyto_demo,eln_comp_cyto_demo_without_age=eln_comp_cyto_demo_without_age,
-                         eln_comp_clin_demo=eln_comp_clin_demo,eln_comp_clin_demo_without_age=eln_comp_clin_demo_without_age,eln_comp_age_gen_cyto=eln_comp_age_gen_cyto,eln_comp_age_gen_clin=eln_comp_age_gen_clin)
+prognosis_features<-list(cyto=cyto,eln_comp_age=eln_comp_age,eln_comp_gen_cyto=eln_comp_gen_cyto,eln_cyto=eln_cyto,
+                         eln_comp_gen_cyto_clin_demo=eln_comp_gen_cyto_clin_demo,eln_comp_gen_cyto_clin_demo_without_age=eln_comp_gen_cyto_clin_demo_without_age)
 
 
                          
@@ -137,7 +137,7 @@ prognosis_features<-list(eln_comp_gen_demo_without_age=eln_comp_gen_demo_without
 ### PARAMETERS OF ANALYSIS:
 nrepeats=5
 seed=1234
-mc.cores=20
+mc.cores=10
 npermutations=4
 nfolds=5
 

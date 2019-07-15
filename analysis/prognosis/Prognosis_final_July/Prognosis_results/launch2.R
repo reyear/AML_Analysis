@@ -124,7 +124,7 @@ clin_age <-c(clin,age)
 y <- data.matrix(df_final[,c("os","os_status")])
 
 prognosis_features<- list(comp_age=comp_age,comp_gen=comp_gen,comp_cyto=comp_cyto,comp_clin=comp_clin,comp_demo=comp_demo,comp_demo_without_age=comp_demo_without_age,comp_gen_cyto=comp_gen_cyto,comp_clin_demo=comp_clin_demo,
-                         comp_gen_cyto_clin_demo,gen_age=gen_age,gen_cyto=gen_cyto,gen_clin=gen_clin,gen_demo=gen_demo,gen_demo_without_age=gen_demo_without_age,gen_clin_demo=gen_clin_demo,gen_cyto_clin_demo=gen_cyto_clin_demo,
+                         comp_gen_cyto_clin_demo=comp_gen_cyto_clin_demo,gen_age=gen_age,gen_cyto=gen_cyto,gen_clin=gen_clin,gen_demo=gen_demo,gen_demo_without_age=gen_demo_without_age,gen_clin_demo=gen_clin_demo,gen_cyto_clin_demo=gen_cyto_clin_demo,
                          cyto_age=cyto_age,cyto_clin=cyto_clin,cyto_demo=cyto_demo,gen_demo_without_age=gen_demo_without_age,cyto_clin_demo=cyto_clin_demo,cyto_gen_demo=cyto_gen_demo,clin_age=clin_age)
 
 predictors <- c(rep(list(predictorGLM),6),rep(list(predictorRF),1),predictorBoost,predictorRFX)
