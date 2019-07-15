@@ -7,28 +7,9 @@ library(CoxBoost)
 library(randomForestSRC)
 library(CoxHD)
 source('../../tools_prognosis/run_prognosis.R')
-source("feature_importance.R")
-
-
 
 df_final <- read.table("../data_frame_final_prognosis.tsv")
-##---------------------------------------------------------------------------------MODELS TO TRY
 
-
-library(glmnet)
-library(doMC)
-library(survival)
-library(data.table)
-library(mltools)
-library(CoxBoost)
-library(randomForestSRC)
-library(CoxHD)
-source('../../tools_prognosis/run_prognosis.R')
-source("feature_importance.R")
-
-
-
-df_final <- read.table("../data_frame_final_prognosis.tsv")
 
 df_final$eln_adverse <- ifelse(df_final$eln_2017_ratio==1,1,0)
 df_final$eln_intermediate <- ifelse(df_final$eln_2017_ratio==2,1,0)
@@ -143,50 +124,31 @@ cyto_gen_demo <- c(gen_cyto,demo)
 
 
 clin_age <-c(clin,age)
-##---------------------------------------------------------------------------------PREPARING MODELS and ALGOS
-                         
-prognosis_features<-
-list(eln_age=eln_age,eln_clin=eln_clin,eln_demo=eln_demo,eln_demo_without_age=eln_demo_without_age,eln_comp_age=eln_comp_age,eln_comp_clin=eln_comp_clin,eln_comp_demo=eln_comp_demo,eln_comp_demo_without_age=eln_comp_demo_without_age,
+
+
+y <- data.matrix(df_final[,c("os","os_status")])
+
+prognosis_features<- list(eln_age=eln_age,eln_clin=eln_clin,eln_demo=eln_demo,eln_demo_without_age=eln_demo_without_age,eln_comp_age=eln_comp_age,eln_comp_clin=eln_comp_clin,eln_comp_demo=eln_comp_demo,eln_comp_demo_without_age=eln_comp_demo_without_age,
      eln_comp_age_gen=eln_comp_age_gen,eln_comp_age_cyto=eln_comp_age_cyto,eln_comp_age_clin=eln_comp_age_clin,eln_comp_gen_clin=eln_comp_gen_clin,eln_comp_gen_demo=eln_comp_gen_demo,
      eln_comp_gen_demo_without_age=eln_comp_gen_demo_without_age,eln_comp_cyto_clin=eln_comp_cyto_clin,eln_comp_cyto_demo=eln_comp_cyto_demo,eln_comp_cyto_demo_without_age=eln_comp_cyto_demo_without_age,
      eln_comp_clin_demo=eln_comp_clin_demo,eln_comp_clin_demo_without_age=eln_comp_clin_demo_without_age,eln_comp_cyto_clin=eln_comp_cyto_clin,eln_comp_cyto_demo=eln_comp_cyto_demo,eln_comp_cyto_demo_without_age=eln_comp_cyto_demo_without_age,
      eln_comp_clin_demo=eln_comp_clin_demo,eln_comp_clin_demo_without_age=eln_comp_clin_demo_without_age,eln_comp_age_gen_cyto=eln_comp_age_gen_cyto,eln_comp_age_gen_clin=eln_comp_age_gen_clin,eln_comp_age_gen_demo=eln_comp_age_gen_demo,
      eln_comp_gen_cyto_clin_demo=eln_comp_gen_cyto_clin_demo,eln_comp_gen_cyto_clin_demo_without_age=eln_comp_gen_cyto_clin_demo_without_age,eln_age_gen=eln_age_gen,eln_age_cyto=eln_age_cyto,eln_age_clin=eln_age_clin,
      eln_gen_clin=eln_gen_clin,eln_gen_demo=eln_gen_demo,eln_gen_demo_without_age=eln_gen_demo_without_age,eln_cyto_clin=eln_cyto_clin,eln_cyto_demo=eln_cyto_demo,eln_cyto_demo_without_age=eln_cyto_demo_without_age,eln_clin_demo=eln_clin_demo,
-     eln_clin_demo_without_age=eln_clin_demo_without_age,eln_age_gen_cyto=eln_age_gen_cyto,eln_age_gen_clin=eln_age_gen_clin,eln_age_gen_demo=eln_age_gen_demo,eln_gen_cyto_clin_demo=eln_gen_cyto_clin_demo)
-              
-     
-     
-              
-nrepeats=5
-seed=1234
-mc.cores=30
-npermutations=4
-nfolds=5
+     eln_clin_demo_without_age=eln_clin_demo_without_age,eln_age_gen_cyto=eln_age_gen_cyto,eln_age_gen_clin=eln_age_gen_clin,eln_age_gen_demo=eln_age_gen_demo,eln_gen_cyto_clin_demo=eln_gen_cyto_clin_demo,                                           eln=eln,eln_comp=eln_comp,eln_gen=eln_gen,eln_cyto=eln_cyto,eln_gen_cyto=eln_gen_cyto,eln_comp_gen=eln_comp_gen,eln_comp_cyto=eln_comp_cyto,eln_comp_gen_cyto=eln_comp_gen_cyto,
+                          eln_comp_gen_cyto_clin_demo=eln_comp_gen_cyto_clin_demo,
+                        eln_comp_gen_cyto_clin_demo_without_age=eln_comp_gen_cyto_clin_demo_without_age)
 
-algorithms<-c(algo_Lasso, algo_Ridge, algo_Elastic_net,  algo_RFX, algo_RFS, algo_Cox)
-predictors<-c(predictor_Lasso, predictor_Ridge, predictor_Elastic_net,  predictor_RFX, predictor_RFS,  predictor_Cox)
-algo_names<-c('Lasso','Ridge','Elastic_net','RFX','RFS','Cox')
-
-
-response <- data.matrix(df_final[,c("os","os_status")])
-colnames(response) <- c("time","status")
-
-
-
-##---------------------------------------------------------------------------------PREPARING MODELS and ALGOS
-
-for (j in 1:length(prognosis_features)){
-    print(names(prognosis_features[j]))
-    res_data <- data.frame('feature'=character(),'ref_CI'=numeric(),'permuted_CI'=numeric(),'algo'=character(),'model'=character())
-    for(i in 1:length(algorithms)){
-        design <- data.matrix(data.frame(df_final[,prognosis_features[[j]]]))      
-        tmp <- runCV_CI_with_test(response=response, design=design,
-              nfolds=nfolds, nrepeats=nrepeats, seed=seed, mc.cores=mc.cores, features=colnames(design), npermutations=npermutations, 
-                                  algorithm=algorithms[i][[1]], predictor=predictors[i][[1]])
-        tmp$algo<-algo_names[i]
-        tmp$model <- names(prognosis_features[j])
-        res_data <- rbind(res_data,tmp)
+predictors <- c(rep(list(predictorGLM),6),rep(list(predictorRF),1),predictorBoost,predictorRFX)
+str_predictors <-c(rep("CoxGLM",6),rep("RFS",1),"CoxBoost","RFX")
+l_alpha <-seq(0,1,0.2)
+l_ntree <- c(1050)
+mc.cores <- 30
+nodesize <- c(20)
+for (i in 1:length(prognosis_features)){
+    print("DONE")
+    x <- data.matrix(df_final[,prognosis_features[[i]]])
+    write.table(launch_prognosis(x=x,y=y,predictors=predictors,str_predictors=str_predictors,l_alpha=l_alpha,nrepeats=5,
+                l_ntree=l_ntree,mc.cores=mc.cores,nodesize=nodesize),paste(names(prognosis_features)[i],".tsv",sep=""),quote=F,sep='\t')
+    print("DONE")
     }
-    write.table(res_data,paste(names(prognosis_features)[j],".tsv",sep="_reshuffle_importance"),quote=F,sep='\t')
-}
