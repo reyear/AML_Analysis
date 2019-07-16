@@ -127,8 +127,8 @@ clin_age <-c(clin,age)
 ##---------------------------------------------------------------------------------PREPARING MODELS and ALGOS
 
 
-prognosis_features<-list(cyto=cyto,eln_comp_age=eln_comp_age,eln_comp_gen_cyto=eln_comp_gen_cyto,eln_cyto=eln_cyto,
-                         eln_comp_gen_cyto_clin_demo=eln_comp_gen_cyto_clin_demo,eln_comp_gen_cyto_clin_demo_without_age=eln_comp_gen_cyto_clin_demo_without_age)
+prognosis_features<-list(eln_comp_gen_cyto=eln_comp_gen_cyto,eln_cyto=eln_cyto,
+                         eln_comp_gen_cyto_clin_demo=eln_comp_gen_cyto_clin_demo,eln_comp_gen_cyto_clin_demo_without_age=eln_comp_gen_cyto_clin_demo_without_age,cyto=cyto,eln_comp_age=eln_comp_age)
 
 
                          
@@ -137,7 +137,7 @@ prognosis_features<-list(cyto=cyto,eln_comp_age=eln_comp_age,eln_comp_gen_cyto=e
 ### PARAMETERS OF ANALYSIS:
 nrepeats=5
 seed=1234
-mc.cores=10
+mc.cores=30
 npermutations=4
 nfolds=5
 
