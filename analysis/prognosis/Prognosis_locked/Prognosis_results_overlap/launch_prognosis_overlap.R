@@ -12,8 +12,7 @@ df_final <- read.table("../prognosis_dataframe.tsv")
 
 
 eln <- c(2,3,4)
-comp <- c(184,198:213)
-comp_overlap <- c(168:197)
+comp <- c(168:197)
 age <- c(167)
 
 all_gen <- c(5:88)

@@ -42,7 +42,8 @@ eln_demo_without_age <- c(eln,demo_without_age)
 # with comp
 eln_comp_age <- c(eln_comp,age)
 eln_comp_gen <- c(eln_comp,gen)
-eln_comp_cyto <- c(eln_comp,cyto)
+bj
+              <- c(eln_comp,cyto)
 eln_comp_clin <- c(eln_comp,clin)
 eln_comp_demo <- c(eln_comp,demo)
 eln_comp_demo_without_age <- c(eln_comp,demo_without_age)
