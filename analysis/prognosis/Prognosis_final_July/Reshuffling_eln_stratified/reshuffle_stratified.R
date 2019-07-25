@@ -180,3 +180,10 @@ for (j in 1:length(prognosis_features)){
     }
     write.table(res_data,paste(names(prognosis_features)[j],".tsv",sep="_reshuffle_importance"),quote=F,sep='\t')
 }
+              
+              
+              
+              
+              
+              
+              

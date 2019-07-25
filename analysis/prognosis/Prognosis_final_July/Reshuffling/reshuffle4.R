@@ -137,7 +137,7 @@ prognosis_features<-list(eln_comp_gen_cyto=eln_comp_gen_cyto
 ### PARAMETERS OF ANALYSIS:
 nrepeats=5
 seed=1234
-mc.cores=30
+mc.cores=30cd 
 npermutations=4
 nfolds=5
 
