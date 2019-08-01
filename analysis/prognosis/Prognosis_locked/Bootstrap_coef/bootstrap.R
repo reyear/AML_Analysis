@@ -92,8 +92,6 @@ comp_clin <- c(comp,clin)
 comp_demo <- c(comp,demo)
 comp_gen_cyto <- c(comp_gen,cyto)
 comp_clin_demo <- c(comp_clin,demo)
-comp_clin <- c(comp,clin)
-comp_demo <- c(comp,demo)
 comp_gen_cyto_clin_demo <- c(comp_gen_cyto,clin,demo)
 
 #USEFUL FOR GEN
@@ -120,9 +118,8 @@ prognosis_features<- list(eln_comp=eln_comp,eln_comp_gen=eln_comp_gen,eln=eln,co
                           eln_comp_gen_cyto=eln_comp_gen_cyto,eln_comp_gen_clin=eln_comp_gen_clin,eln_comp_gen_demo=eln_comp_gen_demo,
                           eln_comp_cyto_clin=eln_comp_cyto_clin,eln_comp_cyto_demo=eln_comp_cyto_demo,eln_comp_clin_demo=eln_comp_clin_demo,
                           eln_comp_gen_cyto_clin_demo=eln_comp_gen_cyto_clin_demo,eln_comp_gen_cyto_clin_demo_without_age=eln_comp_gen_cyto_clin_demo_without_age,
-                          eln_gen_cyto=eln_gen_cyto,eln_clin_demo=eln_clin_demo,eln_clin=eln_clin,eln_demo=eln_demo,eln_gen_cyto_clin_demo=eln_gen_cyto_clin_demo,
+                          eln_gen_cyto=eln_gen_cyto,eln_clin_demo=eln_clin_demo,eln_gen_cyto_clin_demo=eln_gen_cyto_clin_demo,
                           comp_gen=comp_gen,comp_cyto=comp_cyto,comp_clin=comp_clin,comp_demo=comp_demo,comp_gen_cyto=comp_gen_cyto,comp_clin_demo=comp_clin_demo,
-                          comp_clin=comp_clin,comp_demo=comp_demo,comp_gen_cyto=comp_gen_cyto,comp_clin_demo=comp_clin_demo,comp_clin=comp_clin,comp_demo=comp_demo,
                           comp_gen_cyto_clin_demo=comp_gen_cyto_clin_demo,gen_cyto=gen_cyto,gen_clin=gen_clin,gen_demo=gen_demo,gen_clin_demo=gen_clin_demo,
                           gen_cyto_clin_demo=gen_cyto_clin_demo,cyto_clin=cyto_clin,cyto_demo=cyto_demo,cyto_clin_demo=cyto_clin_demo,cyto_gen_demo=cyto_gen_demo,clin_demo=clin_demo)
 

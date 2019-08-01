@@ -98,7 +98,7 @@ clin_demo <-c(clin,demo)
 
 y <- data.matrix(df_final[,c("os","os_status")])
 
-prognosis_features<- list(eln=eln,comp=comp,gen=gen,cyto=cyto,clin=clin,demo=demo,eln_gen=eln_gen,eln_cyto=eln_cyto,eln_clin=eln_clin,
+prognosis_features<- list(eln_comp_gen=eln_comp_gen,eln_comp=eln_comp,eln=eln,comp=comp,gen=gen,cyto=cyto,clin=clin,demo=demo,eln_gen=eln_gen,eln_cyto=eln_cyto,eln_clin=eln_clin,
                           eln_demo=eln_demo,eln_comp_cyto=eln_comp_cyto,eln_comp_clin=eln_comp_clin,eln_comp_demo=eln_comp_demo,
                           eln_comp_gen_cyto=eln_comp_gen_cyto,eln_comp_gen_clin=eln_comp_gen_clin,eln_comp_gen_demo=eln_comp_gen_demo,
                           eln_comp_cyto_clin=eln_comp_cyto_clin,eln_comp_cyto_demo=eln_comp_cyto_demo,eln_comp_clin_demo=eln_comp_clin_demo,
