@@ -124,7 +124,7 @@ y <- data.matrix(df_final[,c("os","os_status")])
 
 prognosis_features<- list(eln_comp_gen=eln_comp_gen,eln_comp_cyto=eln_comp_cyto,
                           eln_comp_gen_cyto=eln_comp_gen_cyto,eln_comp_gen_clin=eln_comp_gen_clin,eln_comp_gen_demo=eln_comp_gen_demo,
-                          eln_comp_cyto_clin=eln_comp_cyto_clin,eln_comp_cyto_demo=eln_comp_cyto_demo,
+                          eln_comp_cyto_clin=eln_comp_cyto_clin,eln_comp_cyto_demo=eln_comp_cyto_demo
                           )
 
               
