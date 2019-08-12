@@ -10,7 +10,7 @@ source('../../../tools_prognosis/run_prognosis.R')
 
 
 df_final <- read.table("../../../../clustering/clustering_Final_1/df_final_full_component_ITD.tsv")
-master <- read.table("../../../../../data/initial_dataset/Master_04_10_2019.csv",sep= ",",header=T)
+master <- read.table("../../../../../data/initial_dataset/Master_04_10_2019.tsv",sep= ",",header=T)
 rownames(master) <- master$data_pd
 df_final <- merge(df_final,master[,c("data_pd","intense")],by=0)
 rownames(df_final) <- df_final$Row.names
