@@ -112,7 +112,7 @@ cyto_clin_demo <- c(cyto_clin,demo)
 cyto_gen_demo <- c(gen_cyto,demo)
 
 clin_demo <-c(clin,demo)
-              
+y <- data.matrix(df_final[,c("os","os_status")])              
 prognosis_features<- list(eln_gen=eln_gen, eln_cyto=eln_cyto,eln_clin=eln_clin,eln_demo=eln_demo,eln_gen_cyto=eln_gen_cyto,eln_clin_demo=eln_clin_demo,eln_clin=eln_clin,eln_demo=eln_demo,eln_gen_cyto_clin_demo=eln_gen_cyto_clin_demo,
                           gen=gen ,cyto =cyto,gen_cyto=gen_cyto,gen_clin=gen_clin,gen_demo=gen_demo,gen_clin_demo=gen_clin_demo,gen_cyto_clin_demo=gen_cyto_clin_demo,
                           cyto_clin=cyto_clin,cyto_demo=cyto_demo,cyto_clin_demo=cyto_clin_demo,cyto_gen_demo=cyto_gen_demo,
