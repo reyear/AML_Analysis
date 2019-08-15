@@ -21,6 +21,7 @@ df_final$data_pd <- NULL
 eln <- c(2,3,4)
 comp <- c(170:193)
 age <- c(167)
+intense <- c(196)
 
 all_gen <- c(5:88)
 vect <- apply(X=df_final[,all_gen],2,FUN=function(x) 100*length(which(x==1))/dim(df_final)[1])
@@ -113,16 +114,17 @@ cyto_gen_demo <- c(gen_cyto,demo)
 
 clin_demo <-c(clin,demo)
 y <- data.matrix(df_final[,c("os","os_status")])              
-prognosis_features<- list(eln_gen=eln_gen, eln_cyto=eln_cyto,eln_clin=eln_clin,eln_demo=eln_demo,eln_gen_cyto=eln_gen_cyto,eln_clin_demo=eln_clin_demo,eln_clin=eln_clin,eln_demo=eln_demo,eln_gen_cyto_clin_demo=eln_gen_cyto_clin_demo,
-                          gen=gen ,cyto =cyto,gen_cyto=gen_cyto,gen_clin=gen_clin,gen_demo=gen_demo,gen_clin_demo=gen_clin_demo,gen_cyto_clin_demo=gen_cyto_clin_demo,
-                          cyto_clin=cyto_clin,cyto_demo=cyto_demo,cyto_clin_demo=cyto_clin_demo,cyto_gen_demo=cyto_gen_demo,
-                          eln_comp_gen=eln_comp_gen,eln_comp=eln_comp,comp=comp,eln_comp_cyto=eln_comp_cyto,eln_comp_clin=eln_comp_clin,eln_comp_demo=eln_comp_demo,
-                          eln_comp_gen_cyto=eln_comp_gen_cyto,eln_comp_gen_clin=eln_comp_gen_clin,eln_comp_gen_demo=eln_comp_gen_demo,
-                          eln_comp_cyto_clin=eln_comp_cyto_clin,eln_comp_cyto_demo=eln_comp_cyto_demo,eln_comp_clin_demo=eln_comp_clin_demo,
-                          eln_comp_gen_cyto_clin_demo=eln_comp_gen_cyto_clin_demo,eln_comp_gen_cyto_clin_demo_without_age=eln_comp_gen_cyto_clin_demo_without_age,
-                          comp_gen=comp_gen,comp_cyto=comp_cyto,comp_clin=comp_clin,comp_demo=comp_demo,comp_gen_cyto=comp_gen_cyto,comp_clin_demo=comp_clin_demo,
-                          comp_clin=comp_clin,comp_demo=comp_demo,comp_gen_cyto=comp_gen_cyto,comp_clin_demo=comp_clin_demo,comp_clin=comp_clin,comp_demo=comp_demo,
-                          comp_gen_cyto_clin_demo=comp_gen_cyto_clin_demo)
+prognosis_features<- list(eln_gen=c(eln_gen,intense), eln_cyto=c(eln_cyto,intense),eln_clin=c(eln_clin,intense),eln_demo=c(eln_demo,intense),eln_gen_cyto=c(eln_gen_cyto,intense),eln_clin_demo=c(eln_clin_demo,intense),
+                          eln_clin=c(eln_clin,intense),eln_demo=c(eln_demo,intense),eln_gen_cyto_clin_demo=c(eln_gen_cyto_clin_demo,intense),
+                          gen=c(gen,intense) ,cyto =c(cyto,intense),gen_cyto=c(gen_cyto,intense),gen_clin=c(gen_clin,intense),gen_demo=c(gen_demo,intense),gen_clin_demo=c(gen_clin_demo,intense),gen_cyto_clin_demo=c(gen_cyto_clin_demo,intense),
+                          cyto_clin=c(cyto_clin,intense),cyto_demo=c(cyto_demo,intense),cyto_clin_demo=c(cyto_clin_demo,intense),cyto_gen_demo=c(cyto_gen_demo,intense),
+                          eln_comp_gen=c(eln_comp_gen,intense),eln_comp=c(eln_comp,intense),comp=c(comp,intense),eln_comp_cyto=c(eln_comp_cyto,intense),eln_comp_clin=c(eln_comp_clin,intense),eln_comp_demo=c(eln_comp_demo,intense),
+                          eln_comp_gen_cyto=c(eln_comp_gen_cyto,intense),eln_comp_gen_clin=c(eln_comp_gen_clin,intense),eln_comp_gen_demo=c(eln_comp_gen_demo,intense),
+                          eln_comp_cyto_clin=c(eln_comp_cyto_clin,intense),eln_comp_cyto_demo=c(eln_comp_cyto_demo,intense),eln_comp_clin_demo=c(eln_comp_clin_demo,intense),
+                          eln_comp_gen_cyto_clin_demo=c(eln_comp_gen_cyto_clin_demo,intense),eln_comp_gen_cyto_clin_demo_without_age=c(eln_comp_gen_cyto_clin_demo_without_age,intense),
+                          comp_gen=c(comp_gen,intense),comp_cyto=c(comp_cyto,intense),comp_clin=c(comp_clin,intense),comp_demo=c(comp_demo,intense),comp_gen_cyto=c(comp_gen_cyto,intense),comp_clin_demo=c(comp_clin_demo,intense),
+                          comp_clin=c(comp_clin,intense),comp_demo=c(comp_demo,intense),comp_gen_cyto=c(comp_gen_cyto,intense),comp_clin_demo=c(comp_clin_demo,intense),comp_clin=c(comp_clin,intense),comp_demo=c(comp_demo,intense),
+                          comp_gen_cyto_clin_demo=c(comp_gen_cyto_clin_demo,intense))
               
 predictors <- c(rep(list(predictorGLM),6),rep(list(predictorRF),1),predictorBoost,predictorRFX)
 str_predictors <-c(rep("CoxGLM",6),rep("RFS",1),"CoxBoost","RFX")
