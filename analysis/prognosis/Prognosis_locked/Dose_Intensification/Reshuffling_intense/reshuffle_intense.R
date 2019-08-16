@@ -18,6 +18,7 @@ library(tidyr)
 library(tidyverse)
 source("../../../../../src/tools.R")
 source('../../../tools_prognosis/run_prognosis.R')
+source('feature_importance.R')
 
 
 
