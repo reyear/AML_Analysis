@@ -1,3 +1,6 @@
+library('ggplot2')
+library('reshape2')
+library('ggpubr')
 library(glmnet)
 library(doMC)
 library(survival)
@@ -6,8 +9,15 @@ library(mltools)
 library(CoxBoost)
 library(randomForestSRC)
 library(CoxHD)
+library(Hmisc)
+library(gridExtra)
+library("survminer")
+library(dplyr)
+library(broom)
+library(tidyr)
+library(tidyverse)
+source("../../../../../src/tools.R")
 source('../../../tools_prognosis/run_prognosis.R')
-source("feature_importance.R")
 
 
 
@@ -33,7 +43,7 @@ vect <- apply(X=df_final[,all_gen],2,FUN=function(x) 100*length(which(x==1))/dim
 gen <- match(names(vect[vect>=2]),names(df_final))
 gen_without <- setdiff(gen,grep("^NPM1$", colnames(df_final)))
 gen_without <- setdiff(gen_without,grep("^CEBPA_bi$", colnames(df_final))) 
-              
+
 all_cyto <- c(89:158)
 vect <- apply(X=df_final[,all_cyto],2,FUN=function(x) 100*length(which(x==1))/dim(df_final)[1])
 cyto <- match(names(vect[vect>=2]),names(df_final))
@@ -44,20 +54,20 @@ cyto_without <- setdiff(cyto_without,grep("^t_v_11$", colnames(df_final)))
 clin <- c(159:165)
 demo <- c(166:167)
 demo_without_age <-c(166)
-              
+
 name_genes <- colnames(df_final[,gen])
 name_cyto <- colnames(df_final[,cyto])
 name_comp <- colnames(df_final[,comp])
 name_eln <- colnames(df_final[,eln])
 for (col in c(name_eln,name_genes,name_cyto,name_comp)){
-    df_final[,paste(col,"intense",sep="_")] <- df_final[,col]*df_final$intense
+df_final[,paste(col,"intense",sep="_")] <- df_final[,col]*df_final$intense
 }    
 #Features with intensification
-    
+
 eln_intense <- c(197:199)
 comp_intense <- c(255:278) 
 gen_intense <- c(200:234)    
-             
+
 gen_without_intense <- setdiff(gen_intense,grep("^NPM1_intense$", colnames(df_final)))
 gen_without_intense <- setdiff(gen_without_intense,grep("^CEBPA_bi_intense$", colnames(df_final)))
 cyto_intense <- c(235:254)
@@ -66,37 +76,34 @@ cyto_without_intense <- setdiff(cyto_without_intense,grep("^t_8_21_intense$", co
 cyto_without_intense <- setdiff(cyto_without_intense,grep("^t_v_11_intense$", colnames(df_final))) 
 
 
-              
+
 ### Models to try
-comp_comp_intense <- c (comp, comp_intense,intense)
-gen_gen_intense <- c (gen, gen_intense,intense)
-cyto_cyto_intense <- c (cyto, cyto_intense,intense)
-gen_cyto_gen_intense_cyto_intense <- c(gen,cyto,gen_intense,cyto_intense,intense)
-comp_gen_cyto_comp_intense_gen_intense_cyto_intense <- c(comp,gen_without,cyto_without,comp_intense,gen_without_intense,cyto_without_intense,intense)
-gen_cyto_clin_demo_gen_intense_cyto_intense <- c(gen_cyto_gen_intense_cyto_intense,clin,demo,intense)
-comp_clin_demo_comp_intense <- c(comp_comp_intense,clin,demo,intense)
-comp_gen_cyto_clin_demo_comp_intense_gen_intense_cyto_intense <- c(comp_gen_cyto_comp_intense_gen_intense_cyto_intense,clin,demo,intense)
-eln_eln_intense <- c(eln,eln_intense,intense)
-eln_comp_eln_intense_comp_intense <- c(eln_eln_intense,comp_comp_intense,intense)
-eln_gen_cyto_eln_intense_gen_intense_cyto_intense <- c(eln_eln_intense,gen_cyto_gen_intense_cyto_intense,intense)
-eln_comp_gen_cyto_eln_intense_comp_intense_gen_intense_cyto_intense <- c(eln_eln_intense,comp_gen_cyto_comp_intense_gen_intense_cyto_intense,intense)
-eln_comp_gen_cyto_clin_demo_eln_intense_comp_intense_gen_intense_cyto_intense <- c(eln_comp_gen_cyto_eln_intense_comp_intense_gen_intense_cyto_intense,clin,demo,intense)
-comp_intense_gen_intense_cyto_intense <- c(comp_intense,gen_without_intense,cyto_without_intense,intense)
-eln_intense_comp_intense_gen_intense_cyto_intense_clin_demo <- c(eln_intense,comp_intense_gen_intense_cyto_intense,clin,demo,intense)
-comp_intense_gen_intense <- c(comp_intense,gen_without_intense,intense)
-comp_intense_cyto_intense <- c(comp_intense,cyto_without_intense,intense)
-eln_intense_gen_intense <- c(eln_intense,gen_intense,intense)
-eln_intense_cyto_intense <- c(eln_intense,cyto_intense,intense)
-eln_intense_gen_intense_cyto_intense <- c(eln_intense,gen_intense,cyto_intense,intense)
-              
-y <- data.matrix(df_final[,c("os","os_status")])
+comp_comp_intense <- c (comp, comp_intense)
+gen_gen_intense <- c (gen, gen_intense)
+cyto_cyto_intense <- c (cyto, cyto_intense)
+gen_cyto_gen_intense_cyto_intense <- c(gen,cyto,gen_intense,cyto_intense)
+comp_gen_cyto_comp_intense_gen_intense_cyto_intense <- c(comp,gen_without,cyto_without,comp_intense,gen_without_intense,cyto_without_intense)
+gen_cyto_clin_demo_gen_intense_cyto_intense <- c(gen_cyto_gen_intense_cyto_intense,clin,demo)
+comp_clin_demo_comp_intense <- c(comp_comp_intense,clin,demo)
+comp_gen_cyto_clin_demo_comp_intense_gen_intense_cyto_intense <- c(comp_gen_cyto_comp_intense_gen_intense_cyto_intense,clin,demo)
+eln_eln_intense <- c(eln,eln_intense)
+eln_comp_eln_intense_comp_intense <- c(eln_eln_intense,comp_comp_intense)
+eln_gen_cyto_eln_intense_gen_intense_cyto_intense <- c(eln_eln_intense,gen_cyto_gen_intense_cyto_intense)
+eln_comp_gen_cyto_eln_intense_comp_intense_gen_intense_cyto_intense <- c(eln_eln_intense,comp_gen_cyto_comp_intense_gen_intense_cyto_intense)
+eln_comp_gen_cyto_clin_demo_eln_intense_comp_intense_gen_intense_cyto_intense <- c(eln_comp_gen_cyto_eln_intense_comp_intense_gen_intense_cyto_intense,clin,demo)
+comp_intense_gen_intense_cyto_intense <- c(comp_intense,gen_without_intense,cyto_without_intense)
+eln_intense_comp_intense_gen_intense_cyto_intense_clin_demo <- c(eln_intense,comp_intense_gen_intense_cyto_intense,clin,demo)
+comp_intense_gen_intense <- c(comp_intense,gen_without_intense)
+comp_intense_cyto_intense <- c(comp_intense,cyto_without_intense)
+eln_intense_gen_intense <- c(eln_intense,gen_intense)
+eln_intense_cyto_intense <- c(eln_intense,cyto_intense)
+eln_intense_gen_intense_cyto_intense <- c(eln_intense,gen_intense,cyto_intense)
 
 prognosis_features<- list(
-                         eln_comp_gen_cyto_eln_intense_comp_intense_gen_intense_cyto_intense=eln_comp_gen_cyto_eln_intense_comp_intense_gen_intense_cyto_intense,
-                         eln_comp_gen_cyto_clin_demo_eln_intense_comp_intense_gen_intense_cyto_intense=eln_comp_gen_cyto_clin_demo_eln_intense_comp_intense_gen_intense_cyto_intense,
-                         comp_intense_gen_intense_cyto_intense=comp_intense_gen_intense_cyto_intense,eln_intense_comp_intense_gen_intense_cyto_intense_clin_demo=eln_intense_comp_intense_gen_intense_cyto_intense_clin_demo,
-                         comp_intense_gen_intense=comp_intense_gen_intense,comp_intense_cyto_intense=comp_intense_cyto_intense,eln_intense_gen_intense=eln_intense_gen_intense,eln_intense_cyto_intense=eln_intense_cyto_intense,
-                         eln_intense_gen_intense_cyto_intense=eln_intense_gen_intense_cyto_intense)
+         eln_comp_gen_cyto_clin_demo_eln_intense_comp_intense_gen_intense_cyto_intense=c(eln_comp_gen_cyto_clin_demo_eln_intense_comp_intense_gen_intense_cyto_intense,intense),
+         comp_intense_gen_intense_cyto_intense=c(comp_intense_gen_intense_cyto_intense,intense),eln_intense_comp_intense_gen_intense_cyto_intense_clin_demo=c(eln_intense_comp_intense_gen_intense_cyto_intense_clin_demo,intense),
+         comp_intense_gen_intense=c(comp_intense_gen_intense,intense),comp_intense_cyto_intense=c(comp_intense_cyto_intense,intense),eln_intense_gen_intense=c(eln_intense_gen_intense,intense),eln_intense_cyto_intense=c(eln_intense_cyto_intense,intense),
+         eln_intense_gen_intense_cyto_intense=c(eln_intense_gen_intense_cyto_intense,intense))
 
 ##---------------------------------------------------------------------------------PREPARING MODELS and ALGOS
                          
