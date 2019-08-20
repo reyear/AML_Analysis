@@ -202,7 +202,7 @@ for (i in 1:length(prognosis_features)){
                     tmp_2 <- bootstrap  %>% group_by(feature) %>% count(feature)
                     }
 
-                write.table(data.frame(merge(tmp_1,tmp_2,by='feature')),"test.tsv"),quote=F,sep='\t')
+                write.table(data.frame(merge(tmp_1,tmp_2,by='feature')),"test.tsv",quote=F,sep='\t')
     print ('next')
         }
     }
