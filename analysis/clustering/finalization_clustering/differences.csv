@@ -1,0 +1,68 @@
+data_pd,initial_eln_2017,eln_2017,positive mutation,Classification rules
+PD20320a,intermediate,favorable,"['FLT3_ITD', 'NPM1', 'TET2']",NPM1 == 1 and ITD == 0
+PD20312a,intermediate,favorable,"['CEBPA_mono', 'FLT3_ITD', 'NPM1', 'TET2']",NPM1 == 1 and ITD == 0
+PD20306a,adverse,intermediate,"['DNMT3A', 'FLT3_ITD']",NPM1 == 0 and ITD == 0
+PD20253a,intermediate,favorable,"['DNMT3A', 'FLT3_ITD', 'NPM1', 'NRAS_p.G12_13', 'TET2']",NPM1 == 1 and ITD == 0
+PD20251c,adverse,intermediate,"['DNMT3A', 'FLT3_ITD', 'IDH2_p.R140']",NPM1 == 0 and ITD == 0
+PD22524d,intermediate,adverse,"['DNMT3A', 'IDH2_p.R140', 'FLT3_ITD_New', 'ITD']",NPM1 == 0 and ITD == 1
+PD20215c,favorable,adverse,"['KMT2D', 'NRAS_p.G12_13', 'inv_16', 'FLT3_ITD_New', 'ITD']",NPM1 == 0 and ITD == 1
+PD20203a,favorable,adverse,"['SMC1A', 't_8_21', 'FLT3_ITD_New', 'ITD']",NPM1 == 0 and ITD == 1
+PD20146a,intermediate,favorable,"['FLT3_ITD', 'FLT3_TKD', 'IDH2_p.R140', 'NPM1', 'SF3B1']",NPM1 == 1 and ITD == 0
+PD15200c,intermediate,favorable,"['FLT3_ITD', 'GATA1', 'NPM1', 'NRAS_p.G12_13', 'SMC1A']",NPM1 == 1 and ITD == 0
+PD15197a,intermediate,favorable,"['FLT3_ITD', 'IDH2_p.R140', 'NPM1', 'SRSF2']",NPM1 == 1 and ITD == 0
+PD20104a,intermediate,favorable,"['DNMT3A', 'FLT3_ITD', 'GATA2', 'NPM1', 'PTPN11']",NPM1 == 1 and ITD == 0
+PD15117a,intermediate,favorable,"['DNMT3A', 'FLT3_ITD', 'FLT3_TKD', 'IDH2_p.R140', 'NPM1']",NPM1 == 1 and ITD == 0
+PD15121a,intermediate,favorable,"['DNMT3A', 'FLT3_ITD', 'FLT3_TKD', 'NPM1', 'TET2', 'WT1']",NPM1 == 1 and ITD == 0
+PD15085a,favorable,intermediate,"['BCOR', 'NPM1', 'NRAS_other', 'NRAS_p.G12_13', 'FLT3_ITD_New', 'ITD']",NPM1 == 1 and ITD == 1
+PD15122a,intermediate,favorable,"['CBL', 'FLT3_ITD', 'FLT3_other', 'NPM1', 'PRPF8', 'PTPN11', 'plus21']",NPM1 == 1 and ITD == 0
+PD15126a,intermediate,favorable,"['FLT3_ITD', 'NPM1', 'TET2']",NPM1 == 1 and ITD == 0
+PD20042a,intermediate,favorable,"['ASXL3', 'FLT3_ITD', 'FLT3_TKD', 'NPM1', 'STAG2']",NPM1 == 1 and ITD == 0
+PD15382a,intermediate,favorable,"['BCOR', 'DNMT3A', 'FLT3_ITD', 'NPM1', 'NRAS_p.G12_13', 'TET2']",NPM1 == 1 and ITD == 0
+PD15361a,adverse,favorable,"['CEBPA_mono', 'FLT3_ITD', 'KIT', 'minusx', 't_8_21']",t_8_21==1
+PD15422c,intermediate,favorable,"['FLT3_ITD', 'GATA1', 'NF1', 'NPM1', 'PRPF8', 'SRSF2', 'TET2', 'plus19']",NPM1 == 1 and ITD == 0
+PD20032a,intermediate,favorable,"['FLT3_ITD', 'NPM1', 'TET2']",NPM1 == 1 and ITD == 0
+PD20027c,intermediate,favorable,"['CEBPA_mono', 'FLT3_ITD', 'NPM1', 'TET2']",NPM1 == 1 and ITD == 0
+PD20006a,intermediate,favorable,"['FLT3_ITD', 'NPM1', 'NRAS_p.Q61_62', 'STAG2', 'neut']",NPM1 == 1 and ITD == 0
+PD15339a,intermediate,favorable,"['FLT3_ITD', 'IDH2_p.R140', 'NF1', 'NPM1', 'SRSF2']",NPM1 == 1 and ITD == 0
+PD14881a,adverse,intermediate,"['ASXL2', 'FLT3_ITD', 'MYC', 'SRSF2', 'TET2']",NPM1 == 0 and ITD == 0
+PD19983a,adverse,favorable,"['CEBPA_bi', 'FLT3_ITD', 'MYC', 'NRAS_p.Q61_62']",CEBPA_bi == 1
+PD19978a,intermediate,favorable,"['FLT3_ITD', 'FLT3_TKD', 'IDH2_p.R140', 'NPM1']",NPM1 == 1 and ITD == 0
+PD22624a,adverse,favorable,"['CEBPA_bi', 'FLT3_ITD', 'GATA2', 'RUNX1', 'WT1']",CEBPA_bi == 1
+PD19948a,favorable,intermediate,"['NPM1', 'TET2', 'FLT3_ITD_New', 'ITD']",NPM1 == 1 and ITD == 1
+PD19938a,adverse,favorable,"['DNMT3A', 'EZH2', 'FBXW7', 'FLT3_ITD', 'FLT3_TKD', 'IDH2_p.R140', 'NPM1', 'RUNX1']",NPM1 == 1 and ITD == 0
+PD19925a,adverse,favorable,"['FLT3_ITD', 'KIT', 'inv_16']",inv_16 ==1
+PD22699a,intermediate,favorable,"['FLT3_ITD', 'IDH1', 'NPM1', 'STAG2']",NPM1 == 1 and ITD == 0
+PD19907a,adverse,intermediate,"['DNMT3A', 'EZH2', 'FLT3_ITD', 'IDH2_p.R140', 'KRAS', 'SMC1A', 'SRSF2']",NPM1 == 0 and ITD == 0
+PD19883a,intermediate,favorable,"['DNMT3A', 'FLT3_ITD', 'KRAS', 'NPM1', 'NRAS_p.G12_13']",NPM1 == 1 and ITD == 0
+PD19880a2,adverse,intermediate,"['FLT3_ITD', 'MYC', 'WT1', 'plus8']",NPM1 == 0 and ITD == 0
+PD19866a,intermediate,favorable,"['ATRX', 'DNMT3A', 'FLT3_ITD', 'NPM1', 'PTPN11', 'TET2']",NPM1 == 1 and ITD == 0
+PD19847a,intermediate,favorable,"['FLT3_ITD', 'FLT3_TKD', 'NPM1', 'PTPN11']",NPM1 == 1 and ITD == 0
+PD22967c,adverse,favorable,"['FLT3_ITD', 'FLT3_TKD', 'NRAS_p.G12_13', 'inv_16']",inv_16 ==1
+PD22974a,intermediate,favorable,"['CEBPA_mono', 'FLT3_ITD', 'IDH2_p.R140', 'NPM1', 'NRAS_p.G12_13']",NPM1 == 1 and ITD == 0
+PD22993c,adverse,intermediate,"['CEBPA_mono', 'DNMT3A', 'FLT3_ITD']",NPM1 == 0 and ITD == 0
+PD14971a,adverse,favorable,"['ASXL2', 'FLT3_ITD', 'RAD21', 'SRSF2', 't_8_21']",t_8_21==1
+PD25032a,intermediate,favorable,"['DNMT3A', 'FLT3_ITD', 'NPM1', 'PTPN11', 'SMC1A', 'WT1']",NPM1 == 1 and ITD == 0
+PD23142a,intermediate,favorable,"['DNMT3A', 'FLT3_ITD', 'IDH2_p.R140', 'NPM1']",NPM1 == 1 and ITD == 0
+PD15033a,adverse,favorable,"['FLT3_ITD', 'KRAS', 'NRAS_p.Q61_62', 'inv_16']",inv_16 ==1
+PD15529a,adverse,intermediate,"['FLT3_ITD', 'wbc', 't_2_17']",NPM1 == 0 and ITD == 0
+PD23316a,intermediate,favorable,"['DNMT3A', 'FLT3_ITD', 'FLT3_other', 'IDH2_p.R140', 'NPM1']",NPM1 == 1 and ITD == 0
+PD23248a,favorable,intermediate,"['NPM1', 'ITD']",NPM1 == 1 and ITD == 1
+PD19736c,intermediate,favorable,"['DNMT3A', 'FLT3_ITD', 'NPM1', 'TET2']",NPM1 == 1 and ITD == 0
+PD19728a,intermediate,favorable,"['DNMT3A', 'FLT3_ITD', 'FLT3_TKD', 'IDH2_p.R140', 'NPM1', 'NRAS_p.G12_13']",NPM1 == 1 and ITD == 0
+PD25059c,intermediate,favorable,"['CEBPA_mono', 'FLT3_ITD', 'NPM1', 'TET2']",NPM1 == 1 and ITD == 0
+PD25067c,intermediate,favorable,"['CEBPA_mono', 'FLT3_ITD', 'NPM1', 'TET2']",NPM1 == 1 and ITD == 0
+PD25113c,intermediate,favorable,"['CEBPA_mono', 'DNMT3A', 'FLT3_ITD', 'IDH1', 'NPM1', 'NRAS_p.G12_13']",NPM1 == 1 and ITD == 0
+PD25115c,intermediate,favorable,"['ATRX', 'FLT3_ITD', 'KDM6A', 'NPM1', 'NRAS_p.G12_13', 'PTPN11', 'RAD21']",NPM1 == 1 and ITD == 0
+PD25194a,intermediate,favorable,"['DNMT3A', 'FLT3_ITD', 'NPM1', 'TET2']",NPM1 == 1 and ITD == 0
+PD25208a,intermediate,favorable,"['FLT3_ITD', 'NPM1', 'TET2']",NPM1 == 1 and ITD == 0
+PD25217c,adverse,favorable,"['FLT3_ITD', 'minusy', 't_8_21']",t_8_21==1
+PD25309c,adverse,intermediate,"['FLT3_ITD', 'MYC', 'PTPN11', 'WT1']",NPM1 == 0 and ITD == 0
+PD25351a,intermediate,favorable,"['DNMT3A', 'FLT3_ITD', 'IDH1', 'NPM1']",NPM1 == 1 and ITD == 0
+PD25393a,intermediate,favorable,"['FLT3_ITD', 'NPM1', 'TET2']",NPM1 == 1 and ITD == 0
+PD25431c,favorable,intermediate,"['NPM1', 'STAG2', 'FLT3_ITD_New', 'ITD']",NPM1 == 1 and ITD == 1
+PD25467a,intermediate,favorable,"['FLT3_ITD', 'IDH2_p.R140', 'NPM1', 'PTPN11']",NPM1 == 1 and ITD == 0
+PD25509c,intermediate,favorable,"['FLT3_ITD', 'IDH2_p.R140', 'NPM1', 'SRSF2', 'TET2']",NPM1 == 1 and ITD == 0
+PD25513a,intermediate,favorable,"['FLT3_ITD', 'IDH2_p.R140', 'NPM1']",NPM1 == 1 and ITD == 0
+PD25550a,intermediate,favorable,"['DNMT3A', 'FLT3_ITD', 'NPM1']",NPM1 == 1 and ITD == 0
+PD25613a,intermediate,favorable,"['FLT3_ITD', 'FLT3_TKD', 'NPM1', 'WT1']",NPM1 == 1 and ITD == 0
+PD25614c,intermediate,favorable,"['FLT3_ITD', 'IDH2_p.R140', 'NPM1', 'SRSF2']",NPM1 == 1 and ITD == 0
