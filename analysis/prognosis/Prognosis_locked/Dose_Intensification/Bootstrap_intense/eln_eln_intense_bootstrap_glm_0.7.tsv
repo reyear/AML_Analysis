@@ -1,0 +1,8 @@
+feature	coef	n
+1	eln_2017_adverse	24.9376606473522	93
+2	eln_2017_adverse_intense	11.1683047668339	68
+3	eln_2017_favorable	-0.911780948217847	8
+4	eln_2017_favorable_intense	-57.8459843893583	100
+5	eln_2017_intermediate	-11.8677713564646	60
+6	eln_2017_intermediate_intense	-1.47426721321103	30
+7	intense	-118.200792174832	100
