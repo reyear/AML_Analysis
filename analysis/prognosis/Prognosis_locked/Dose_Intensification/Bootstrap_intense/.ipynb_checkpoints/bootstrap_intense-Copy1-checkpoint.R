@@ -188,7 +188,7 @@ for (i in 1:length(prognosis_features)){
                     nodesize <- c(20)
                     print("DONE")
                     write.table(launch_prognosis(data.matrix(df_final[,features_reduced]),y=y,predictors=predictors,str_predictors=str_predictors,l_alpha=l_alpha,nrepeats=2,l_ntree=l_ntree,nodesize=nodesize,
-                                mc.cores=mc.cores),paste(names(prognosis_features)[i],"_reduced.tsv",sep=""),quote=F,sep='\t')
+                                mc.cores=mc.cores),"testss.tsv",quote=F,sep='\t')
                     print("DONE")
                 }
             }
