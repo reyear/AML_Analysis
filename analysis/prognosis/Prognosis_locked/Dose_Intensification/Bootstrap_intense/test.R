@@ -14,6 +14,7 @@ library("survminer")
 library(dplyr)
 library(broom)
 library(tidyr)
+library(tidyverse)
 source("../../../../../src/tools.R")
 source('../../../tools_prognosis/run_prognosis.R')
 
