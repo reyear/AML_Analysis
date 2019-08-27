@@ -1,5 +1,18 @@
 import sys
 sys.path.append('/juno/work/isabl/opt/python/.virtualenvs/users/taziy/theano/lib/python3.6/site-packages/deepsurv/')
+import deepsurv
+
+#from deepsurv_logger import DeepSurvLogger, TensorboardLogger
+import utils
+import viz
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn import preprocessing
+import lasagne
+import matplotlib
+import matplotlib.pyplot as plt
+import random
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
