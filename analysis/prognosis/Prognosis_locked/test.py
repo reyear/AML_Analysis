@@ -1,6 +1,8 @@
+OMP_NUM_THREADS=16
 import sys
 sys.path.append('/juno/work/isabl/opt/python/.virtualenvs/users/taziy/theano/lib/python3.6/site-packages/deepsurv/')
 import deepsurv
+
 
 #from deepsurv_logger import DeepSurvLogger, TensorboardLogger
 import utils
