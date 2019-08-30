@@ -11,23 +11,6 @@ source("feature_importance.R")
 
 
 
-df_final <- read.table("../prognosis_dataframe.tsv")
-##---------------------------------------------------------------------------------MODELS TO TRY
-
-
-library(glmnet)
-library(doMC)
-library(survival)
-library(data.table)
-library(mltools)
-library(CoxBoost)
-library(randomForestSRC)
-library(CoxHD)
-source('../../tools_prognosis/run_prognosis.R')
-source("feature_importance.R")
-
-
-
 ### Features that we can use
 ###-----------------------------------------------------------------------------
 df_final <- read.table("../../../clustering/clustering_Final_1/df_final_full_component_ITD.tsv")
