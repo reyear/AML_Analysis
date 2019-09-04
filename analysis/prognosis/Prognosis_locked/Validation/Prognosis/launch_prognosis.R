@@ -11,8 +11,8 @@ source('../../../tools_prognosis/run_prognosis.R')
 df_final <- read.table("../full_data_validation.tsv")
 
 
-eln <- c(113,114,115)
-comp <- c(89:112)
+eln <- c(114,115,116)
+comp <- c(90:113)
 age <- c(84)
 
 all_gen <- c(1:57)
@@ -23,7 +23,7 @@ all_cyto <- c(58:80)
 vect <- apply(X=df_final[,all_cyto],2,FUN=function(x) 100*length(which(x==1))/dim(df_final)[1])
 cyto <- match(names(vect[vect>=2]),names(df_final))
               
-clin <- c(85:87)
+clin <- c(85:88)
 demo <- c(83,84)
 demo_without_age <-c(83)
            
@@ -97,7 +97,7 @@ clin_demo <-c(clin,demo)
 
 y <- data.matrix(df_final[,c("OS","OS_Status")])
 
-prognosis_features<- list(demo=demo,clin=clin,gen=gen,cyto=cyto,comp=comp,eln=eln,gen=gen,cyto=cyto,gen_cyto=gen_cyto,eln_gen_cyto=eln_gen_cyto,comp_gen_cyto=comp_gen_cyto,eln_comp=eln_comp,eln_clin_demo=eln_clin_demo,comp_clin_demo=comp_clin_demo,eln_comp_gen_cyto_clin_demo=eln_comp_gen_cyto_clin_demo)
+prognosis_features<- list(clin=clin,eln_clin_demo=eln_clin_demo,comp_clin_demo=comp_clin_demo,eln_comp_gen_cyto_clin_demo=eln_comp_gen_cyto_clin_demo)
                           
                           
 
@@ -114,4 +114,5 @@ for (i in 1:length(prognosis_features)){
                 l_ntree=l_ntree,mc.cores=mc.cores,nodesize=nodesize),paste(names(prognosis_features)[i],".tsv",sep=""),quote=F,sep='\t')
     print("DONE")
     }
+
 

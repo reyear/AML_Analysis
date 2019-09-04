@@ -18,10 +18,10 @@ def score_survival_model(model, X, y):
     result = concordance_index_censored(y['Status'], y['Survival_in_days'], prediction)
     return result[0]
     
-  df_final = pd.read_table("full_data_validation.tsv",sep=" ")
+df_final = pd.read_table("full_data_validation.tsv",sep=" ")
 
-eln = [112,113,114]
-comp =list(range(88,112)) 
+eln = [113,114,115]
+comp =list(range(89,113)) 
 #comp_overlap = list(range(167,197))
 age = [83]
 
@@ -33,7 +33,7 @@ all_cyto = list(range(57,80))
 tmp = df_final.iloc[:,all_cyto][df_final.iloc[:,all_cyto] >0].count()
 cyto = [df_final.columns.get_loc(c) for c in tmp[tmp>df_final.shape[0]*0.02].keys() if c in df_final]
 
-clin=list(range(84,87))
+clin=list(range(84,88))
 demo=[82,83]
 demo_without_age = [82]
 
@@ -112,13 +112,13 @@ clin_demo  = clin + demo
 
 
 
-dict_features_type_final_comp = dict(zip(("cyto_gen_demo","gen_cyto_clin_demo","demo","clin","gen","cyto","comp","eln","gen","cyto","gen_cyto","eln_gen_cyto","comp_gen_cyto","eln_comp","eln_clin_demo","comp_clin_demo","eln_comp_gen_cyto_clin_demo"),
-                                         (cyto_gen_demo,gen_cyto_clin_demo,demo,clin,gen,cyto,comp,eln,gen,cyto,gen_cyto,eln_gen_cyto,comp_gen_cyto,eln_comp,eln_clin_demo,comp_clin_demo,eln_comp_gen_cyto_clin_demo)))
+dict_features_type_final_comp = dict(zip(("gen_cyto_clin_demo","clin","eln_clin_demo","comp_clin_demo","eln_comp_gen_cyto_clin_demo"),
+                                         (gen_cyto_clin_demo,clin,eln_clin_demo,comp_clin_demo,eln_comp_gen_cyto_clin_demo)))
 estimator = FastSurvivalSVM(max_iter=1000, tol=1e-6, random_state=17)
-param_grid = {'alpha': 10. ** np.array([-6,-5,-4,-3,-2,-1,0]),'optimizer':["rbtree"]}
+param_grid = {'alpha': 10. ** np.array([-6,-5,-4,-3,-2,-1,0]),'optimizer':["avltree"]}
 cv = ShuffleSplit(n_splits=5,random_state=17)
 gcv = GridSearchCV(estimator, param_grid, scoring=score_survival_model,
-                   n_jobs=10, iid=False, refit=True,
+                   n_jobs=-1, iid=False, refit=True,
                    cv=cv)
 df=pd.DataFrame(columns=dict_features_type_final_comp.keys())
 for key,item in dict_features_type_final_comp.items():

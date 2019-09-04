@@ -15,8 +15,8 @@ source("feature_importance.R")
 ###-----------------------------------------------------------------------------
 
 df_final <- read.table("../full_data_validation.tsv")
-eln <- c(113,114,115)
-comp <- c(89:112)
+eln <- c(114,115,116)
+comp <- c(90:113)
 age <- c(84)
 
 all_gen <- c(1:57)
@@ -32,7 +32,7 @@ cyto_without <- setdiff(cyto,grep("^inv_16$", colnames(df_final)))
 cyto_without <- setdiff(cyto_without,grep("^t_8_21$", colnames(df_final)))      
 cyto_without <- setdiff(cyto_without,grep("^t_v_11$", colnames(df_final)))  
               
-clin <- c(85:87)
+clin <- c(85:88)
 demo <- c(83,84)
 demo_without_age <-c(83)
 
@@ -104,7 +104,7 @@ clin_demo <-c(clin,demo)
 
 y <- data.matrix(df_final[,c("OS","OS_Status")])
 
-prognosis_features<- list(demo=demo,clin=clin,gen=gen,cyto=cyto,comp=comp,eln=eln,gen=gen,cyto=cyto,gen_cyto=gen_cyto,eln_gen_cyto=eln_gen_cyto,comp_gen_cyto=comp_gen_cyto,eln_comp=eln_comp,eln_clin_demo=eln_clin_demo,comp_clin_demo=comp_clin_demo,eln_comp_gen_cyto_clin_demo=eln_comp_gen_cyto_clin_demo)
+prognosis_features<- list(clin=clin,eln_clin_demo=eln_clin_demo,comp_clin_demo=comp_clin_demo,eln_comp_gen_cyto_clin_demo=eln_comp_gen_cyto_clin_demo)
 
               
 ##---------------------------------------------------------------------------------PREPARING MODELS and ALGOS
