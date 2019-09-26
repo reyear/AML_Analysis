@@ -212,7 +212,7 @@ comp_features_frequency <- function(df_final="",genes="",cytos="",comp="ss",cols
 comp_repartition <- function(df_final,cols_component,cols_order){
 
     df_tmp <- setNames(data.frame(matrix(ncol = length(cols_order), nrow = length(cols_order))), cols_order)
-    rownames(df_tmp) <- gsub("full_component_","",col_list)
+    rownames(df_tmp) <- gsub("full_component_","",cols_order)
     for (col in cols_component){
         for (col_bis in cols_component){
             df_tmp[gsub("full_component_","",col),gsub("full_component_","",col_bis)] <- ifelse(is.null(dim(df_final[df_final[,col]==1 & df_final[,col_bis]==1,])[1]),0,dim(df_final[df_final[,col]==1 & df_final[,col_bis]==1,])[1])
