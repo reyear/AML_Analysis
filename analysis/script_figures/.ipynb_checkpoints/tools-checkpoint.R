@@ -1,5 +1,7 @@
 ####################################### Libraries #######################################
 library(doMC)
+library(dplyr)
+library(ggplot2)
 ####################################### End Libraries #######################################
 
 
@@ -7,8 +9,9 @@ library(doMC)
 
 
 ####################################### Prepare the colors #######################################
-df_final <- read.table("../clustering/clustering_Final_1/df_final_full_component.tsv")
-df_w_correlates <- read.table("../clustering/clustering_Final_1/df_final_full_component.tsv")
+df_final <- read.table("/Users/taziy/AML_analysis/analysis/clustering/clustering_Final_1/df_final_full_component.tsv")
+df_w_correlates <- read.table("/Users/taziy/AML_analysis/analysis/clustering/clustering_Final_1/df_final_full_component.tsv")
+df_final_itd <- read.table("/Users/taziy/AML_analysis/analysis/clustering/clustering_Final_1/df_final_full_component_ITD.tsv")
 cols_component <- colnames(df_final %>% dplyr:: select(starts_with("full_component_")))
 tmp <- NULL
 for (co in cols_component){
@@ -23,7 +26,19 @@ color_values <- c("grey45", "#e79f00", "#009E73","#0072B2",  "#CC79A7","#9ad0f3"
 names(color_values) <- levels(factor(tmp$fill_pal))
 color_values["overlap"] <- "purple"
 
-colors_analysis <- c(eln="#EE9937",comp="#59A08B",gen="#BFBFBF",cyto="#2b8cbe",clin="#870C14",demo="#a6bddb",age="#a6bddb",gen_cyto="pink",eln_gen_cyto="#fdbb84",comp_gen_cyto="lightgoldenrod",all="lightsalmon")
+eln <- colnames(df_final_itd[,c(2,3,4)])
+comp <- colnames(df_final_itd[,c(170:193)])
+age <- c(167)
+
+gen<- colnames(df_final_itd[,c(5:88)])
+
+cyto <- colnames(df_final_itd[,c(89:158)])       
+              
+clin <- colnames(df_final_itd[,c(159:165)])
+demo <- colnames(df_final_itd[,c(166:167)])
+mrd <- c("CR_MRD_neg","CR_MRD_pos","all_others")
+
+colors_analysis <- c(eln="#EE9937",comp="#59A08B",gen="#BFBFBF",cyto="#2b8cbe",clin="#870C14",demo="#a6bddb",age="#a6bddb",gen_cyto="pink",eln_gen_cyto="#fdbb84",comp_gen_cyto="lightgoldenrod",all="lightsalmon",mrd="pink")
 
 val <- c("#EE9937","#5C5C5C","#870C14","#BFBFBF","#59A08B","#2b8cbe","#a6bddb","#fdbb84","#e79f00","#000000","darkseagreen","lightskyblue","#0072B2","pink","blue","green")
 
@@ -35,7 +50,7 @@ val <- c("#EE9937","#5C5C5C","#870C14","#BFBFBF","#59A08B","#2b8cbe","#a6bddb","
 
 ####################################### Survival Plots #######################################
 
-plot_surv_curves <-function(fit,submain="",vals=val,legend="top",risk.tab=F,y="",linetype=1,size=4){
+plot_surv_curves <-function(fit,submain="",vals=val,legend="top",risk.tab=F,y="",linetype=1,size=4,pval=TRUE,pval.coord=c(0,0.05),font.legend=28,xlab="Time (years)",legend.title="",...){
     
     # Create the vector to use for leg.labs
     vec <- NULL
@@ -43,12 +58,12 @@ plot_surv_curves <-function(fit,submain="",vals=val,legend="top",risk.tab=F,y=""
     vec <- cbind(vec,paste(str_remove(names(fit$strata[i]),"comparison="),fit$n[i],sep=" , N="))
     }
     
-    ggsurvplot(fit,  pval = TRUE,main = "Survival curve",risk.table=risk.tab,submain = submain,palette=vals,legend=legend,pval.size=8,pval.coord=c(0,0.05),risk.table.fontsize=10,xlab="Time (years)",legend.labs=vec,ylab=y,
+    ggsurvplot(fit,  pval = pval,main = "Survival curve",risk.table=risk.tab,submain = submain,palette=vals,legend=legend,pval.size=8,pval.coord=pval.coord,risk.table.fontsize=10,xlab=xlab,legend.labs=vec,ylab=y,legend.title=legend.title,...,
                linetype=linetype,size=size,
                   ggtheme = theme_survminer(
                  font.main = c(30, "plain", "black"),
                  font.submain = c(30, "plain", "black"),
-                 font.legend=28,
+                 font.legend=font.legend,
                  font.caption = c(30, "plain", "black"),
                  font.x = c(24, "plain", "black"),
                  font.y = c(24, "plain", "black"),
@@ -459,19 +474,19 @@ num_events_comp <- function(df_final,cols_component){
                     
 ####################################### Regression Tools #######################################
          
-multivariate_regression <- function(df_final,target,features=c(gen,cyto),fam="gaussian"){                  
+multivariate_regression <- function(df_final,target,features=c(gen,cyto),fam="gaussian",num_iterations=100,lambda=NULL,top_n=10,size_title=25,size_axis=12){                  
     registerDoMC(cores=50)
 
 
     data <- df_final
     df_multi <- NULL
     i <- 1
-    for (i in c(1:100)){
-        res1 <- cv.glmnet(data.matrix(data[,features]), data[,target], family=fam,alpha=1,nfolds=10,parallel = T)
+    for (i in c(1:num_iterations)){
+        res1 <- cv.glmnet(data.matrix(data[,features]), data[,target], family=fam,alpha=1,nfolds=10,parallel =T , lambda=lambda)
         df_multi <- cbind(df_multi,as.matrix(coef(res1,s="lambda.min")))
         i <- i+1
         }
-    l <- data.frame(coef = rowSums(df_multi)/100)
+    l <- data.frame(coef = rowSums(df_multi)/num_iterations)
     l$names <- rownames(l)
     l <- l[-1,]
     l$abs_coef <- abs(l$coef)
@@ -479,19 +494,20 @@ multivariate_regression <- function(df_final,target,features=c(gen,cyto),fam="ga
                   ifelse(l$names %in% cyto,"cyto",
                         ifelse(l$names %in% clin, "clin",
                               ifelse(l$names %in% demo, "demo",
-                                    ifelse(l$names %in% eln, "eln","comp")))))
-    l <- l %>% top_n(10,abs_coef)
+                                    ifelse(l$names %in% eln, "eln",
+                                           ifelse(l$names %in% mrd,"mrd","comp"))))))
+    l <- l %>% top_n(top_n,abs_coef)
     t <- ggplot(l[l$coef!=0,],aes(x=reorder(names,abs_coef),y=coef,fill=Model))+geom_bar(stat="identity")+coord_flip()+
-    theme(plot.title = element_text(hjust = 0.5,size=25),axis.text=element_text(size=22),axis.title=element_text(size=34,face="bold"),
+    theme(plot.title = element_text(hjust = 0.5,size=25),axis.text=element_text(size=size_axis),axis.title=element_text(size=size_title,face="bold"),
          legend.position="none")+
     scale_fill_manual(values=colors_analysis)+ylab(paste(paste("Lasso Regression Coefficients for ",target,sep="")," (averaged over 100 repetitions)",sep="")) + xlab("Top 10 Features")
     #     png(paste(target,"_lasso.png",sep=""),width=4500,height=2500,res=200)
-    plot(t)
+    return(t)
     #     dev.off()
 }
                     
                     
-univariate_volcano <- function(df_final,target,features=c(gen,cyto),type="continuous",quantile=c(0,1),p_value_threshold=0.05){
+univariate_volcano <- function(df_final,target,features=c(gen,cyto),type="continuous",quantile=c(0,1),p_value_threshold=0.05,size_title=25,legend.position="top"){
     
     df <- data.frame(beta = double(),pvalue = double(),Frequency = double()) 
     
@@ -515,18 +531,18 @@ univariate_volcano <- function(df_final,target,features=c(gen,cyto),type="contin
                       ifelse(df$names %in% cyto,"cyto",
                             ifelse(df$names %in% clin, "clin",
                                   ifelse(df$names %in% demo, "demo",
-                                        ifelse(df$names %in% eln, "eln","comp")))))
+                                        ifelse(df$names %in% eln, "eln",
+                                               ifelse(df$names %in% mrd,"mrd","comp"))))))
     df$Frequency <- ifelse(df$names %in% clin, 5,
                                   ifelse(df$names %in% demo, 5, df$Frequency))
 
-    colors_analysis <- c(gen="#BFBFBF",cyto="#2b8cbe")
     df <- df[order(df$adjusted_pvalue),]
-    s <- ggplot(df, aes(beta, -log10(adjusted_pvalue))) + #volcanoplot with log2Foldchange versus pvalue
-            geom_point(aes(size=Frequency,col=Model)) + geom_text_repel(data=df[(df["adjusted_pvalue"]<p_value_threshold) ,], aes(label=names,fontface=8))+scale_size_continuous(range = c(3,12)) + 
+    s <- ggplot(df, aes(x=beta, y=-log10(adjusted_pvalue))) + #volcanoplot with log2Foldchange versus pvalue
+            geom_point(aes(size=Frequency,col=Model)) + geom_text_repel(data=df[(df["pvalue"]<p_value_threshold) ,], aes(label=names,fontface=8))+scale_size_continuous(range = c(3,12)) + 
              scale_color_manual(values=colors_analysis,limits=names(colors_analysis))+  ## respect color in feature importance
-            theme(plot.title = element_text(hjust = 0.5,size=25),axis.text=element_text(size=22),axis.title=element_text(size=24,face="bold"))  + theme(legend.position="top") + scale_x_continuous(limits = quantile(df$beta, quantile,na.rm = T))
+            theme(plot.title = element_text(hjust = 0.5,size=25),axis.text=element_text(size=22),axis.title=element_text(size=size_title,face="bold"))  + theme(legend.position=legend.position) + scale_x_continuous(limits = quantile(df$beta, quantile,na.rm = T))
      #     png(paste(target,"_univariate.png",sep=""),width=4500,height=2500,res=300)
-    plot(s)
+    return(s)
 #     dev.off()
 }
     
