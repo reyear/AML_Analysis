@@ -1,0 +1,744 @@
+,itemList
+1,full_component_NPM1, no_CR_MRD_neg
+2,full_component_chr_splicing_1, no_CR_MRD_neg
+3,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_multiple, overlap
+4,full_component_t_8_21, no_CR_MRD_neg
+5,full_component_not_assigned, no_CR_MRD_neg
+6,full_component_chr_splicing_1, no_CR_MRD_neg
+7,full_component_not_assigned
+8,full_component_NPM1
+9,full_component_DNMT3A_IDH1_2, no_CR_MRD_neg
+10,full_component_NPM1, no_CR_MRD_neg
+11,full_component_t_8_21
+12,full_component_NPM1, no_CR_MRD_neg
+13,full_component_NPM1, no_CR_MRD_neg
+14,full_component_TP53_complex, no_CR_MRD_neg
+15,full_component_WT1, no_CR_MRD_neg
+16,full_component_chr_splicing_multiple, no_CR_MRD_neg
+17,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_multiple, overlap
+18,full_component_NPM1, full_component_CEBPA_bi, overlap, no_CR_MRD_neg
+19,full_component_chr_splicing_multiple, no_CR_MRD_neg
+20,full_component_NPM1
+21,full_component_chr_splicing_multiple, no_CR_MRD_neg
+22,full_component_chr_splicing_multiple, no_CR_MRD_neg
+23,full_component_not_assigned, no_CR_MRD_neg
+24,full_component_additions, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+25,full_component_inv_3, no_CR_MRD_neg
+26,full_component_chr_splicing_multiple, no_CR_MRD_neg
+27,full_component_inv_16, no_CR_MRD_neg
+28,full_component_NPM1, no_CR_MRD_neg
+29,full_component_CEBPA_bi, no_CR_MRD_neg
+30,full_component_not_assigned, no_CR_MRD_neg
+31,full_component_t_8_21, no_CR_MRD_neg
+32,full_component_NPM1, no_CR_MRD_neg
+33,full_component_NPM1, no_CR_MRD_neg
+34,full_component_not_assigned, no_CR_MRD_neg
+35,full_component_chr_splicing_1, no_CR_MRD_neg
+36,full_component_chr_splicing_multiple, no_CR_MRD_neg
+37,full_component_NPM1, no_CR_MRD_neg
+38,full_component_NPM1, no_CR_MRD_neg
+39,full_component_not_assigned, no_CR_MRD_neg
+40,full_component_chr_splicing_multiple, no_CR_MRD_neg
+41,full_component_chr_splicing_multiple, no_CR_MRD_neg
+42,full_component_NPM1, no_CR_MRD_neg
+43,full_component_NPM1, no_CR_MRD_neg
+44,full_component_WT1, no_CR_MRD_neg
+45,full_component_NPM1, no_CR_MRD_neg
+46,full_component_NPM1, no_CR_MRD_neg
+47,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_1, overlap, no_CR_MRD_neg
+48,full_component_NPM1, no_CR_MRD_neg
+49,full_component_additions, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+50,full_component_NPM1
+51,full_component_NPM1, no_CR_MRD_neg
+52,full_component_inv_16, no_CR_MRD_neg
+53,full_component_NPM1, no_CR_MRD_neg
+54,full_component_inv_16, no_CR_MRD_neg
+55,full_component_not_assigned, no_CR_MRD_neg
+56,full_component_NPM1, no_CR_MRD_neg
+57,full_component_NPM1, no_CR_MRD_neg
+58,full_component_additions, full_component_TP53_complex, overlap, no_CR_MRD_neg
+59,full_component_NPM1, no_CR_MRD_neg
+60,full_component_chr_splicing_multiple, no_CR_MRD_neg
+61,full_component_NPM1, no_CR_MRD_neg
+62,full_component_NPM1, no_CR_MRD_neg
+63,full_component_NPM1, no_CR_MRD_neg
+64,full_component_NPM1, no_CR_MRD_neg
+65,full_component_NPM1, no_CR_MRD_neg
+66,full_component_chr_splicing_1, no_CR_MRD_neg
+67,full_component_NPM1
+68,full_component_not_assigned, no_CR_MRD_neg
+69,full_component_NPM1, no_CR_MRD_neg
+70,full_component_NPM1
+71,full_component_t_8_21, no_CR_MRD_neg
+72,full_component_NPM1, no_CR_MRD_neg
+73,full_component_NPM1, no_CR_MRD_neg
+74,full_component_t_11, no_CR_MRD_neg
+75,full_component_CEBPA_bi, no_CR_MRD_neg
+76,full_component_WT1, no_CR_MRD_neg
+77,full_component_inv_16, no_CR_MRD_neg
+78,full_component_chr_splicing_multiple, no_CR_MRD_neg
+79,full_component_chr_splicing_1, no_CR_MRD_neg
+80,full_component_chr_splicing_multiple, no_CR_MRD_neg
+81,full_component_CEBPA_bi, no_CR_MRD_neg
+82,full_component_inv_16, full_component_TP53_complex, overlap
+83,full_component_NPM1
+84,full_component_CEBPA_bi
+85,full_component_chr_splicing_multiple, no_CR_MRD_neg
+86,full_component_t_8_21, no_CR_MRD_neg
+87,full_component_additions, full_component_TP53_complex, overlap
+88,full_component_t_8_21
+89,full_component_not_assigned, no_CR_MRD_neg
+90,full_component_t_8_21, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+91,full_component_WT1, no_CR_MRD_neg
+92,full_component_chr_splicing_multiple, no_CR_MRD_neg
+93,full_component_not_assigned, no_CR_MRD_neg
+94,full_component_NPM1, no_CR_MRD_neg
+95,full_component_inv_16, no_CR_MRD_neg
+96,full_component_TP53_complex, no_CR_MRD_neg
+97,full_component_chr_splicing_1, no_CR_MRD_neg
+98,full_component_t_11, no_CR_MRD_neg
+99,full_component_NPM1, no_CR_MRD_neg
+100,full_component_t_11, no_CR_MRD_neg
+101,full_component_NPM1
+102,full_component_not_assigned, no_CR_MRD_neg
+103,full_component_NPM1
+104,full_component_chr_splicing_multiple, no_CR_MRD_neg
+105,full_component_chr_splicing_multiple, no_CR_MRD_neg
+106,full_component_NPM1, no_CR_MRD_neg
+107,full_component_NPM1, no_CR_MRD_neg
+108,full_component_NPM1, no_CR_MRD_neg
+109,full_component_inv_16, no_CR_MRD_neg
+110,full_component_inv_16, no_CR_MRD_neg
+111,full_component_NPM1, no_CR_MRD_neg
+112,full_component_NPM1, no_CR_MRD_neg
+113,full_component_t_11, full_component_NPM1, overlap, no_CR_MRD_neg
+114,full_component_t_8_21, no_CR_MRD_neg
+115,full_component_chr_splicing_multiple, no_CR_MRD_neg
+116,full_component_NPM1, no_CR_MRD_neg
+117,full_component_NPM1, no_CR_MRD_neg
+118,full_component_additions, full_component_TP53_complex, overlap, no_CR_MRD_neg
+119,full_component_t_8_21
+120,full_component_WT1
+121,full_component_NPM1, no_CR_MRD_neg
+122,full_component_TP53_complex, no_CR_MRD_neg
+123,full_component_NPM1
+124,full_component_inv_16, no_CR_MRD_neg
+125,full_component_NPM1, no_CR_MRD_neg
+126,full_component_inv_16
+127,full_component_CEBPA_bi, no_CR_MRD_neg
+128,full_component_CEBPA_bi, no_CR_MRD_neg
+129,full_component_not_assigned, no_CR_MRD_neg
+130,full_component_NPM1, no_CR_MRD_neg
+131,full_component_inv_16
+132,full_component_NPM1
+133,full_component_NPM1, no_CR_MRD_neg
+134,full_component_inv_16, full_component_t_11, overlap, no_CR_MRD_neg
+135,full_component_chr_splicing_multiple
+136,full_component_NPM1, no_CR_MRD_neg
+137,full_component_WT1
+138,full_component_WT1, full_component_chr_splicing_1, overlap, no_CR_MRD_neg
+139,full_component_additions, full_component_TP53_complex, overlap, no_CR_MRD_neg
+140,full_component_NPM1
+141,full_component_WT1, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+142,full_component_chr_splicing_multiple, no_CR_MRD_neg
+143,full_component_additions, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+144,full_component_t_8_21
+145,full_component_NPM1, no_CR_MRD_neg
+146,full_component_chr_splicing_multiple, no_CR_MRD_neg
+147,full_component_NPM1, no_CR_MRD_neg
+148,full_component_NPM1, no_CR_MRD_neg
+149,full_component_inv_16, no_CR_MRD_neg
+150,full_component_NPM1
+151,full_component_NPM1
+152,full_component_NPM1, no_CR_MRD_neg
+153,full_component_NPM1
+154,full_component_NPM1
+155,full_component_not_assigned
+156,full_component_CEBPA_bi
+157,full_component_NPM1, no_CR_MRD_neg
+158,full_component_t_8_21, no_CR_MRD_neg
+159,full_component_NPM1, no_CR_MRD_neg
+160,full_component_CEBPA_bi, no_CR_MRD_neg
+161,full_component_NPM1
+162,full_component_t_11, no_CR_MRD_neg
+163,full_component_NPM1
+164,full_component_t_8_21, no_CR_MRD_neg
+165,full_component_NPM1, no_CR_MRD_neg
+166,full_component_NPM1, no_CR_MRD_neg
+167,full_component_t_8_21, no_CR_MRD_neg
+168,full_component_inv_16, no_CR_MRD_neg
+169,full_component_NPM1, no_CR_MRD_neg
+170,full_component_NPM1
+171,full_component_no_events
+172,full_component_NPM1
+173,full_component_NPM1, no_CR_MRD_neg
+174,full_component_t_11, no_CR_MRD_neg
+175,full_component_NPM1, no_CR_MRD_neg
+176,full_component_chr_splicing_multiple, no_CR_MRD_neg
+177,full_component_NPM1
+178,full_component_NPM1, no_CR_MRD_neg
+179,full_component_CEBPA_bi, no_CR_MRD_neg
+180,full_component_NPM1, full_component_chr_splicing_multiple, overlap
+181,full_component_not_assigned
+182,full_component_inv_16, no_CR_MRD_neg
+183,full_component_NPM1, no_CR_MRD_neg
+184,full_component_NPM1
+185,full_component_inv_16
+186,full_component_NPM1, no_CR_MRD_neg
+187,full_component_WT1, no_CR_MRD_neg
+188,full_component_NPM1
+189,full_component_WT1, no_CR_MRD_neg
+190,full_component_NPM1, no_CR_MRD_neg
+191,full_component_NPM1
+192,full_component_NPM1, no_CR_MRD_neg
+193,full_component_CEBPA_bi
+194,full_component_NPM1
+195,full_component_NPM1, no_CR_MRD_neg
+196,full_component_NPM1
+197,full_component_NPM1
+198,full_component_not_assigned
+199,full_component_DNMT3A_IDH1_2, no_CR_MRD_neg
+200,full_component_NPM1
+201,full_component_t_11, no_CR_MRD_neg
+202,full_component_NPM1, no_CR_MRD_neg
+203,full_component_WT1, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+204,full_component_t_8_21, no_CR_MRD_neg
+205,full_component_t_11, no_CR_MRD_neg
+206,full_component_t_8_21
+207,full_component_additions, full_component_chr_splicing_1, overlap, no_CR_MRD_neg
+208,full_component_NPM1
+209,full_component_NPM1, no_CR_MRD_neg
+210,full_component_NPM1, no_CR_MRD_neg
+211,full_component_NPM1
+212,full_component_t_8_21
+213,full_component_WT1, no_CR_MRD_neg
+214,full_component_NPM1, no_CR_MRD_neg
+215,full_component_t_8_21
+216,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+217,full_component_chr_splicing_multiple, no_CR_MRD_neg
+218,full_component_chr_splicing_multiple, no_CR_MRD_neg
+219,full_component_not_assigned, no_CR_MRD_neg
+220,full_component_NPM1, no_CR_MRD_neg
+221,full_component_t_8_21
+222,full_component_NPM1
+223,full_component_NPM1, no_CR_MRD_neg
+224,full_component_chr_splicing_multiple
+225,full_component_NPM1, no_CR_MRD_neg
+226,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_1, overlap, no_CR_MRD_neg
+227,full_component_CEBPA_bi
+228,full_component_NPM1, no_CR_MRD_neg
+229,full_component_NPM1, no_CR_MRD_neg
+230,full_component_TP53_complex, no_CR_MRD_neg
+231,full_component_NPM1
+232,full_component_not_assigned, no_CR_MRD_neg
+233,full_component_additions, full_component_chr_splicing_multiple, overlap
+234,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+235,full_component_chr_splicing_1, no_CR_MRD_neg
+236,full_component_additions
+237,full_component_inv_16, no_CR_MRD_neg
+238,full_component_t_8_21, no_CR_MRD_neg
+239,full_component_NPM1, no_CR_MRD_neg
+240,full_component_CEBPA_bi
+241,full_component_NPM1, no_CR_MRD_neg
+242,full_component_inv_16, full_component_TP53_complex, overlap
+243,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_1, overlap, no_CR_MRD_neg
+244,full_component_TP53_complex, no_CR_MRD_neg
+245,full_component_NPM1, no_CR_MRD_neg
+246,full_component_chr_splicing_multiple, no_CR_MRD_neg
+247,full_component_not_assigned, no_CR_MRD_neg
+248,full_component_inv_16, no_CR_MRD_neg
+249,full_component_t_11, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+250,full_component_NPM1
+251,full_component_WT1, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+252,full_component_t_11, full_component_TP53_complex, overlap
+253,full_component_not_assigned, no_CR_MRD_neg
+254,full_component_inv_16, no_CR_MRD_neg
+255,full_component_NPM1
+256,full_component_NPM1, no_CR_MRD_neg
+257,full_component_t_11, no_CR_MRD_neg
+258,full_component_not_assigned
+259,full_component_inv_16, no_CR_MRD_neg
+260,full_component_NPM1, no_CR_MRD_neg
+261,full_component_NPM1, no_CR_MRD_neg
+262,full_component_chr_splicing_multiple, no_CR_MRD_neg
+263,full_component_chr_splicing_1
+264,full_component_NPM1, no_CR_MRD_neg
+265,full_component_chr_splicing_1, no_CR_MRD_neg
+266,full_component_t_8_21
+267,full_component_NPM1, no_CR_MRD_neg
+268,full_component_NPM1
+269,full_component_NPM1, no_CR_MRD_neg
+270,full_component_NPM1, no_CR_MRD_neg
+271,full_component_CEBPA_bi, no_CR_MRD_neg
+272,full_component_not_assigned, no_CR_MRD_neg
+273,full_component_chr_splicing_multiple, no_CR_MRD_neg
+274,full_component_NPM1
+275,full_component_not_assigned, no_CR_MRD_neg
+276,full_component_t_11, no_CR_MRD_neg
+277,full_component_inv_16
+278,full_component_inv_16
+279,full_component_NPM1, no_CR_MRD_neg
+280,full_component_TP53_complex, no_CR_MRD_neg
+281,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+282,full_component_NPM1, no_CR_MRD_neg
+283,full_component_t_8_21
+284,full_component_chr_splicing_1
+285,full_component_not_assigned, no_CR_MRD_neg
+286,full_component_chr_splicing_multiple, no_CR_MRD_neg
+287,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_1, overlap, no_CR_MRD_neg
+288,full_component_t_8_21, no_CR_MRD_neg
+289,full_component_t_11, no_CR_MRD_neg
+290,full_component_inv_16
+291,full_component_t_8_21
+292,full_component_chr_splicing_multiple, no_CR_MRD_neg
+293,full_component_not_assigned, no_CR_MRD_neg
+294,full_component_chr_splicing_1, no_CR_MRD_neg
+295,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+296,full_component_NPM1, no_CR_MRD_neg
+297,full_component_NPM1, no_CR_MRD_neg
+298,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+299,full_component_additions, full_component_TP53_complex, overlap, no_CR_MRD_neg
+300,full_component_additions, no_CR_MRD_neg
+301,full_component_chr_splicing_1, no_CR_MRD_neg
+302,full_component_NPM1, no_CR_MRD_neg
+303,full_component_chr_splicing_multiple, no_CR_MRD_neg
+304,full_component_TP53_complex, no_CR_MRD_neg
+305,full_component_NPM1, no_CR_MRD_neg
+306,full_component_DNMT3A_IDH1_2, no_CR_MRD_neg
+307,full_component_WT1, no_CR_MRD_neg
+308,full_component_TP53_complex, no_CR_MRD_neg
+309,full_component_t_11, full_component_TP53_complex, overlap, no_CR_MRD_neg
+310,full_component_chr_splicing_multiple
+311,full_component_chr_splicing_multiple, no_CR_MRD_neg
+312,full_component_t_8_21
+313,full_component_NPM1
+314,full_component_NPM1
+315,full_component_chr_splicing_multiple, no_CR_MRD_neg
+316,full_component_t_11, no_CR_MRD_neg
+317,full_component_not_assigned, no_CR_MRD_neg
+318,full_component_NPM1, no_CR_MRD_neg
+319,full_component_chr_splicing_multiple, no_CR_MRD_neg
+320,full_component_t_8_21, no_CR_MRD_neg
+321,full_component_t_11, no_CR_MRD_neg
+322,full_component_chr_splicing_1
+323,full_component_NPM1, full_component_CEBPA_bi, overlap, no_CR_MRD_neg
+324,full_component_TP53_complex, no_CR_MRD_neg
+325,full_component_NPM1, no_CR_MRD_neg
+326,full_component_chr_splicing_multiple, no_CR_MRD_neg
+327,full_component_NPM1, no_CR_MRD_neg
+328,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+329,full_component_additions, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+330,full_component_chr_splicing_multiple, no_CR_MRD_neg
+331,full_component_additions, full_component_chr_splicing_multiple, overlap
+332,full_component_NPM1, no_CR_MRD_neg
+333,full_component_not_assigned
+334,full_component_chr_splicing_1
+335,full_component_not_assigned, no_CR_MRD_neg
+336,full_component_NPM1, no_CR_MRD_neg
+337,full_component_NPM1, no_CR_MRD_neg
+338,full_component_DNMT3A_IDH1_2, no_CR_MRD_neg
+339,full_component_NPM1, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+340,full_component_t_11, no_CR_MRD_neg
+341,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_1, overlap, no_CR_MRD_neg
+342,full_component_TP53_complex, no_CR_MRD_neg
+343,full_component_NPM1, no_CR_MRD_neg
+344,full_component_inv_16
+345,full_component_chr_splicing_multiple, no_CR_MRD_neg
+346,full_component_not_assigned, no_CR_MRD_neg
+347,full_component_not_assigned, no_CR_MRD_neg
+348,full_component_NPM1, no_CR_MRD_neg
+349,full_component_WT1, no_CR_MRD_neg
+350,full_component_chr_splicing_multiple, no_CR_MRD_neg
+351,full_component_WT1, no_CR_MRD_neg
+352,full_component_NPM1, no_CR_MRD_neg
+353,full_component_NPM1, no_CR_MRD_neg
+354,full_component_t_8_21
+355,full_component_NPM1, no_CR_MRD_neg
+356,full_component_t_11, no_CR_MRD_neg
+357,full_component_NPM1, no_CR_MRD_neg
+358,full_component_NPM1, no_CR_MRD_neg
+359,full_component_t_11, full_component_TP53_complex, overlap, no_CR_MRD_neg
+360,full_component_not_assigned, no_CR_MRD_neg
+361,full_component_chr_splicing_multiple, no_CR_MRD_neg
+362,full_component_NPM1, no_CR_MRD_neg
+363,full_component_NPM1, no_CR_MRD_neg
+364,full_component_NPM1, no_CR_MRD_neg
+365,full_component_NPM1, full_component_chr_splicing_multiple, overlap
+366,full_component_t_11, full_component_TP53_complex, overlap, no_CR_MRD_neg
+367,full_component_NPM1
+368,full_component_NPM1, no_CR_MRD_neg
+369,full_component_TP53_complex
+370,full_component_NPM1
+371,full_component_NPM1
+372,full_component_CEBPA_bi, no_CR_MRD_neg
+373,full_component_TP53_complex, no_CR_MRD_neg
+374,full_component_TP53_complex, no_CR_MRD_neg
+375,full_component_NPM1, no_CR_MRD_neg
+376,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_1, overlap
+377,full_component_NPM1, no_CR_MRD_neg
+378,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_1, overlap, no_CR_MRD_neg
+379,full_component_CEBPA_bi, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+380,full_component_t_8_21
+381,full_component_chr_splicing_1
+382,full_component_t_11
+383,full_component_inv_16
+384,full_component_not_assigned, no_CR_MRD_neg
+385,full_component_NPM1, no_CR_MRD_neg
+386,full_component_NPM1
+387,full_component_TP53_complex, no_CR_MRD_neg
+388,full_component_additions, full_component_TP53_complex, overlap, no_CR_MRD_neg
+389,full_component_inv_16
+390,full_component_NPM1, no_CR_MRD_neg
+391,full_component_inv_16, no_CR_MRD_neg
+392,full_component_additions, full_component_chr_splicing_1, overlap, no_CR_MRD_neg
+393,full_component_chr_splicing_multiple, no_CR_MRD_neg
+394,full_component_NPM1, no_CR_MRD_neg
+395,full_component_NPM1, no_CR_MRD_neg
+396,full_component_NPM1, no_CR_MRD_neg
+397,full_component_t_8_21
+398,full_component_chr_splicing_multiple, no_CR_MRD_neg
+399,full_component_not_assigned, no_CR_MRD_neg
+400,full_component_chr_splicing_1, no_CR_MRD_neg
+401,full_component_not_assigned, no_CR_MRD_neg
+402,full_component_NPM1
+403,full_component_additions, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+404,full_component_NPM1, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+405,full_component_chr_splicing_1, no_CR_MRD_neg
+406,full_component_chr_splicing_multiple, no_CR_MRD_neg
+407,full_component_DNMT3A_IDH1_2, no_CR_MRD_neg
+408,full_component_chr_splicing_multiple, no_CR_MRD_neg
+409,full_component_additions, full_component_TP53_complex, overlap, no_CR_MRD_neg
+410,full_component_NPM1
+411,full_component_NPM1
+412,full_component_inv_16, no_CR_MRD_neg
+413,full_component_t_11
+414,full_component_NPM1, no_CR_MRD_neg
+415,full_component_not_assigned, no_CR_MRD_neg
+416,full_component_not_assigned, no_CR_MRD_neg
+417,full_component_WT1, no_CR_MRD_neg
+418,full_component_chr_splicing_1, no_CR_MRD_neg
+419,full_component_chr_splicing_multiple, no_CR_MRD_neg
+420,full_component_t_8_21
+421,full_component_chr_splicing_multiple
+422,full_component_NPM1, no_CR_MRD_neg
+423,full_component_chr_splicing_multiple
+424,full_component_t_8_21
+425,full_component_NPM1, no_CR_MRD_neg
+426,full_component_additions, full_component_chr_splicing_1, overlap
+427,full_component_WT1, no_CR_MRD_neg
+428,full_component_inv_16, no_CR_MRD_neg
+429,full_component_NPM1, no_CR_MRD_neg
+430,full_component_inv_16, no_CR_MRD_neg
+431,full_component_NPM1, no_CR_MRD_neg
+432,full_component_WT1, full_component_chr_splicing_1, overlap, no_CR_MRD_neg
+433,full_component_NPM1
+434,full_component_t_11, no_CR_MRD_neg
+435,full_component_NPM1
+436,full_component_chr_splicing_1, no_CR_MRD_neg
+437,full_component_not_assigned, no_CR_MRD_neg
+438,full_component_NPM1, no_CR_MRD_neg
+439,full_component_chr_splicing_multiple, no_CR_MRD_neg
+440,full_component_NPM1, no_CR_MRD_neg
+441,full_component_NPM1, no_CR_MRD_neg
+442,full_component_additions, full_component_TP53_complex, overlap, no_CR_MRD_neg
+443,full_component_inv_16, no_CR_MRD_neg
+444,full_component_NPM1, no_CR_MRD_neg
+445,full_component_NPM1, no_CR_MRD_neg
+446,full_component_CEBPA_bi, no_CR_MRD_neg
+447,full_component_NPM1, no_CR_MRD_neg
+448,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_1, overlap
+449,full_component_NPM1, no_CR_MRD_neg
+450,full_component_chr_splicing_multiple, no_CR_MRD_neg
+451,full_component_t_8_21, no_CR_MRD_neg
+452,full_component_NPM1, no_CR_MRD_neg
+453,full_component_inv_16
+454,full_component_TP53_complex, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+455,full_component_NPM1, no_CR_MRD_neg
+456,full_component_chr_splicing_multiple, no_CR_MRD_neg
+457,full_component_TP53_complex, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+458,full_component_t_8_21
+459,full_component_chr_splicing_1, no_CR_MRD_neg
+460,full_component_NPM1, no_CR_MRD_neg
+461,full_component_NPM1
+462,full_component_WT1, no_CR_MRD_neg
+463,full_component_chr_splicing_multiple, no_CR_MRD_neg
+464,full_component_NPM1, no_CR_MRD_neg
+465,full_component_additions, full_component_TP53_complex, overlap, no_CR_MRD_neg
+466,full_component_NPM1, no_CR_MRD_neg
+467,full_component_not_assigned
+468,full_component_NPM1
+469,full_component_NPM1, no_CR_MRD_neg
+470,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_1, overlap, no_CR_MRD_neg
+471,full_component_chr_splicing_multiple, no_CR_MRD_neg
+472,full_component_NPM1
+473,full_component_t_11, no_CR_MRD_neg
+474,full_component_t_8_21
+475,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_multiple, overlap
+476,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_1, overlap, no_CR_MRD_neg
+477,full_component_chr_splicing_1, no_CR_MRD_neg
+478,full_component_t_8_21, no_CR_MRD_neg
+479,full_component_chr_splicing_1
+480,full_component_t_6_9, no_CR_MRD_neg
+481,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+482,full_component_CEBPA_bi, no_CR_MRD_neg
+483,full_component_chr_splicing_1, no_CR_MRD_neg
+484,full_component_chr_splicing_multiple, no_CR_MRD_neg
+485,full_component_t_11, no_CR_MRD_neg
+486,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+487,full_component_chr_splicing_1, no_CR_MRD_neg
+488,full_component_inv_3, full_component_NPM1, overlap, no_CR_MRD_neg
+489,full_component_NPM1, no_CR_MRD_neg
+490,full_component_chr_splicing_multiple
+491,full_component_NPM1, no_CR_MRD_neg
+492,full_component_not_assigned, no_CR_MRD_neg
+493,full_component_NPM1, no_CR_MRD_neg
+494,full_component_NPM1, no_CR_MRD_neg
+495,full_component_chr_splicing_1
+496,full_component_not_assigned, no_CR_MRD_neg
+497,full_component_NPM1, no_CR_MRD_neg
+498,full_component_additions, no_CR_MRD_neg
+499,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_1, overlap, no_CR_MRD_neg
+500,full_component_NPM1, no_CR_MRD_neg
+501,full_component_WT1, no_CR_MRD_neg
+502,full_component_NPM1, no_CR_MRD_neg
+503,full_component_not_assigned, no_CR_MRD_neg
+504,full_component_NPM1, no_CR_MRD_neg
+505,full_component_NPM1, no_CR_MRD_neg
+506,full_component_inv_3, no_CR_MRD_neg
+507,full_component_chr_splicing_multiple, no_CR_MRD_neg
+508,full_component_NPM1, no_CR_MRD_neg
+509,full_component_NPM1
+510,full_component_NPM1, no_CR_MRD_neg
+511,full_component_NPM1, no_CR_MRD_neg
+512,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+513,full_component_CEBPA_bi, no_CR_MRD_neg
+514,full_component_NPM1, no_CR_MRD_neg
+515,full_component_NPM1, no_CR_MRD_neg
+516,full_component_NPM1, no_CR_MRD_neg
+517,full_component_NPM1
+518,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_1, overlap
+519,full_component_NPM1, no_CR_MRD_neg
+520,full_component_additions, full_component_TP53_complex, overlap, no_CR_MRD_neg
+521,full_component_WT1
+522,full_component_inv_16, no_CR_MRD_neg
+523,full_component_NPM1
+524,full_component_NPM1, no_CR_MRD_neg
+525,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+526,full_component_NPM1, no_CR_MRD_neg
+527,full_component_t_11, no_CR_MRD_neg
+528,full_component_additions, full_component_TP53_complex, overlap, no_CR_MRD_neg
+529,full_component_chr_splicing_1, no_CR_MRD_neg
+530,full_component_TP53_complex, no_CR_MRD_neg
+531,full_component_chr_splicing_1
+532,full_component_DNMT3A_IDH1_2, no_CR_MRD_neg
+533,full_component_inv_16, no_CR_MRD_neg
+534,full_component_NPM1, full_component_CEBPA_bi, overlap, no_CR_MRD_neg
+535,full_component_TP53_complex, no_CR_MRD_neg
+536,full_component_chr_splicing_multiple, no_CR_MRD_neg
+537,full_component_not_assigned, no_CR_MRD_neg
+538,full_component_NPM1, no_CR_MRD_neg
+539,full_component_NPM1
+540,full_component_not_assigned, no_CR_MRD_neg
+541,full_component_chr_splicing_multiple
+542,full_component_additions, no_CR_MRD_neg
+543,full_component_NPM1, no_CR_MRD_neg
+544,full_component_NPM1, no_CR_MRD_neg
+545,full_component_NPM1, no_CR_MRD_neg
+546,full_component_NPM1
+547,full_component_NPM1
+548,full_component_NPM1
+549,full_component_inv_16, no_CR_MRD_neg
+550,full_component_t_8_21, no_CR_MRD_neg
+551,full_component_NPM1, no_CR_MRD_neg
+552,full_component_additions, no_CR_MRD_neg
+553,full_component_TP53_complex, no_CR_MRD_neg
+554,full_component_NPM1, no_CR_MRD_neg
+555,full_component_NPM1, no_CR_MRD_neg
+556,full_component_inv_3, no_CR_MRD_neg
+557,full_component_NPM1, no_CR_MRD_neg
+558,full_component_additions, no_CR_MRD_neg
+559,full_component_NPM1, no_CR_MRD_neg
+560,full_component_t_11, no_CR_MRD_neg
+561,full_component_TP53_complex, no_CR_MRD_neg
+562,full_component_chr_splicing_1, no_CR_MRD_neg
+563,full_component_inv_16
+564,full_component_TP53_complex, no_CR_MRD_neg
+565,full_component_not_assigned
+566,full_component_t_11, no_CR_MRD_neg
+567,full_component_NPM1, no_CR_MRD_neg
+568,full_component_additions, full_component_TP53_complex, overlap, no_CR_MRD_neg
+569,full_component_NPM1, no_CR_MRD_neg
+570,full_component_NPM1
+571,full_component_NPM1
+572,full_component_chr_splicing_multiple, no_CR_MRD_neg
+573,full_component_NPM1
+574,full_component_NPM1
+575,full_component_NPM1, no_CR_MRD_neg
+576,full_component_chr_splicing_multiple, no_CR_MRD_neg
+577,full_component_not_assigned, no_CR_MRD_neg
+578,full_component_NPM1, no_CR_MRD_neg
+579,full_component_CEBPA_bi, no_CR_MRD_neg
+580,full_component_NPM1, no_CR_MRD_neg
+581,full_component_t_8_21, no_CR_MRD_neg
+582,full_component_NPM1
+583,full_component_NPM1, no_CR_MRD_neg
+584,full_component_CEBPA_bi
+585,full_component_TP53_complex, full_component_NPM1, overlap, no_CR_MRD_neg
+586,full_component_DNMT3A_IDH1_2, no_CR_MRD_neg
+587,full_component_NPM1, no_CR_MRD_neg
+588,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+589,full_component_NPM1, no_CR_MRD_neg
+590,full_component_NPM1, no_CR_MRD_neg
+591,full_component_NPM1, no_CR_MRD_neg
+592,full_component_additions, full_component_TP53_complex, overlap, no_CR_MRD_neg
+593,full_component_chr_splicing_multiple
+594,full_component_additions, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+595,full_component_NPM1, no_CR_MRD_neg
+596,full_component_chr_splicing_multiple, no_CR_MRD_neg
+597,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+598,full_component_NPM1
+599,full_component_CEBPA_bi
+600,full_component_chr_splicing_multiple, no_CR_MRD_neg
+601,full_component_not_assigned, no_CR_MRD_neg
+602,full_component_NPM1, no_CR_MRD_neg
+603,full_component_TP53_complex, no_CR_MRD_neg
+604,full_component_additions, full_component_TP53_complex, overlap, no_CR_MRD_neg
+605,full_component_NPM1, no_CR_MRD_neg
+606,full_component_additions, full_component_chr_splicing_multiple, overlap
+607,full_component_NPM1, no_CR_MRD_neg
+608,full_component_NPM1, no_CR_MRD_neg
+609,full_component_t_11, no_CR_MRD_neg
+610,full_component_t_8_21, no_CR_MRD_neg
+611,full_component_WT1, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+612,full_component_NPM1, no_CR_MRD_neg
+613,full_component_NPM1, no_CR_MRD_neg
+614,full_component_t_8_21, no_CR_MRD_neg
+615,full_component_inv_16, no_CR_MRD_neg
+616,full_component_additions, full_component_TP53_complex, overlap, no_CR_MRD_neg
+617,full_component_additions, full_component_TP53_complex, overlap, no_CR_MRD_neg
+618,full_component_NPM1, no_CR_MRD_neg
+619,full_component_inv_16, no_CR_MRD_neg
+620,full_component_t_6_9, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+621,full_component_NPM1, no_CR_MRD_neg
+622,full_component_chr_splicing_1, no_CR_MRD_neg
+623,full_component_NPM1, full_component_chr_splicing_multiple, overlap
+624,full_component_TP53_complex, no_CR_MRD_neg
+625,full_component_chr_splicing_multiple
+626,full_component_NPM1, no_CR_MRD_neg
+627,full_component_NPM1, no_CR_MRD_neg
+628,full_component_NPM1
+629,full_component_TP53_complex, full_component_NPM1, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+630,full_component_NPM1, no_CR_MRD_neg
+631,full_component_NPM1, no_CR_MRD_neg
+632,full_component_t_8_21, full_component_TP53_complex, overlap, no_CR_MRD_neg
+633,full_component_additions, full_component_TP53_complex, overlap, no_CR_MRD_neg
+634,full_component_t_8_21
+635,full_component_NPM1, no_CR_MRD_neg
+636,full_component_NPM1, no_CR_MRD_neg
+637,full_component_NPM1, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+638,full_component_inv_3, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+639,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+640,full_component_inv_16, no_CR_MRD_neg
+641,full_component_additions, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+642,full_component_t_8_21, no_CR_MRD_neg
+643,full_component_NPM1, no_CR_MRD_neg
+644,full_component_NPM1, no_CR_MRD_neg
+645,full_component_WT1, no_CR_MRD_neg
+646,full_component_additions, full_component_TP53_complex, overlap, no_CR_MRD_neg
+647,full_component_TP53_complex, no_CR_MRD_neg
+648,full_component_t_8_21, no_CR_MRD_neg
+649,full_component_chr_splicing_multiple, no_CR_MRD_neg
+650,full_component_chr_splicing_1, no_CR_MRD_neg
+651,full_component_not_assigned, no_CR_MRD_neg
+652,full_component_inv_16
+653,full_component_not_assigned, no_CR_MRD_neg
+654,full_component_chr_splicing_multiple
+655,full_component_chr_splicing_multiple, no_CR_MRD_neg
+656,full_component_NPM1, no_CR_MRD_neg
+657,full_component_NPM1, no_CR_MRD_neg
+658,full_component_NPM1
+659,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_1, overlap, no_CR_MRD_neg
+660,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+661,full_component_additions, full_component_chr_splicing_multiple, overlap
+662,full_component_TP53_complex, no_CR_MRD_neg
+663,full_component_not_assigned, no_CR_MRD_neg
+664,full_component_t_8_21
+665,full_component_inv_16
+666,full_component_inv_16
+667,full_component_NPM1, no_CR_MRD_neg
+668,full_component_chr_splicing_multiple, no_CR_MRD_neg
+669,full_component_NPM1
+670,full_component_additions, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+671,full_component_TP53_complex, no_CR_MRD_neg
+672,full_component_t_11
+673,full_component_WT1, no_CR_MRD_neg
+674,full_component_NPM1, no_CR_MRD_neg
+675,full_component_t_8_21, no_CR_MRD_neg
+676,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_1, overlap, no_CR_MRD_neg
+677,full_component_CEBPA_bi, no_CR_MRD_neg
+678,full_component_chr_splicing_1, no_CR_MRD_neg
+679,full_component_inv_16, no_CR_MRD_neg
+680,full_component_chr_splicing_multiple, no_CR_MRD_neg
+681,full_component_DNMT3A_IDH1_2, no_CR_MRD_neg
+682,full_component_chr_splicing_1, no_CR_MRD_neg
+683,full_component_chr_splicing_multiple, no_CR_MRD_neg
+684,full_component_additions, full_component_TP53_complex, overlap, no_CR_MRD_neg
+685,full_component_NPM1, no_CR_MRD_neg
+686,full_component_NPM1, no_CR_MRD_neg
+687,full_component_NPM1
+688,full_component_NPM1, no_CR_MRD_neg
+689,full_component_not_assigned, no_CR_MRD_neg
+690,full_component_NPM1, no_CR_MRD_neg
+691,full_component_chr_splicing_1, no_CR_MRD_neg
+692,full_component_additions, no_CR_MRD_neg
+693,full_component_DNMT3A_IDH1_2, no_CR_MRD_neg
+694,full_component_inv_16
+695,full_component_NPM1, no_CR_MRD_neg
+696,full_component_NPM1, no_CR_MRD_neg
+697,full_component_NPM1, no_CR_MRD_neg
+698,full_component_CEBPA_bi, no_CR_MRD_neg
+699,full_component_NPM1, no_CR_MRD_neg
+700,full_component_NPM1, no_CR_MRD_neg
+701,full_component_chr_splicing_1, no_CR_MRD_neg
+702,full_component_chr_splicing_1, no_CR_MRD_neg
+703,full_component_NPM1, no_CR_MRD_neg
+704,full_component_TP53_complex, no_CR_MRD_neg
+705,full_component_NPM1, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+706,full_component_CEBPA_bi, no_CR_MRD_neg
+707,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+708,full_component_NPM1
+709,full_component_chr_splicing_multiple, no_CR_MRD_neg
+710,full_component_NPM1
+711,full_component_DNMT3A_IDH1_2, no_CR_MRD_neg
+712,full_component_TP53_complex, no_CR_MRD_neg
+713,full_component_t_8_21, no_CR_MRD_neg
+714,full_component_chr_splicing_multiple
+715,full_component_TP53_complex, no_CR_MRD_neg
+716,full_component_NPM1
+717,full_component_t_11
+718,full_component_inv_16, no_CR_MRD_neg
+719,full_component_not_assigned
+720,full_component_NPM1, no_CR_MRD_neg
+721,full_component_NPM1, no_CR_MRD_neg
+722,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_1, overlap, no_CR_MRD_neg
+723,full_component_t_11
+724,full_component_t_11, no_CR_MRD_neg
+725,full_component_WT1, full_component_chr_splicing_1, overlap
+726,full_component_NPM1, no_CR_MRD_neg
+727,full_component_t_8_21, full_component_TP53_complex, overlap, no_CR_MRD_neg
+728,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_multiple, overlap, no_CR_MRD_neg
+729,full_component_NPM1, no_CR_MRD_neg
+730,full_component_NPM1, no_CR_MRD_neg
+731,full_component_NPM1, no_CR_MRD_neg
+732,full_component_NPM1, no_CR_MRD_neg
+733,full_component_chr_splicing_1, no_CR_MRD_neg
+734,full_component_not_assigned, no_CR_MRD_neg
+735,full_component_additions, full_component_TP53_complex, overlap, no_CR_MRD_neg
+736,full_component_chr_splicing_1, no_CR_MRD_neg
+737,full_component_NPM1, no_CR_MRD_neg
+738,full_component_NPM1
+739,full_component_NPM1, no_CR_MRD_neg
+740,full_component_NPM1, no_CR_MRD_neg
+741,full_component_chr_splicing_multiple, no_CR_MRD_neg
+742,full_component_TP53_complex, no_CR_MRD_neg
+743,full_component_NPM1, no_CR_MRD_neg
