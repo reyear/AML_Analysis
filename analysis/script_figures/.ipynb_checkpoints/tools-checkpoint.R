@@ -95,7 +95,7 @@ heatmaps <- function(df_final, type=c("not_ordered","ordered"),cols_to_plot=c(ge
         transp_df_all <-(as.data.frame(t(tmp_all)))
         transp_df_all$features <- rownames(transp_df_all)
         transp_df_all <- transp_df_all[! row.names(transp_df_all) == "final_component_numeric",]
-        col_order <- c("t_15_17","inv_16","t_8_21","t_v_11","t_9_11","t_6_9","inv_3","add_8","add_13","add_21","add_22","add_11","TP53","complex","NPM1","CEBPA_bi","CEBPA_mono","DNMT3A","IDH1","IDH2_p.R140","IDH2_p.R172","WT1","ITD","TET2",factors,
+        col_order<-c("t_15_17","inv_16","t_8_21","t_v_11","t_9_11","t_6_9","inv_3","add_8","add_13","add_21","add_22","add_11","TP53","complex","NPM1","CEBPA_bi","CEBPA_mono","DNMT3A","IDH1","IDH2_p.R140","IDH2_p.R172","WT1","ITD","TET2",factors,
                            "FLT3_TKD","FLT3_other",
                            "del_5","del_7","del_17","del_9","del_13","del_20","del_18","del_16","del_12","del_3","minusy")
         col_order <- c(col_order,setdiff(features_cols,col_order))
