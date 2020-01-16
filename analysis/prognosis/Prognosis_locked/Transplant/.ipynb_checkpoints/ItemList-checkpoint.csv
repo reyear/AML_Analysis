@@ -1,0 +1,648 @@
+,itemList
+1,full_component_additions, full_component_chr_splicing_1, overlap, TPL_o
+2,full_component_TP53_complex, TPL_o
+3,full_component_NPM1, TPL_o
+4,full_component_CEBPA_bi, TPL_o
+5,full_component_NPM1, TPL_o
+6,full_component_WT1, TPL_o
+7,full_component_not_assigned, TPL_o
+8,full_component_additions, full_component_chr_splicing_multiple, overlap, TPL_o
+9,full_component_inv_3, TPL_o
+10,full_component_TP53_complex, TPL_o
+11,full_component_NPM1, TPL_o
+12,full_component_CEBPA_bi, TPL_o
+13,full_component_not_assigned, TPL_o
+14,full_component_TP53_complex, TPL_o
+15,full_component_CEBPA_bi, TPL_o
+16,full_component_chr_splicing_multiple, TPL_o
+17,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_1, overlap, TPL_o
+18,full_component_t_6_9, TPL_o
+19,full_component_TP53_complex, TPL_o
+20,full_component_additions, full_component_TP53_complex, overlap, TPL_o
+21,full_component_NPM1, TPL_o
+22,full_component_CEBPA_bi, TPL_o
+23,full_component_TP53_complex, TPL_o
+24,full_component_NPM1, TPL_o
+25,full_component_chr_splicing_multiple, TPL_o
+26,full_component_WT1, TPL_o
+27,full_component_chr_splicing_1, TPL_o
+28,full_component_not_assigned, TPL_o
+29,full_component_chr_splicing_multiple, TPL_o
+30,full_component_additions, TPL_o
+31,full_component_NPM1, TPL_o
+32,full_component_NPM1, TPL_o
+33,full_component_chr_splicing_1, TPL_o
+34,full_component_additions, full_component_chr_splicing_multiple, overlap, TPL_o
+35,full_component_chr_splicing_1, TPL_o
+36,full_component_CEBPA_bi, TPL_o
+37,full_component_NPM1, TPL_o
+38,full_component_TP53_complex, TPL_o
+39,full_component_TP53_complex, TPL_o
+40,full_component_chr_splicing_multiple, TPL_o
+41,full_component_chr_splicing_multiple, TPL_o
+42,full_component_NPM1, TPL_o
+43,full_component_t_8_21, TPL_o
+44,full_component_WT1, full_component_chr_splicing_1, overlap, TPL_o
+45,full_component_chr_splicing_multiple, TPL_o
+46,full_component_CEBPA_bi, TPL_o
+47,full_component_NPM1, TPL_o
+48,full_component_DNMT3A_IDH1_2, TPL_o
+49,full_component_t_6_9, TPL_o
+50,full_component_not_assigned, TPL_o
+51,full_component_NPM1, full_component_chr_splicing_multiple, overlap, TPL_o
+52,full_component_additions, full_component_chr_splicing_multiple, overlap, TPL_o
+53,full_component_NPM1, TPL_o
+54,full_component_NPM1, TPL_o
+55,full_component_NPM1, TPL_o
+56,full_component_chr_splicing_1, TPL_o
+57,full_component_NPM1, TPL_o
+58,full_component_not_assigned, TPL_o
+59,full_component_chr_splicing_1, TPL_o
+60,full_component_not_assigned, TPL_o
+61,full_component_NPM1, TPL_o
+62,full_component_TP53_complex, TPL_o
+63,full_component_TP53_complex, TPL_o
+64,full_component_TP53_complex, TPL_o
+65,full_component_WT1, TPL_o
+66,full_component_NPM1, TPL_o
+67,full_component_t_8_21, TPL_o
+68,full_component_NPM1, TPL_o
+69,full_component_not_assigned, TPL_o
+70,full_component_inv_3, TPL_o
+71,full_component_chr_splicing_multiple, TPL_o
+72,full_component_TP53_complex, TPL_o
+73,full_component_not_assigned, TPL_o
+74,full_component_NPM1, TPL_o
+75,full_component_NPM1, TPL_o
+76,full_component_DNMT3A_IDH1_2, TPL_o
+77,full_component_NPM1, TPL_o
+78,full_component_NPM1, TPL_o
+79,full_component_NPM1, TPL_o
+80,full_component_chr_splicing_multiple, TPL_o
+81,full_component_additions, full_component_chr_splicing_1, overlap, TPL_o
+82,full_component_NPM1, TPL_o
+83,full_component_NPM1, TPL_o
+84,full_component_not_assigned, TPL_o
+85,full_component_WT1, TPL_o
+86,full_component_NPM1, TPL_o
+87,full_component_DNMT3A_IDH1_2, TPL_o
+88,full_component_NPM1, TPL_o
+89,full_component_NPM1, TPL_o
+90,full_component_WT1, TPL_o
+91,full_component_CEBPA_bi, TPL_o
+92,full_component_NPM1, TPL_o
+93,full_component_NPM1, TPL_o
+94,full_component_additions, full_component_chr_splicing_multiple, overlap, TPL_o
+95,full_component_NPM1, TPL_o
+96,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_1, overlap, TPL_o
+97,full_component_NPM1, TPL_o
+98,full_component_NPM1, TPL_o
+99,full_component_WT1, TPL_o
+100,full_component_NPM1, TPL_o
+101,full_component_chr_splicing_multiple, TPL_o
+102,full_component_inv_3, full_component_TP53_complex, overlap, TPL_o
+103,full_component_additions, TPL_o
+104,full_component_chr_splicing_multiple, TPL_o
+105,full_component_inv_16, TPL_o
+106,full_component_DNMT3A_IDH1_2, TPL_o
+107,full_component_DNMT3A_IDH1_2, TPL_o
+108,full_component_additions, full_component_TP53_complex, overlap, TPL_o
+109,full_component_chr_splicing_1, TPL_o
+110,full_component_chr_splicing_1, TPL_o
+111,full_component_NPM1, TPL_o
+112,full_component_inv_3, TPL_o
+113,full_component_TP53_complex, TPL_o
+114,full_component_t_6_9, TPL_o
+115,full_component_DNMT3A_IDH1_2, TPL_o
+116,full_component_TP53_complex, TPL_o
+117,full_component_NPM1, TPL_o
+118,full_component_t_6_9, TPL_o
+119,full_component_not_assigned, TPL_o
+120,full_component_TP53_complex, TPL_o
+121,full_component_chr_splicing_multiple, TPL_o
+122,full_component_chr_splicing_1, TPL_o
+123,full_component_chr_splicing_1, TPL_o
+124,full_component_TP53_complex, TPL_o
+125,full_component_chr_splicing_1, TPL_o
+126,full_component_chr_splicing_multiple, TPL_o
+127,full_component_additions, full_component_chr_splicing_multiple, overlap, TPL_o
+128,full_component_TP53_complex, TPL_o
+129,full_component_t_8_21, TPL_o
+130,full_component_NPM1, TPL_o
+131,full_component_NPM1, TPL_o
+132,full_component_chr_splicing_1, TPL_o
+133,full_component_NPM1, TPL_o
+134,full_component_CEBPA_bi, TPL_o
+135,full_component_chr_splicing_multiple, TPL_o
+136,full_component_not_assigned, TPL_o
+137,full_component_inv_3, TPL_o
+138,full_component_CEBPA_bi, TPL_o
+139,full_component_not_assigned, TPL_o
+140,full_component_TP53_complex, TPL_o
+141,full_component_additions, full_component_TP53_complex, overlap, TPL_o
+142,full_component_inv_16, TPL_o
+143,full_component_NPM1, TPL_o
+144,full_component_not_assigned, TPL_o
+145,full_component_not_assigned, TPL_o
+146,full_component_t_6_9, TPL_o
+147,full_component_chr_splicing_1, TPL_o
+148,full_component_chr_splicing_multiple, TPL_o
+149,full_component_chr_splicing_multiple, TPL_o
+150,full_component_CEBPA_bi, TPL_o
+151,full_component_NPM1, TPL_o
+152,full_component_not_assigned, TPL_o
+153,full_component_chr_splicing_multiple, TPL_o
+154,full_component_NPM1, full_component_chr_splicing_multiple, overlap, TPL_o
+155,full_component_NPM1, TPL_o
+156,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_1, overlap, TPL_o
+157,full_component_inv_16, TPL_o
+158,full_component_not_assigned, TPL_o
+159,full_component_DNMT3A_IDH1_2, TPL_o
+160,full_component_TP53_complex, full_component_chr_splicing_multiple, overlap, TPL_o
+161,full_component_chr_splicing_multiple, TPL_o
+162,full_component_chr_splicing_multiple, TPL_o
+163,full_component_chr_splicing_1, TPL_o
+164,full_component_NPM1, TPL_o
+165,full_component_additions, full_component_chr_splicing_1, overlap, TPL_o
+166,full_component_additions, full_component_chr_splicing_1, overlap, TPL_o
+167,full_component_not_assigned, TPL_o
+168,full_component_chr_splicing_multiple, TPL_o
+169,full_component_CEBPA_bi, TPL_o
+170,full_component_NPM1, TPL_o
+171,full_component_NPM1, TPL_o
+172,full_component_chr_splicing_1, TPL_o
+173,full_component_CEBPA_bi, TPL_o
+174,full_component_chr_splicing_1, TPL_o
+175,full_component_not_assigned, TPL_o
+176,full_component_NPM1, TPL_o
+177,full_component_t_15_17, TPL_o
+178,full_component_NPM1, TPL_o
+179,full_component_not_assigned, TPL_o
+180,full_component_NPM1, TPL_o
+181,full_component_inv_16, TPL_o
+182,full_component_not_assigned, TPL_o
+183,full_component_inv_16, TPL_o
+184,full_component_not_assigned, TPL_o
+185,full_component_NPM1, TPL_o
+186,full_component_chr_splicing_1, TPL_o
+187,full_component_WT1, TPL_o
+188,full_component_NPM1, TPL_o
+189,full_component_NPM1, full_component_chr_splicing_multiple, overlap, TPL_o
+190,full_component_not_assigned, TPL_o
+191,full_component_chr_splicing_1, TPL_o
+192,full_component_NPM1, TPL_o
+193,full_component_WT1, TPL_o
+194,full_component_TP53_complex, TPL_o
+195,full_component_chr_splicing_1, TPL_o
+196,full_component_NPM1, TPL_o
+197,full_component_NPM1, TPL_o
+198,full_component_inv_16, TPL_o
+199,full_component_NPM1, TPL_o
+200,full_component_chr_splicing_1, TPL_o
+201,full_component_not_assigned, TPL_o
+202,full_component_TP53_complex, TPL_o
+203,full_component_TP53_complex, TPL_o
+204,full_component_chr_splicing_multiple, TPL_o
+205,full_component_NPM1, TPL_o
+206,full_component_TP53_complex, TPL_o
+207,full_component_additions, full_component_chr_splicing_multiple, overlap, TPL_o
+208,full_component_TP53_complex, TPL_o
+209,full_component_not_assigned, TPL_o
+210,full_component_CEBPA_bi, TPL_o
+211,full_component_additions, TPL_o
+212,full_component_CEBPA_bi, TPL_o
+213,full_component_NPM1, TPL_o
+214,full_component_inv_16, TPL_o
+215,full_component_NPM1, TPL_o
+216,full_component_chr_splicing_multiple, TPL_o
+217,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_1, overlap, TPL_o
+218,full_component_NPM1, TPL_o
+219,full_component_CEBPA_bi, TPL_o
+220,full_component_CEBPA_bi, TPL_o
+221,full_component_TP53_complex, TPL_o
+222,full_component_t_15_17, TPL_o
+223,full_component_t_11, TPL_o
+224,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_multiple, overlap, TPL_o
+225,full_component_NPM1, TPL_o
+226,full_component_t_8_21, TPL_o
+227,full_component_additions, TPL_o
+228,full_component_additions, full_component_chr_splicing_1, overlap, TPL_o
+229,full_component_t_8_21, TPL_o
+230,full_component_additions, full_component_chr_splicing_multiple, overlap, TPL_o
+231,full_component_WT1, TPL_o
+232,full_component_inv_16, TPL_o
+233,full_component_inv_16, TPL_o
+234,full_component_not_assigned, TPL_o
+235,full_component_inv_16, TPL_o
+236,full_component_NPM1, TPL_o
+237,full_component_not_assigned, TPL_o
+238,full_component_CEBPA_bi, TPL_o
+239,full_component_not_assigned, TPL_o
+240,full_component_NPM1, TPL_o
+241,full_component_t_6_9, TPL_o
+242,full_component_inv_16, TPL_o
+243,full_component_NPM1, TPL_o
+244,full_component_inv_16, TPL_o
+245,full_component_chr_splicing_multiple, TPL_o
+246,full_component_NPM1, TPL_o
+247,full_component_t_6_9, TPL_o
+248,full_component_NPM1, TPL_o
+249,full_component_NPM1, TPL_o
+250,full_component_TP53_complex, TPL_o
+251,full_component_NPM1, TPL_o
+252,full_component_additions, full_component_chr_splicing_1, overlap, TPL_o
+253,full_component_NPM1, TPL_o
+254,full_component_not_assigned, TPL_o
+255,full_component_chr_splicing_multiple, TPL_o
+256,full_component_chr_splicing_1, TPL_o
+257,full_component_not_assigned, full_component_no_events, overlap, TPL_o
+258,full_component_chr_splicing_multiple, TPL_o
+259,full_component_chr_splicing_1, TPL_o
+260,full_component_t_11, full_component_TP53_complex, overlap, TPL_o
+261,full_component_NPM1, TPL_o
+262,full_component_not_assigned, TPL_o
+263,full_component_not_assigned, TPL_o
+264,full_component_NPM1, TPL_o
+265,full_component_chr_splicing_1, TPL_o
+266,full_component_inv_16, TPL_o
+267,full_component_not_assigned, TPL_o
+268,full_component_NPM1, TPL_o
+269,full_component_CEBPA_bi, TPL_o
+270,full_component_CEBPA_bi, TPL_o
+271,full_component_CEBPA_bi, TPL_o
+272,full_component_NPM1, TPL_o
+273,full_component_not_assigned, TPL_o
+274,full_component_NPM1, TPL_o
+275,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_1, overlap, TPL_o
+276,full_component_not_assigned, TPL_o
+277,full_component_NPM1, TPL_o
+278,full_component_chr_splicing_1, TPL_o
+279,full_component_NPM1, TPL_o
+280,full_component_chr_splicing_1, TPL_o
+281,full_component_CEBPA_bi, TPL_o
+282,full_component_chr_splicing_1, TPL_o
+283,full_component_not_assigned, TPL_o
+284,full_component_t_8_21, TPL_o
+285,full_component_additions, full_component_TP53_complex, overlap, TPL_o
+286,full_component_inv_16, TPL_o
+287,full_component_t_11, TPL_o
+288,full_component_chr_splicing_1, TPL_o
+289,full_component_additions, full_component_chr_splicing_multiple, overlap, TPL_o
+290,full_component_not_assigned, TPL_o
+291,full_component_NPM1, TPL_o
+292,full_component_inv_3, TPL_o
+293,full_component_inv_16, TPL_o
+294,full_component_NPM1, TPL_o
+295,full_component_chr_splicing_1, TPL_o
+296,full_component_NPM1, TPL_o
+297,full_component_t_15_17, TPL_o
+298,full_component_chr_splicing_1, TPL_o
+299,full_component_CEBPA_bi, TPL_o
+300,full_component_NPM1, TPL_o
+301,full_component_CEBPA_bi, TPL_o
+302,full_component_NPM1, TPL_o
+303,full_component_not_assigned, TPL_o
+304,full_component_t_6_9, TPL_o
+305,full_component_inv_16, TPL_o
+306,full_component_chr_splicing_multiple, TPL_o
+307,full_component_inv_16, TPL_o
+308,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_1, overlap, TPL_o
+309,full_component_chr_splicing_multiple, TPL_o
+310,full_component_NPM1, full_component_chr_splicing_multiple, overlap, TPL_o
+311,full_component_NPM1, TPL_o
+312,full_component_chr_splicing_1, TPL_o
+313,full_component_CEBPA_bi, TPL_o
+314,full_component_additions, TPL_o
+315,full_component_CEBPA_bi, TPL_o
+316,full_component_not_assigned, TPL_o
+317,full_component_NPM1, TPL_o
+318,full_component_NPM1, TPL_o
+319,full_component_NPM1, TPL_o
+320,full_component_not_assigned, TPL_o
+321,full_component_CEBPA_bi, TPL_o
+322,full_component_chr_splicing_multiple, TPL_o
+323,full_component_CEBPA_bi, TPL_o
+324,full_component_not_assigned, TPL_o
+325,full_component_not_assigned, TPL_o
+326,full_component_NPM1, TPL_o
+327,full_component_NPM1, TPL_o
+328,full_component_t_6_9, TPL_o
+329,full_component_NPM1, full_component_chr_splicing_multiple, overlap, TPL_o
+330,full_component_TP53_complex, TPL_o
+331,full_component_t_8_21, TPL_o
+332,full_component_CEBPA_bi, TPL_o
+333,full_component_WT1, TPL_o
+334,full_component_TP53_complex, TPL_o
+335,full_component_NPM1, TPL_o
+336,full_component_inv_16, TPL_o
+337,full_component_WT1, full_component_chr_splicing_multiple, overlap, TPL_o
+338,full_component_NPM1, TPL_o
+339,full_component_additions, TPL_o
+340,full_component_NPM1, TPL_o
+341,full_component_TP53_complex, TPL_o
+342,full_component_WT1, TPL_o
+343,full_component_additions, TPL_o
+344,full_component_inv_16, TPL_o
+345,full_component_NPM1, TPL_o
+346,full_component_CEBPA_bi, TPL_o
+347,full_component_inv_16, TPL_o
+348,full_component_chr_splicing_multiple, TPL_o
+349,full_component_NPM1, TPL_o
+350,full_component_not_assigned, TPL_o
+351,full_component_NPM1, TPL_o
+352,full_component_NPM1, TPL_o
+353,full_component_NPM1, TPL_o
+354,full_component_TP53_complex, TPL_o
+355,full_component_inv_16, TPL_o
+356,full_component_t_8_21, TPL_o
+357,full_component_additions, full_component_chr_splicing_multiple, overlap, TPL_o
+358,full_component_CEBPA_bi, TPL_o
+359,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_multiple, overlap, TPL_o
+360,full_component_chr_splicing_multiple, TPL_o
+361,full_component_inv_16, TPL_o
+362,full_component_not_assigned, TPL_o
+363,full_component_not_assigned, TPL_o
+364,full_component_TP53_complex, TPL_o
+365,full_component_chr_splicing_1, TPL_o
+366,full_component_additions, full_component_chr_splicing_1, overlap, TPL_o
+367,full_component_TP53_complex, TPL_o
+368,full_component_not_assigned, TPL_o
+369,full_component_TP53_complex, TPL_o
+370,full_component_additions, full_component_chr_splicing_multiple, overlap, TPL_o
+371,full_component_TP53_complex, TPL_o
+372,full_component_NPM1, TPL_o
+373,full_component_inv_16, TPL_o
+374,full_component_chr_splicing_multiple, TPL_o
+375,full_component_NPM1, TPL_o
+376,full_component_t_8_21, TPL_o
+377,full_component_NPM1, TPL_o
+378,full_component_NPM1, TPL_o
+379,full_component_NPM1, TPL_o
+380,full_component_NPM1, TPL_o
+381,full_component_CEBPA_bi, TPL_o
+382,full_component_inv_16, TPL_o
+383,full_component_NPM1, TPL_o
+384,full_component_not_assigned, TPL_o
+385,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_1, overlap, TPL_o
+386,full_component_chr_splicing_1, TPL_o
+387,full_component_NPM1, TPL_o
+388,full_component_chr_splicing_1, TPL_o
+389,full_component_additions, TPL_o
+390,full_component_additions, full_component_TP53_complex, full_component_chr_splicing_multiple, overlap, TPL_o
+391,full_component_TP53_complex, full_component_chr_splicing_multiple, overlap, TPL_o
+392,full_component_CEBPA_bi, TPL_o
+393,full_component_additions, full_component_chr_splicing_1, overlap, TPL_o
+394,full_component_not_assigned, TPL_o
+395,full_component_NPM1, TPL_o
+396,full_component_TP53_complex, TPL_o
+397,full_component_NPM1, TPL_o
+398,full_component_NPM1, TPL_o
+399,full_component_NPM1, TPL_o
+400,full_component_chr_splicing_multiple, TPL_o
+401,full_component_CEBPA_bi, TPL_o
+402,full_component_TP53_complex, TPL_o
+403,full_component_NPM1, TPL_o
+404,full_component_inv_3, TPL_o
+405,full_component_NPM1, TPL_o
+406,full_component_NPM1, TPL_o
+407,full_component_inv_3, full_component_chr_splicing_multiple, overlap, TPL_o
+408,full_component_NPM1, TPL_o
+409,full_component_t_8_21, TPL_o
+410,full_component_chr_splicing_multiple, TPL_o
+411,full_component_t_8_21, TPL_o
+412,full_component_NPM1, TPL_o
+413,full_component_inv_16, TPL_o
+414,full_component_not_assigned, TPL_o
+415,full_component_DNMT3A_IDH1_2, TPL_o
+416,full_component_NPM1, TPL_o
+417,full_component_not_assigned, TPL_o
+418,full_component_inv_3, TPL_o
+419,full_component_NPM1, TPL_o
+420,full_component_inv_3, full_component_chr_splicing_multiple, overlap, TPL_o
+421,full_component_TP53_complex, full_component_NPM1, overlap, TPL_o
+422,full_component_chr_splicing_1, TPL_o
+423,full_component_DNMT3A_IDH1_2, TPL_o
+424,full_component_chr_splicing_multiple, TPL_o
+425,full_component_NPM1, TPL_o
+426,full_component_chr_splicing_1, TPL_o
+427,full_component_NPM1, TPL_o
+428,full_component_chr_splicing_1, TPL_o
+429,full_component_NPM1, TPL_o
+430,full_component_NPM1, TPL_o
+431,full_component_NPM1, TPL_o
+432,full_component_CEBPA_bi, TPL_o
+433,full_component_NPM1, TPL_o
+434,full_component_chr_splicing_1, TPL_o
+435,full_component_NPM1, TPL_o
+436,full_component_CEBPA_bi, TPL_o
+437,full_component_chr_splicing_multiple, TPL_o
+438,full_component_CEBPA_bi, TPL_o
+439,full_component_WT1, TPL_o
+440,full_component_NPM1, TPL_o
+441,full_component_not_assigned, full_component_no_events, overlap, TPL_o
+442,full_component_chr_splicing_1, TPL_o
+443,full_component_NPM1, TPL_o
+444,full_component_NPM1, TPL_o
+445,full_component_NPM1, TPL_o
+446,full_component_TP53_complex, TPL_o
+447,full_component_NPM1, TPL_o
+448,full_component_t_8_21, TPL_o
+449,full_component_NPM1, TPL_o
+450,full_component_not_assigned, TPL_o
+451,full_component_NPM1, TPL_o
+452,full_component_chr_splicing_multiple, TPL_o
+453,full_component_NPM1, TPL_o
+454,full_component_NPM1, TPL_o
+455,full_component_NPM1, TPL_o
+456,full_component_inv_3, TPL_o
+457,full_component_inv_16, TPL_o
+458,full_component_additions, TPL_o
+459,full_component_chr_splicing_1, TPL_o
+460,full_component_WT1, TPL_o
+461,full_component_chr_splicing_multiple, TPL_o
+462,full_component_NPM1, TPL_o
+463,full_component_chr_splicing_1, TPL_o
+464,full_component_additions, TPL_o
+465,full_component_WT1, TPL_o
+466,full_component_chr_splicing_1, TPL_o
+467,full_component_not_assigned, TPL_o
+468,full_component_TP53_complex, TPL_o
+469,full_component_NPM1, TPL_o
+470,full_component_chr_splicing_multiple, TPL_o
+471,full_component_NPM1, TPL_o
+472,full_component_t_8_21, TPL_o
+473,full_component_NPM1, TPL_o
+474,full_component_NPM1, TPL_o
+475,full_component_not_assigned, TPL_o
+476,full_component_NPM1, TPL_o
+477,full_component_chr_splicing_multiple, TPL_o
+478,full_component_additions, full_component_chr_splicing_1, overlap, TPL_o
+479,full_component_NPM1, TPL_o
+480,full_component_chr_splicing_1, TPL_o
+481,full_component_not_assigned, TPL_o
+482,full_component_NPM1, TPL_o
+483,full_component_not_assigned, TPL_o
+484,full_component_NPM1, TPL_o
+485,full_component_NPM1, TPL_o
+486,full_component_not_assigned, TPL_o
+487,full_component_inv_16, TPL_o
+488,full_component_not_assigned, TPL_o
+489,full_component_not_assigned, TPL_o
+490,full_component_chr_splicing_1, TPL_o
+491,full_component_NPM1, TPL_o
+492,full_component_inv_16, TPL_o
+493,full_component_chr_splicing_1, TPL_o
+494,full_component_NPM1, TPL_o
+495,full_component_NPM1, TPL_o
+496,full_component_NPM1, TPL_o
+497,full_component_not_assigned, TPL_o
+498,full_component_not_assigned, TPL_o
+499,full_component_NPM1, TPL_o
+500,full_component_NPM1, TPL_o
+501,full_component_additions, full_component_chr_splicing_multiple, overlap, TPL_o
+502,full_component_not_assigned, TPL_o
+503,full_component_TP53_complex, full_component_NPM1, overlap, TPL_o
+504,full_component_chr_splicing_1, TPL_o
+505,full_component_NPM1, TPL_o
+506,full_component_NPM1, TPL_o
+507,full_component_CEBPA_bi, TPL_o
+508,full_component_NPM1, TPL_o
+509,full_component_chr_splicing_1, TPL_o
+510,full_component_t_8_21, TPL_o
+511,full_component_not_assigned, TPL_o
+512,full_component_NPM1, TPL_o
+513,full_component_chr_splicing_multiple, TPL_o
+514,full_component_not_assigned, TPL_o
+515,full_component_not_assigned, TPL_o
+516,full_component_chr_splicing_multiple, TPL_o
+517,full_component_NPM1, TPL_o
+518,full_component_chr_splicing_1, TPL_o
+519,full_component_t_11, TPL_o
+520,full_component_NPM1, TPL_o
+521,full_component_not_assigned, TPL_o
+522,full_component_NPM1, TPL_o
+523,full_component_NPM1, TPL_o
+524,full_component_NPM1, full_component_chr_splicing_multiple, overlap, TPL_o
+525,full_component_NPM1, TPL_o
+526,full_component_CEBPA_bi, TPL_o
+527,full_component_NPM1, TPL_o
+528,full_component_not_assigned, TPL_o
+529,full_component_TP53_complex, TPL_o
+530,full_component_NPM1, TPL_o
+531,full_component_DNMT3A_IDH1_2, TPL_o
+532,full_component_NPM1, full_component_chr_splicing_multiple, overlap, TPL_o
+533,full_component_NPM1, TPL_o
+534,full_component_additions, full_component_TP53_complex, overlap, TPL_o
+535,full_component_not_assigned, TPL_o
+536,full_component_not_assigned, TPL_o
+537,full_component_CEBPA_bi, TPL_o
+538,full_component_chr_splicing_multiple, TPL_o
+539,full_component_not_assigned, TPL_o
+540,full_component_t_11, TPL_o
+541,full_component_inv_16, TPL_o
+542,full_component_NPM1, TPL_o
+543,full_component_additions, full_component_chr_splicing_1, overlap, TPL_o
+544,full_component_NPM1, TPL_o
+545,full_component_chr_splicing_multiple, TPL_o
+546,full_component_inv_16, TPL_o
+547,full_component_not_assigned, TPL_o
+548,full_component_NPM1, TPL_o
+549,full_component_NPM1, TPL_o
+550,full_component_TP53_complex, full_component_chr_splicing_multiple, overlap, TPL_o
+551,full_component_NPM1, TPL_o
+552,full_component_NPM1, TPL_o
+553,full_component_t_11, TPL_o
+554,full_component_not_assigned, TPL_o
+555,full_component_t_8_21, TPL_o
+556,full_component_additions, full_component_chr_splicing_multiple, overlap, TPL_o
+557,full_component_NPM1, TPL_o
+558,full_component_chr_splicing_multiple, TPL_o
+559,full_component_additions, full_component_chr_splicing_1, overlap, TPL_o
+560,full_component_NPM1, TPL_o
+561,full_component_inv_16, TPL_o
+562,full_component_DNMT3A_IDH1_2, TPL_o
+563,full_component_not_assigned, full_component_no_events, overlap, TPL_o
+564,full_component_WT1, full_component_chr_splicing_multiple, overlap, TPL_o
+565,full_component_chr_splicing_multiple, TPL_o
+566,full_component_chr_splicing_multiple, TPL_o
+567,full_component_inv_3, TPL_o
+568,full_component_not_assigned, TPL_o
+569,full_component_NPM1, TPL_o
+570,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_1, overlap, TPL_o
+571,full_component_additions, full_component_TP53_complex, overlap, TPL_o
+572,full_component_TP53_complex, TPL_o
+573,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_1, overlap, TPL_o
+574,full_component_chr_splicing_1, TPL_o
+575,full_component_CEBPA_bi, TPL_o
+576,full_component_WT1, full_component_chr_splicing_multiple, overlap, TPL_o
+577,full_component_chr_splicing_multiple, TPL_o
+578,full_component_chr_splicing_1, TPL_o
+579,full_component_TP53_complex, TPL_o
+580,full_component_chr_splicing_1, TPL_o
+581,full_component_additions, full_component_TP53_complex, overlap, TPL_o
+582,full_component_NPM1, TPL_o
+583,full_component_chr_splicing_1, TPL_o
+584,full_component_chr_splicing_1, TPL_o
+585,full_component_NPM1, TPL_o
+586,full_component_chr_splicing_multiple, TPL_o
+587,full_component_chr_splicing_1, TPL_o
+588,full_component_t_8_21, TPL_o
+589,full_component_DNMT3A_IDH1_2, full_component_chr_splicing_multiple, overlap, TPL_o
+590,full_component_NPM1, TPL_o
+591,full_component_t_6_9, TPL_o
+592,full_component_additions, full_component_chr_splicing_1, overlap, TPL_o
+593,full_component_t_8_21, TPL_o
+594,full_component_TP53_complex, TPL_o
+595,full_component_NPM1, full_component_chr_splicing_multiple, overlap, TPL_o
+596,full_component_additions, full_component_TP53_complex, overlap, TPL_o
+597,full_component_t_8_21, full_component_TP53_complex, overlap, TPL_o
+598,full_component_NPM1, TPL_o
+599,full_component_additions, full_component_TP53_complex, overlap, TPL_o
+600,full_component_not_assigned, TPL_o
+601,full_component_NPM1, TPL_o
+602,full_component_inv_16, TPL_o
+603,full_component_TP53_complex, full_component_NPM1, overlap, TPL_o
+604,full_component_NPM1, TPL_o
+605,full_component_additions, full_component_chr_splicing_multiple, overlap, TPL_o
+606,full_component_TP53_complex, TPL_o
+607,full_component_not_assigned, TPL_o
+608,full_component_TP53_complex, TPL_o
+609,full_component_NPM1, TPL_o
+610,full_component_chr_splicing_1, TPL_o
+611,full_component_NPM1, TPL_o
+612,full_component_NPM1, TPL_o
+613,full_component_not_assigned, TPL_o
+614,full_component_TP53_complex, TPL_o
+615,full_component_TP53_complex, TPL_o
+616,full_component_chr_splicing_1, TPL_o
+617,full_component_not_assigned, TPL_o
+618,full_component_additions, TPL_o
+619,full_component_TP53_complex, full_component_CEBPA_bi, overlap, TPL_o
+620,full_component_chr_splicing_1, TPL_o
+621,full_component_t_11, TPL_o
+622,full_component_NPM1, TPL_o
+623,full_component_WT1, full_component_chr_splicing_1, overlap, TPL_o
+624,full_component_NPM1, TPL_o
+625,full_component_NPM1, TPL_o
+626,full_component_DNMT3A_IDH1_2, full_component_WT1, overlap, TPL_o
+627,full_component_chr_splicing_1, TPL_o
+628,full_component_chr_splicing_1, TPL_o
+629,full_component_chr_splicing_multiple, TPL_o
+630,full_component_NPM1, TPL_o
+631,full_component_additions, TPL_o
+632,full_component_chr_splicing_multiple, TPL_o
+633,full_component_additions, full_component_TP53_complex, overlap, TPL_o
+634,full_component_t_8_21, TPL_o
+635,full_component_TP53_complex, full_component_NPM1, overlap, TPL_o
+636,full_component_chr_splicing_multiple, TPL_o
+637,full_component_TP53_complex, TPL_o
+638,full_component_additions, TPL_o
+639,full_component_TP53_complex, TPL_o
+640,full_component_chr_splicing_1, TPL_o
+641,full_component_NPM1, TPL_o
+642,full_component_t_6_9, TPL_o
+643,full_component_NPM1, TPL_o
+644,full_component_NPM1, TPL_o
+645,full_component_chr_splicing_multiple, TPL_o
+646,full_component_NPM1, TPL_o
+647,full_component_additions, TPL_o

@@ -1,0 +1,1177 @@
+,itemList
+1,ASXL1, KRAS, del_17, add_8
+2,EP300, GATA2, PTPN11, complex, add_21
+3,NPM1, DNMT3A, NRAS, RAD21
+4,NPM1, ITD, DNMT3A, MLL2, STAG2, no_Transplant
+5,CEBPA_bi, FLT3, FLT3_TKD
+6,NPM1, add_8
+7,ITD, FLT3, MYC, WT1
+8,CBL, del_3
+9,ITD, FLT3, MLL, RUNX1, no_Transplant
+10,ITD, FLT3, MLL, U2AF1, add_11
+11,PTPN11, inv_3, del_7
+12,CBL, NRAS, complex, del_5
+13,NPM1, ITD, DNMT3A, FLT3, NRAS, PTPN11
+14,CEBPA_bi, TET2
+15,CEBPA_bi, no_Transplant
+16,NRAS, inv_16, del_7, no_Transplant
+17,ITD, FLT3, FLT3_TKD
+18,CEBPA_bi, EP300, KIT, no_Transplant
+19,NRAS, RUNX1, complex, del_7, del_17
+20,CEBPA_bi, GATA2, MLL3, NRAS
+21,ITD, FLT3, PHF6, RUNX1, STAG2, TET2, ZRSR2, FLT3_other
+22,DNMT3A, IDH2, MLL, add_8
+23,ITD, FLT3, t_6_9
+24,NPM1, DNMT3A, NRAS, TET2, no_Transplant
+25,IDH2, RUNX1, add_13, no_Transplant
+26,NF1, complex, del_3, del_7, del_9
+27,PTPN11, RAD21, complex, del_3, add_8, add_11
+28,KIT, t_8_21, no_Transplant
+29,NPM1, ITD, DNMT3A, FLT3
+30,CEBPA_bi, WT1
+31,PHF6, PTPN11, complex, del_9, del_17
+32,NPM1, minusy
+33,MLL, no_Transplant
+34,TP53, complex, del_5, del_7, del_9, del_17, add_8, add_21, no_Transplant
+35,IDH1, MLL, U2AF1
+36,NPM1, DNMT3A, no_Transplant
+37,NPM1, PTPN11, RAD21, no_Transplant
+38,CBL, WT1
+39,FBXW7, IKZF1, KIT, U2AF1
+40,NPM1, DNMT3A, FLT3, IDH1, FLT3_TKD, no_Transplant
+41,ITD, DNMT3A, FLT3, del_5
+42,IDH2, RUNX1, SRSF2
+43,NPM1, DNMT3A, FLT3, MYC, FLT3_TKD, no_Transplant
+44,KRAS, MYC, add_11
+45,NPM1, ITD, FLT3
+46,NPM1, ITD, DNMT3A, FLT3
+47,NPM1, ITD, FLT3, IDH1, no_Transplant
+48,KRAS, PTPN11, RUNX1, del_7
+49,KRAS, SRSF2, STAG2, del_12, add_8
+50,RUNX1, del_12
+51,CEBPA_bi, TET2
+52,NPM1, KRAS, TET2
+53,TET2, complex
+54,RUNX1, complex, del_9, minusy
+55,DNMT3A, MLL, RAD21, SRSF2, TET2
+56,CEBPA_bi, add_21, no_Transplant
+57,ITD, FLT3, MLL, PHF6
+58,NPM1, ITD, FLT3, WT1, del_3, del_17
+59,FLT3, FLT3_TKD, t_8_21, del_9
+60,MLL, WT1
+61,KIT, RUNX1, SRSF2, TET2, del_7
+62,CEBPA_bi, KIT, NRAS
+63,RUNX1, SRSF2, no_Transplant
+64,NPM1, ITD, FLT3, WT1
+65,DNMT3A, IDH2
+66,ITD, FLT3, t_6_9
+67,ITD, FLT3, FLT3_TKD
+68,NPM1, ITD, NRAS, PTPN11, RAD21, no_Transplant
+69,NRAS, RUNX1, del_7, no_Transplant
+70,RUNX1, SRSF2, no_Transplant
+71,CEBPA_bi, GATA2, KRAS, NRAS, no_Transplant
+72,NPM1, IDH2, RUNX1, SRSF2
+73,EZH2, no_Transplant
+74,CBL, MLL, RUNX1, SRSF2, TET2, add_11
+75,NPM1, ITD, DNMT3A, EP300, FLT3
+76,NPM1, ITD, DNMT3A, FLT3, MLL
+77,NPM1, CBL, DNMT3A, IDH2
+78,SRSF2, TET2, del_3
+79,NPM1, DNMT3A, KRAS, RAD21
+80,ITD, FLT3
+81,SRSF2
+82,ITD, DNMT3A, FLT3, TET2
+83,NPM1, ITD, FLT3, IDH2, NRAS
+84,NPM1, FLT3, FLT3_other, complex, del_5, add_8, no_Transplant
+85,FLT3, FLT3_other, complex, add_8, add_22
+86,TP53, complex, del_3
+87,NPM1, FLT3, NRAS, FLT3_TKD, no_Transplant
+88,NRAS, complex, del_5, del_7, del_12, del_17, del_18
+89,KIT, t_8_21, no_Transplant
+90,ITD, FLT3, WT1
+91,NPM1, DNMT3A, KDM5A, NRAS, WT1, no_Transplant
+92,NPM1, DNMT3A, FLT3, IDH1, IDH2, FLT3_TKD, del_9
+93,CEBPA_bi, DNMT3A, GATA2, TET2, TP53, no_Transplant
+94,KIT, t_8_21, minusy
+95,NPM1, DNMT3A, IDH1, NRAS, PTPN11
+96,FLT3, PTPN11, FLT3_TKD
+97,NPM1, DNMT3A, TET2, no_Transplant
+98,NPM1, FLT3, NRAS, FLT3_other, no_Transplant
+99,ITD, FLT3, WT1, no_Transplant
+100,ETV6, NRAS, RUNX1, inv_3, del_7
+101,DNMT3A, KRAS, RUNX1, STAG2, TET2, no_Transplant
+102,MLL, NF1, RUNX1
+103,NPM1, DNMT3A, TET2, no_Transplant
+104,DNMT3A, TP53, complex, del_5, del_7, del_12, del_17, del_18, no_Transplant
+105,DNMT3A, TET2, complex
+106,NPM1, FLT3, FLT3_other, no_Transplant
+107,KRAS
+108,NRAS, no_Transplant
+109,FLT3, KRAS, FLT3_TKD, add_22, no_Transplant
+110,NPM1, IDH2, SRSF2
+111,NPM1, FLT3, MYC, FLT3_TKD
+112,CREBBP, DNMT3A, IDH2
+113,ITD, KIT, t_8_21, minusy, no_Transplant
+114,NPM1, ITD, FLT3, MLL2, TET2, no_Transplant
+115,NPM1, ITD, FLT3, TET2
+116,NPM1, add_8
+117,NPM1, ITD, DNMT3A, FLT3
+118,KRAS, complex, add_8, add_21, no_Transplant
+119,ASXL1, NRAS, SRSF2, del_17
+120,NPM1, DNMT3A, FLT3, NF1, NRAS, FLT3_other, no_Transplant
+121,ITD, FLT3, no_Transplant
+122,RUNX1, add_21
+123,NPM1, FLT3, NRAS, STAG2, FLT3_other
+124,NPM1, DNMT3A, IDH2, PTPN11, no_Transplant
+125,PHF6, U2AF1, del_20, no_Transplant
+126,NPM1, FLT3, IDH1, FLT3_TKD
+127,ITD, FLT3
+128,KIT, TET2, inv_16, no_Transplant
+129,KRAS, WT1
+130,JAK2, TP53, ZRSR2, complex, del_9, del_20, no_Transplant
+131,NPM1, FLT3, MYC, FLT3_TKD
+132,DNMT3A, IDH2, add_8
+133,NPM1, DNMT3A, IDH2, NRAS
+134,NPM1, FLT3, KRAS, NRAS, FLT3_other
+135,ITD, FLT3, WT1, add_8
+136,CEBPA_bi, GATA2, PTPN11, WT1
+137,NPM1, BRAF, EZH2, RUNX1, STAG2, add_8, no_Transplant
+138,NPM1, ITD, CBL, FLT3
+139,NPM1, DNMT3A, IDH2, PTPN11
+140,IDH2, RUNX1, SRSF2, add_8
+141,NPM1, ITD, DNMT3A, FLT3
+142,DNMT3A, FLT3, IDH1, KRAS, NRAS, RUNX1, FLT3_other
+143,NPM1
+144,NPM1, MYC
+145,WT1
+146,NPM1, FLT3, WT1, FLT3_TKD, no_Transplant
+147,NPM1, ITD, DNMT3A, FLT3, TET2
+148,MLL, NRAS, del_5, del_12, no_Transplant
+149,IDH2, SRSF2, STAG2
+150,NPM1, DNMT3A, FLT3, FLT3_TKD, no_Transplant
+151,ITD, CBL, DNMT3A, FLT3, NRAS, RUNX1, SF3B1, no_Transplant
+152,NPM1, DNMT3A, IDH2, no_Transplant
+153,KRAS, inv_3, del_7, no_Transplant
+154,MLL2, NRAS, TP53, inv_3, complex, del_5, del_7
+155,JAK2, RAD21, t_8_21, minusy, no_Transplant
+156,NPM1, DNMT3A, no_Transplant
+157,ITD, FLT3, add_8
+158,FLT3, FLT3_TKD, inv_16, no_Transplant
+159,ASXL1, KRAS, NRAS, PTPN11, RUNX1, U2AF1
+160,NPM1, DNMT3A, IDH2, NRAS, PTPN11, no_Transplant
+161,NRAS, inv_16, add_22
+162,NPM1, IDH2, no_Transplant
+163,CEBPA_bi, EZH2, GATA2, MPL, NRAS, no_Transplant
+164,NPM1, IDH1, no_Transplant
+165,DNMT3A, IDH2, add_11
+166,DNMT3A, IDH2, RAD21
+167,NPM1, SRSF2, TET2, no_Transplant
+168,ITD, DNMT3A, FLT3, complex, del_9, minusy, add_8
+169,IDH1, SRSF2, no_Transplant
+170,NF1, del_5, del_7
+171,ETV6, NF1
+172,NPM1, IDH1, PTPN11
+173,NF1, inv_3, del_7
+174,BCOR, TP53, complex, del_5, del_17
+175,ITD, FLT3, KRAS, t_6_9, add_8
+176,DNMT3A, IDH2
+177,TP53, complex, del_5, del_7, del_17, del_20
+178,NPM1, ITD, DNMT3A, FLT3
+179,KRAS, MYC, t_6_9
+180,NRAS
+181,ETV6, SRSF2, add_8, no_Transplant
+182,DNMT3A, TP53, complex, del_5, del_7
+183,KRAS, NRAS, TET2, inv_16, add_8, no_Transplant
+184,CBL, EZH2, NRAS, PTPN11, RUNX1, del_7
+185,CBL, FLT3, IDH2, FLT3_other, add_8, no_Transplant
+186,RUNX1, del_7
+187,ASXL1, DNMT3A, NRAS, U2AF1, no_Transplant
+188,IDH1, PHF6
+189,NPM1, ITD, DNMT3A, IDH1, IDH2, no_Transplant
+190,TP53, complex, del_5, del_7, del_17
+191,PTPN11, RUNX1, complex, del_5, del_7, no_Transplant
+192,IDH2, MLL
+193,IDH2, MLL, RUNX1
+194,NPM1, NRAS, no_Transplant
+195,NPM1, DNMT3A, IDH1, NRAS, PTPN11, no_Transplant
+196,IDH1, RUNX1, SRSF2, add_8
+197,IDH1, MLL, no_Transplant
+198,CUX1, SRSF2, add_8, no_Transplant
+199,TP53, complex, del_7
+200,NPM1, ITD, DNMT3A, FLT3, no_Transplant
+201,KIT, TET2, t_8_21, del_7
+202,NPM1, ITD, FLT3, PTPN11, STAG2
+203,NPM1, ITD, FLT3, WT1, add_8
+204,NF1
+205,CEBPA_bi, del_9, no_Transplant
+206,NRAS, t_8_21, no_Transplant
+207,NPM1, ITD, DNMT3A, FLT3, RAD21
+208,CEBPA_bi, FBXW7, NRAS
+209,NPM1, IDH2, no_Transplant
+210,ATRX, NRAS, inv_16, no_Transplant
+211,NPM1, DNMT3A, IDH1, KRAS, NRAS, RAD21, no_Transplant
+212,KIT, t_8_21, no_Transplant
+213,NPM1, IDH1, PTPN11, no_Transplant
+214,ASXL1, EZH2, PHF6
+215,FLT3, FLT3_other
+216,NRAS, inv_3
+217,CEBPA_bi, IDH1
+218,ITD, DNMT3A, FLT3, minusy
+219,CBL, del_5, del_7, no_Transplant
+220,TP53, complex, del_5, del_7, del_9, del_17
+221,BRAF, GATA2, t_9_11, no_Transplant
+222,RUNX1, complex, del_12, add_13, add_22
+223,NRAS, inv_16
+224,NPM1, DNMT3A, FLT3, PHF6, FLT3_other
+225,IDH2
+226,ITD, FLT3, IDH1
+227,EZH2, t_6_9
+228,RUNX1
+229,PHF6, del_7, no_Transplant
+230,EP300, NF1, TP53, complex, del_5, del_9, del_17, del_18, no_Transplant
+231,DNMT3A, IDH1, NRAS, SRSF2, add_13, no_Transplant
+232,BCOR, U2AF1, del_20
+233,ASXL1, ETV6, KRAS, PHF6, del_17
+234,CEBPA_bi, FLT3, FLT3_other, del_9
+235,KIT, inv_16, no_Transplant
+236,NPM1, DNMT3A, FLT3, PTPN11, FLT3_other
+237,IDH2, RUNX1, add_13, add_21, no_Transplant
+238,ITD, FLT3
+239,PTPN11, inv_3, del_7, no_Transplant
+240,NPM1, ITD, DNMT3A, FLT3, no_Transplant
+241,RUNX1, SF3B1
+242,NPM1, DNMT3A, IDH1, RUNX1, SRSF2
+243,NPM1, ITD, FLT3
+244,CEBPA_bi, del_17, no_Transplant
+245,BCOR, DNMT3A, IDH1, del_5, del_7
+246,NPM1, DNMT3A, KIT, no_Transplant
+247,TET2, inv_16
+248,EP300, NRAS
+249,FLT3, no_Transplant
+250,NPM1, ITD, KIT, no_Transplant
+251,NPM1, DNMT3A, FLT3, PTPN11, TET2, FLT3_other, no_Transplant
+252,ITD, IDH2, no_Transplant
+253,NPM1, ITD, NRAS, no_Transplant
+254,MLL, STAG2, no_Transplant
+255,NPM1, IDH2, no_Transplant
+256,FLT3, FLT3_other, no_Transplant
+257,ITD, ASXL1, FLT3, MLL, RAD21, RUNX1, SRSF2, STAG2, TET2, FLT3_other, no_Transplant
+258,TET2, no_Transplant
+259,NPM1, ITD, IDH2, SRSF2, no_Transplant
+260,EZH2, complex, minusy, no_Transplant
+261,ASXL1, FLT3, SRSF2, TET2, FLT3_TKD, no_Transplant
+262,EZH2, complex, del_20, add_8, add_21, no_Transplant
+263,NRAS, PTPN11, SF3B1, inv_3, del_7, no_Transplant
+264,ITD, FLT3, RUNX1, SRSF2, add_13, no_Transplant
+265,ITD, CREBBP, DNMT3A, FLT3, IDH2, RAD21
+266,ITD, FLT3, WT1, t_15_17, no_Transplant
+267,ASXL1, IDH2, RB1, SRSF2, no_Transplant
+268,DNMT3A, RUNX1, SRSF2, complex, del_20, add_21, no_Transplant
+269,SF3B1, SRSF2, STAG2, del_7, no_Transplant
+270,DNMT3A, IDH1, no_Transplant
+271,KRAS, NRAS, inv_16, no_Transplant
+272,TP53, complex, del_5, no_Transplant
+273,DNMT3A, IDH2, SF3B1, del_7, no_Transplant
+274,DNMT3A, IDH2, RUNX1, SRSF2, complex, del_5, add_22
+275,BCOR, DNMT3A, STAG2, TET2, U2AF1, del_20, no_Transplant
+276,ASXL1, SRSF2, TET2
+277,NPM1, CREBBP, TET2, no_Transplant
+278,NPM1, ITD, DNMT3A, FLT3, RUNX1, TET2, FLT3_other, no_Transplant
+279,KDM6A, STAG2, TP53, complex, del_3, del_5, add_8, no_Transplant
+280,ASXL1, CBL, EZH2, PHF6, RB1, no_Transplant
+281,KIT, t_8_21, no_Transplant
+282,NPM1, IDH2, PTPN11, no_Transplant
+283,NPM1, ITD, DNMT3A, FLT3, IDH2, no_Transplant
+284,DNMT3A, FBXW7, IDH1, del_7, no_Transplant
+285,KRAS, TET2, ZRSR2, no_Transplant
+286,NPM1, DNMT3A, NRAS, TET2, no_Transplant
+287,EP300, FLT3, IDH2, FLT3_TKD, add_8, no_Transplant
+288,TP53, complex, del_5, add_11, add_22, no_Transplant
+289,DNMT3A, IDH2, no_Transplant
+290,ITD, DNMT3A, FLT3, no_Transplant
+291,NPM1, ITD, FLT3, FLT3_other, no_Transplant
+292,TP53, no_Transplant
+293,DNMT3A, NF1, no_Transplant
+294,ASXL1, CUX1, IDH1, no_Transplant
+295,ASXL1, BCOR, RUNX1, SRSF2, STAG2
+296,DNMT3A, IDH2, NRAS, no_Transplant
+297,FLT3, FLT3_other, t_15_17, add_8, no_Transplant
+298,NPM1, IDH2, no_Transplant
+299,NPM1, NRAS, no_Transplant
+300,TET2, no_Transplant
+301,PHF6
+302,NPM1, ITD, FLT3, RAD21, TET2, no_Transplant
+303,NPM1, DNMT3A, IDH1, NRAS, no_Transplant
+304,ITD, FLT3, RUNX1, SRSF2, TET2, no_Transplant
+305,BRAF, TET2, no_Transplant
+306,TP53, complex, del_5, del_17, no_Transplant
+307,NPM1, DNMT3A, FLT3, IDH1, FLT3_other
+308,ITD, FLT3, TET2, no_Transplant
+309,RUNX1, add_8
+310,NPM1, BCOR, PTPN11, no_Transplant
+311,ASXL1, NRAS, SRSF2, no_Transplant
+312,NRAS, TET2, no_Transplant
+313,NPM1, ITD, FLT3, TET2, no_Transplant
+314,TP53, complex, del_5, del_7, del_17, no_Transplant
+315,TP53, complex, del_5, del_7, no_Transplant
+316,FLT3, IDH2, FLT3_TKD, no_Transplant
+317,NPM1, ITD, DNMT3A, FLT3, TET2, no_Transplant
+318,NPM1, DNMT3A, TET2, no_Transplant
+319,NRAS, no_Transplant
+320,NPM1, ITD, FLT3, STAG2, WT1, no_Transplant
+321,RUNX1, add_8
+322,IDH1, TP53, complex, del_5, del_7, del_17, no_Transplant
+323,RUNX1, SRSF2, add_13, no_Transplant
+324,IDH2, TP53, del_5, no_Transplant
+325,IDH1, PHF6, RUNX1, SRSF2, complex, del_7, del_17, no_Transplant
+326,ITD, EZH2, FLT3, NRAS, RUNX1, STAG2, TET2, del_12, no_Transplant
+327,NPM1, ITD, DNMT3A, FLT3, IDH2, KDM6A, TET2, t_8_21, no_Transplant
+328,NPM1, CEBPA_bi, ITD, FLT3, TET2, no_Transplant
+329,CREBBP, DNMT3A
+330,IDH2, PHF6, PTPN11, add_13, no_Transplant
+331,SF3B1, no_Transplant
+332,IDH1, MLL, MPL, no_Transplant
+333,ITD, FLT3, KDM5A, FLT3_other, add_8, no_Transplant
+334,NPM1, ITD, SRSF2, TET2, no_Transplant
+335,ASXL1, STAG2, TET2, U2AF1, complex, add_8, no_Transplant
+336,RUNX1, TET2, no_Transplant
+337,NPM1, ITD, FLT3, IDH2, TET2, FLT3_other, no_Transplant
+338,NPM1, ITD, FLT3, RAD21, no_Transplant
+339,ITD, ASXL1, FLT3, PHF6, RUNX1, add_21, no_Transplant
+340,DNMT3A, PTPN11, TP53, complex, del_3, del_5, del_7, del_12, del_17, del_18, no_Transplant
+341,NPM1, ITD, FLT3, NRAS, RAD21, no_Transplant
+342,RUNX1, SRSF2, no_Transplant
+343,NPM1, ITD, FLT3, TET2, no_Transplant
+344,DNMT3A, IDH1, KIT, NRAS, RUNX1, no_Transplant
+345,IDH2, complex, add_8, no_Transplant
+346,NPM1, CBL, TET2, no_Transplant
+347,ASXL1, RUNX1, SRSF2
+348,ITD, FLT3, t_6_9, no_Transplant
+349,ITD, FLT3, SF3B1, TET2, TP53, del_5, add_8, no_Transplant
+350,ASXL1, NRAS, STAG2, add_8, no_Transplant
+351,BCOR, DNMT3A, NRAS, RUNX1, STAG2, TET2, add_8, no_Transplant
+352,NPM1, ITD, DNMT3A, FLT3, IDH2, PTPN11, no_Transplant
+353,ITD, FLT3, SF3B1, no_Transplant
+354,IDH1, SRSF2, STAG2, no_Transplant
+355,ASXL1, DNMT3A, IDH2, no_Transplant
+356,DNMT3A, EZH2, IDH2, no_Transplant
+357,DNMT3A, complex, del_12, minusy, add_8, no_Transplant
+358,IDH2, no_Transplant
+359,IDH2, SRSF2, no_Transplant
+360,TP53, complex, del_5, del_17, del_18, no_Transplant
+361,IDH2, RUNX1, no_Transplant
+362,NPM1, ITD, FLT3, TET2, no_Transplant
+363,DNMT3A, no_Transplant
+364,ITD, DNMT3A, FLT3, RUNX1, SRSF2, no_Transplant
+365,CBL, FLT3, MLL, STAG2, TET2, U2AF1, FLT3_TKD, no_Transplant
+366,DNMT3A, EZH2, STAG2, TET2, no_Transplant
+367,DNMT3A, EP300, IDH1, MLL, del_5, no_Transplant
+368,ITD, ASXL1, FLT3, STAG2, TET2, no_Transplant
+369,TP53, complex, del_5, del_17, add_8, add_11, add_13, add_21, add_22, no_Transplant
+370,CEBPA_bi
+371,NPM1, DNMT3A, FLT3, RAD21, FLT3_TKD
+372,WT1, inv_16, no_Transplant
+373,NPM1, DNMT3A, FLT3, NRAS, FLT3_other
+374,EZH2, TET2
+375,CEBPA_bi, FLT3, FLT3_TKD, t_15_17, no_Transplant
+376,ITD, FLT3, t_15_17, no_Transplant
+377,ITD, FLT3, FLT3_TKD, t_15_17, no_Transplant
+378,CEBPA_bi, CBL, KRAS
+379,ITD, FLT3, WT1, no_Transplant
+380,IDH2, MLL, del_20
+381,CEBPA_bi, WT1, no_Transplant
+382,EP300, t_15_17, no_Transplant
+383,FLT3, FLT3_other, t_9_11, add_8, no_Transplant
+384,ITD, FLT3, SRSF2, complex, del_9, add_8, add_13, no_Transplant
+385,ITD, FLT3
+386,NPM1, ATRX, DNMT3A, NRAS, no_Transplant
+387,NPM1, add_8
+388,ETV6, t_15_17
+389,NPM1, DNMT3A, IDH2, PTPN11
+390,DNMT3A, no_Transplant
+391,KIT, minusy
+392,NPM1, DNMT3A, FLT3, MLL, PTPN11, RB1, FLT3_TKD, FLT3_other
+393,FLT3, MLL2, NRAS, FLT3_TKD, inv_16, add_8, add_13, add_21
+394,ITD, FLT3, t_9_11, no_Transplant
+395,NRAS, no_Transplant
+396,FLT3, NRAS, PTEN, RAD21, FLT3_TKD
+397,NRAS, inv_16
+398,NRAS
+399,NPM1, DNMT3A, IDH1, NRAS
+400,NPM1, IDH1, NRAS, no_Transplant
+401,GATA2, NF1, del_5
+402,WT1
+403,KIT, RUNX1, TET2, no_Transplant
+404,NPM1, ITD, DNMT3A, FLT3, MLL, TET2, no_Transplant
+405,NPM1, DNMT3A, NRAS
+406,FLT3, FLT3_TKD, no_Transplant
+407,PTPN11, SRSF2, no_Transplant
+408,EZH2, KIT, KRAS, NRAS, t_8_21, minusy, no_Transplant
+409,NPM1, BCOR, MYC, PHF6, TET2
+410,TET2
+411,EZH2, NRAS, STAG2, no_Transplant
+412,NRAS, ZRSR2
+413,NPM1, ITD, DNMT3A, FLT3
+414,WT1
+415,NPM1, DNMT3A, PTPN11, del_9, no_Transplant
+416,SRSF2, WT1, t_15_17, no_Transplant
+417,SF1, complex, del_5, del_17
+418,NPM1, NRAS, no_Transplant
+419,NPM1, ITD, DNMT3A, FLT3, no_Transplant
+420,NRAS, RUNX1
+421,NPM1, NRAS, PTPN11
+422,NPM1, ITD, DNMT3A, FLT3
+423,ASXL1, t_8_21, del_7, no_Transplant
+424,NRAS, inv_16
+425,NPM1, ITD, DNMT3A, FLT3
+426,NPM1, NRAS, TET2, no_Transplant
+427,ASXL1
+428,ITD, KIT, t_8_21, minusy, no_Transplant
+429,NRAS
+430,KIT, RUNX1, complex, add_13
+431,NRAS, TP53, complex, del_3, del_5, del_7, del_12, del_17
+432,KRAS, inv_16, minusy, no_Transplant
+433,ITD, FLT3, STAG2, del_12, no_Transplant
+434,FLT3, MLL, RUNX1, FLT3_other
+435,NPM1, ITD, DNMT3A, FLT3, ZRSR2, no_Transplant
+436,ETV6, SF3B1, no_Transplant
+437,NPM1, ITD, FLT3, IDH1, MLL2
+438,NRAS, inv_16, no_Transplant
+439,NPM1, no_Transplant
+440,ITD, STAG2, TET2, complex
+441,TET2, TP53, U2AF1, no_Transplant
+442,ASXL1, EP300, KIT, RUNX1, SRSF2, add_8
+443,DNMT3A, NRAS, del_5, del_7, no_Transplant
+444,TP53, complex, del_3, del_5, del_12, del_20, add_13, no_Transplant
+445,ITD, STAG2, complex, del_5, del_7, del_17, del_18, minusy
+446,FBXW7, FLT3, FLT3_TKD
+447,CEBPA_bi
+448,FLT3, WT1, FLT3_TKD, t_15_17, del_17, add_8, no_Transplant
+449,CREBBP, no_Transplant
+450,NRAS, PTPN11, add_8
+451,CEBPA_bi, EP300
+452,NPM1, DNMT3A, FLT3, KRAS, FLT3_TKD, del_9
+453,FLT3, NRAS, inv_16
+454,TP53, complex, del_5, del_7, del_17, del_20, no_Transplant
+455,KIT, t_8_21, minusy, no_Transplant
+456,NPM1, ITD, DNMT3A, FLT3, TET2
+457,NPM1, IDH2, SRSF2, no_Transplant
+458,ITD, FLT3, t_15_17, no_Transplant
+459,IDH2, MLL, RUNX1
+460,BCOR, DNMT3A, IDH2, del_7
+461,DNMT3A, PTPN11, TP53, complex, del_3, del_5, del_7, del_12, del_17, no_Transplant
+462,NPM1, DNMT3A, NRAS
+463,CEBPA_bi, del_9, add_21
+464,CEBPA_bi, ITD, FLT3, WT1
+465,FLT3, FLT3_other, t_15_17, del_7, no_Transplant
+466,PTPN11, TP53, complex, del_5, del_7, del_17, del_20
+467,WT1, t_15_17
+468,ITD, CUX1, FLT3, KRAS, RAD21, TET2, t_9_11
+469,BCOR, DNMT3A, EZH2, IDH1, NRAS, RUNX1
+470,NPM1, ITD, DNMT3A, FLT3, no_Transplant
+471,NPM1, ITD, FLT3, RAD21, FLT3_TKD
+472,NPM1, ITD, FLT3, NRAS, RAD21, FLT3_TKD, t_8_21, minusy, no_Transplant
+473,RUNX1, complex, del_5, del_7, del_17, no_Transplant
+474,ITD, FLT3, RAD21, t_8_21, del_9
+475,CEBPA_bi, no_Transplant
+476,CEBPA_bi, ITD, FLT3, t_15_17, no_Transplant
+477,ASXL1, BCOR, PTPN11, inv_3, del_7, no_Transplant
+478,ETV6, IDH1, t_9_22, add_8
+479,SRSF2, add_8, no_Transplant
+480,MYC, PTPN11, SF3B1, add_8
+481,CBL, FLT3, FLT3_TKD, FLT3_other, t_8_21, minusy
+482,ITD, ASXL1, BCOR, NRAS, SRSF2, STAG2, TET2, add_8, no_Transplant
+483,DNMT3A, FLT3, MLL, RUNX1, FLT3_TKD, add_8
+484,ITD, FLT3, NRAS, WT1
+485,NRAS, inv_16
+486,KIT, inv_16
+487,IDH2, NRAS, del_7, no_Transplant
+488,MYC
+489,KRAS, NRAS, inv_16
+490,ITD, FLT3, t_8_21, minusy, no_Transplant
+491,ITD, FLT3, t_15_17, no_Transplant
+492,NPM1, ITD, EZH2, FLT3, NRAS, FLT3_TKD, no_Transplant
+493,CEBPA_bi, DNMT3A, GATA2, NRAS, no_Transplant
+494,NPM1, ITD, DNMT3A, FLT3, IDH1, TET2
+495,FLT3, FLT3_other
+496,CEBPA_bi
+497,NPM1, DNMT3A, MYC, PTPN11, no_Transplant
+498,FLT3, FLT3_TKD
+499,ITD, FLT3, RAD21, t_6_9, no_Transplant
+500,NPM1, ITD, FLT3, MLL2
+501,KRAS, t_6_9
+502,NPM1, ITD, FLT3, SF3B1, no_Transplant
+503,NPM1, DNMT3A, IDH1, NRAS, PTPN11, RAD21, no_Transplant
+504,NPM1, DNMT3A, FLT3, FLT3_TKD, no_Transplant
+505,DNMT3A, TP53, complex, del_5, del_7, del_17, add_21, no_Transplant
+506,FLT3, NRAS, inv_16
+507,ITD, FLT3, t_15_17, no_Transplant
+508,NPM1, ITD, FLT3
+509,ITD, FLT3, t_15_17, no_Transplant
+510,DNMT3A, KIT, inv_16
+511,TP53, complex, del_5, del_7, del_12, del_18, no_Transplant
+512,ITD, FLT3, t_15_17, del_7, no_Transplant
+513,ITD, BCOR, KRAS, NRAS, PHF6, RUNX1, no_Transplant
+514,ASXL1, GNAS, NRAS, RUNX1, SRSF2
+515,KIT, RAD21, t_8_21, no_Transplant
+516,NPM1, FLT3, FLT3_TKD, no_Transplant
+517,ITD, FLT3, TET2, no_Transplant
+518,IDH2, MLL, SRSF2, STAG2, no_Transplant
+519,NPM1, DNMT3A
+520,NPM1, BCOR, FLT3, PHF6, FLT3_TKD, no_Transplant
+521,ITD, FLT3, U2AF1, t_6_9
+522,KRAS, complex, del_9, del_12, add_8, no_Transplant
+523,NPM1, STAG2
+524,NPM1, ITD, DNMT3A, FLT3, MYC
+525,NRAS, TP53, complex, del_18
+526,NPM1, DNMT3A, RB1, TET2
+527,FLT3, no_Transplant
+528,JAK2, ZRSR2, del_20, add_8
+529,ASXL1, t_15_17, no_Transplant
+530,NPM1, ITD, FLT3, MLL2, WT1, no_Transplant
+531,NPM1, ITD, FLT3
+532,IDH2
+533,FLT3, WT1, FLT3_TKD, t_15_17, no_Transplant
+534,ASXL1, RUNX1, SRSF2, complex, del_7, no_Transplant
+535,MLL, RUNX1, complex, del_5, no_Transplant
+536,ITD, EZH2, FLT3, MLL2, RUNX1
+537,NPM1, IDH1, PTPN11, no_Transplant
+538,ASXL1, IDH1, TET2
+539,
+540,ASXL1, KRAS, inv_3, del_7, no_Transplant
+541,ITD, FLT3, NRAS, t_15_17, del_17, no_Transplant
+542,ITD, FLT3, t_15_17, no_Transplant
+543,DNMT3A, FLT3, MLL, STAG2, U2AF2, FLT3_other
+544,KRAS, no_Transplant
+545,EZH2, del_7
+546,FLT3, TP53, FLT3_other, t_9_11, add_8
+547,NPM1, ITD, FLT3, SF3A1
+548,NRAS, del_7
+549,ITD, FLT3, PHF6, TET2, FLT3_TKD, t_6_9, no_Transplant
+550,ITD, DNMT3A, FLT3, FLT3_TKD
+551,NPM1, ITD, DNMT3A, FLT3, NF1, TET2, FLT3_TKD
+552,NRAS, RUNX1
+553,IDH2, U2AF1, add_8, no_Transplant
+554,FLT3, TET2, FLT3_TKD, no_Transplant
+555,NPM1, ITD, FLT3, IDH1, no_Transplant
+556,ITD, FLT3, PTPN11, no_Transplant
+557,ITD, FLT3, NRAS, WT1, FLT3_other, inv_16, add_8
+558,ITD, FLT3, NRAS, FLT3_TKD, minusy
+559,NPM1, DNMT3A, NRAS
+560,CEBPA_bi, KIT, NRAS, WT1
+561,FLT3, RAD21, FLT3_TKD, t_8_21, add_8, no_Transplant
+562,CEBPA_bi, FLT3, GATA2, FLT3_other
+563,MLL3, no_Transplant
+564,CEBPA_bi, EZH2
+565,NPM1, ITD, FLT3, WT1
+566,NPM1, FLT3, FLT3_TKD, no_Transplant
+567,FLT3, FLT3_TKD, del_3
+568,NPM1, ITD, DNMT3A, FLT3
+569,DNMT3A, MLL, no_Transplant
+570,DNMT3A, IDH2, STAG2, add_8
+571,DNMT3A, NRAS, del_3, del_7
+572,NPM1, ITD, DNMT3A, FLT3, IDH2, MYC
+573,ITD, FLT3, MLL
+574,NPM1, ITD, DNMT3A, FLT3
+575,KRAS, t_15_17, add_8, no_Transplant
+576,ASXL1, IDH2
+577,NPM1, ITD, NRAS, no_Transplant
+578,ETV6, NRAS, t_8_21, no_Transplant
+579,CEBPA_bi, GATA2, NRAS, WT1, add_21
+580,NPM1, KIT, minusy, no_Transplant
+581,NPM1, ITD, FLT3, RAD21, no_Transplant
+582,PHF6
+583,NPM1, ITD, FLT3, RAD21, FLT3_TKD, no_Transplant
+584,NPM1, PTPN11, TET2, no_Transplant
+585,ITD, GATA2, MYC
+586,NPM1, MYC, PTPN11, no_Transplant
+587,NPM1, ITD, DNMT3A, FLT3, FLT3_TKD, no_Transplant
+588,ITD, FLT3, KDM5A, t_8_21
+589,DNMT3A, TP53, complex, del_5, del_17, del_18, add_11
+590,ITD, FLT3, NRAS, t_15_17, no_Transplant
+591,NPM1, DNMT3A, FLT3, KIT, WT1, FLT3_TKD, no_Transplant
+592,NPM1, DNMT3A, PTPN11, no_Transplant
+593,FLT3, KIT, FLT3_TKD, inv_16, del_7, add_22
+594,ATRX, PTPN11, t_9_11
+595,EZH2, del_7
+596,ASXL1, EZH2, FLT3, IDH2, JAK2, U2AF1, add_8
+597,ITD, IDH1
+598,NPM1, ITD, DNMT3A, FLT3
+599,NPM1, ITD, FLT3, PHF6, TET2, no_Transplant
+600,NPM1, IDH2, PTPN11, no_Transplant
+601,KRAS, MLL, TP53, complex, del_5, del_17, no_Transplant
+602,FLT3, U2AF1, FLT3_TKD, add_22, no_Transplant
+603,PHF6, inv_3
+604,NRAS, inv_16
+605,NPM1, DNMT3A, IDH2, KRAS, NRAS
+606,SRSF2, TET2
+607,FLT3, FLT3_TKD, del_7, no_Transplant
+608,NPM1, ITD, DNMT3A, FLT3, no_Transplant
+609,ITD, FLT3, t_15_17, no_Transplant
+610,NPM1, ITD, DNMT3A, FLT3
+611,FLT3, FLT3_TKD, t_15_17
+612,JAK2, TP53, complex, del_7, del_17, add_13, no_Transplant
+613,NRAS, t_8_21, add_8, no_Transplant
+614,FLT3, FLT3_other, no_Transplant
+615,GATA2, SF3B1, del_3
+616,CEBPA_bi
+617,NPM1, FLT3, FLT3_TKD
+618,DNMT3A, IDH2, no_Transplant
+619,DNMT3A, IDH2, no_Transplant
+620,CEBPA_bi, ITD, FLT3, WT1
+621,NPM1, ITD, DNMT3A, IDH1, NRAS
+622,IDH2, NRAS, del_3, del_7
+623,TP53, complex, del_3, del_9, del_17, no_Transplant
+624,ITD, FLT3, t_6_9
+625,KRAS, inv_16, del_12
+626,ASXL1, PTPN11, RUNX1, U2AF1
+627,NRAS, inv_16, add_21
+628,DNMT3A, IDH2, STAG2, del_7
+629,ITD, DNMT3A, FLT3, MLL, RUNX1
+630,NPM1, ASXL1, ATRX, FLT3, STAG2, FLT3_other
+631,NPM1, DNMT3A, IDH1, PTPN11
+632,EZH2, IDH1, NF1, STAG2, U2AF1, no_Transplant
+633,ITD, FLT3, FLT3_TKD, t_15_17, no_Transplant
+634,ITD, DNMT3A, FLT3, MLL
+635,CEBPA_bi, GATA2, NRAS, WT1
+636,ITD, FLT3, add_8
+637,CEBPA_bi, WT1
+638,ITD, FLT3, TET2
+639,NPM1, ITD, FLT3, WT1
+640,NPM1, ITD, DNMT3A, FLT3, IDH1, PTPN11, no_Transplant
+641,NPM1, DNMT3A, NRAS, PTPN11, RAD21, add_8
+642,NPM1, ITD, FLT3, MLL5, TET2, FLT3_TKD, no_Transplant
+643,NPM1, DNMT3A, FLT3, MYC, FLT3_other
+644,IDH2, MLL, WT1, no_Transplant
+645,ITD, FLT3
+646,IDH1, RUNX1, no_Transplant
+647,FLT3, FLT3_TKD, FLT3_other, inv_16, no_Transplant
+648,CEBPA_bi, ITD, FLT3, GATA2, NRAS, WT1, del_9
+649,IDH2, MLL, STAG2
+650,ITD, DNMT3A, FLT3, IDH1, add_8, no_Transplant
+651,CEBPA_bi, ITD, EZH2, FLT3, RAD21
+652,RUNX1, STAG2, TET2, WT1, no_Transplant
+653,ITD, FLT3, KIT, FLT3_other
+654,NPM1, ITD, DNMT3A, FLT3, no_Transplant
+655,NPM1, NRAS, RAD21, no_Transplant
+656,NPM1, FLT3, GATA2, FLT3_TKD, no_Transplant
+657,ITD, FLT3, IDH1
+658,NPM1, CBL, DNMT3A, no_Transplant
+659,NPM1, ITD, FLT3
+660,ITD, EZH2, FLT3, RAD21, RUNX1, FLT3_TKD, add_8, no_Transplant
+661,NPM1, FLT3, IDH1, FLT3_TKD
+662,ITD, FLT3, t_6_9
+663,FLT3, FLT3_TKD, inv_16, add_22, no_Transplant
+664,NPM1, ITD, FLT3, NF1, WT1, no_Transplant
+665,NPM1, BCOR, IDH2, NRAS, RUNX1, WT1
+666,ITD, KRAS, complex, del_3, del_5, del_7, del_17
+667,KIT, RAD21, t_8_21
+668,CEBPA_bi, del_9
+669,NPM1, IDH2, KRAS, no_Transplant
+670,ITD, FLT3, no_Transplant
+671,NPM1, DNMT3A, EP300, FLT3, FLT3_TKD, no_Transplant
+672,ITD, FLT3, WT1
+673,ITD, FLT3, t_15_17, no_Transplant
+674,BCOR, IDH2, KRAS, SRSF2, no_Transplant
+675,TP53, complex, del_5, del_7, del_17, del_18, del_20
+676,ITD, DNMT3A, FLT3, no_Transplant
+677,NPM1, DNMT3A, IDH2, NRAS, SRSF2
+678,FLT3, KIT, NRAS, FLT3_TKD, inv_16
+679,NPM1, DNMT3A, IDH2, KIT, no_Transplant
+680,KRAS, PHF6, U2AF1, WT1
+681,FLT3, IDH2, MLL, NRAS, FLT3_TKD, del_7, no_Transplant
+682,NPM1, DNMT3A, NRAS
+683,FLT3, FLT3_TKD, add_8
+684,NPM1, DNMT3A, TET2
+685,TP53, complex, del_5, del_7, del_17, del_18
+686,ASXL1, BCOR, NRAS, SRSF2, STAG2, no_Transplant
+687,ITD, WT1, add_8
+688,FLT3, FLT3_TKD, add_8
+689,NPM1, DNMT3A, FLT3, WT1, FLT3_other, no_Transplant
+690,KIT, inv_16
+691,NPM1, ITD, FLT3
+692,CEBPA_bi, WT1
+693,FLT3, NRAS, STAG2, FLT3_TKD, inv_16
+694,KRAS, MLL, NRAS, STAG2, no_Transplant
+695,NPM1, CEBPA_bi, ITD, FLT3, IDH2, FLT3_TKD, no_Transplant
+696,BCOR, RUNX1
+697,NPM1, MYC, TET2
+698,NPM1, ITD, DNMT3A, FLT3, TP53, no_Transplant
+699,DNMT3A, ETV6, KRAS, U2AF1, inv_3, del_7, no_Transplant
+700,ETV6, NRAS, del_7
+701,FLT3, WT1, FLT3_TKD, t_15_17, add_8, no_Transplant
+702,NPM1, ITD, FLT3, RAD21, no_Transplant
+703,ITD, NRAS, WT1, no_Transplant
+704,NPM1, ITD, FLT3, PTPN11, STAG2
+705,NPM1, DNMT3A, IDH1, IDH2
+706,NPM1, DNMT3A, GATA2, RAD21
+707,ITD, CBL, FLT3, t_15_17, add_8, no_Transplant
+708,NPM1, EP300, IDH1, NRAS, no_Transplant
+709,PTPN11, complex, del_7
+710,KIT, NRAS, inv_16, add_22
+711,NRAS, TP53, inv_16, t_9_11, del_17, add_8, no_Transplant
+712,KIT, TET2, t_8_21, no_Transplant
+713,ITD, FLT3, FLT3_other, t_15_17, no_Transplant
+714,ITD, ASXL1, FLT3, RUNX1, add_8, no_Transplant
+715,MLL3, t_15_17, no_Transplant
+716,SF3B1, minusy, no_Transplant
+717,DNMT3A, EZH2, t_8_21, minusy
+718,ASXL1, EZH2, FLT3, MLL, FLT3_TKD, no_Transplant
+719,ASXL1, EZH2, TET2, ZRSR2, add_8
+720,KDM6A, KIT, t_8_21, no_Transplant
+721,CEBPA_bi, GATA2, minusy
+722,ASXL1, DNMT3A, IDH2, PHF6, RUNX1
+723,BCOR, DNMT3A, FLT3, RUNX1, SF3B1, FLT3_other, no_Transplant
+724,ITD, ASXL1, FLT3, RUNX1, SRSF2
+725,KRAS, inv_16
+726,FLT3, FLT3_TKD, inv_16, add_22, no_Transplant
+727,IDH2, MLL, SRSF2, STAG2, add_21, no_Transplant
+728,ITD, KDM6A
+729,NPM1, ITD, FLT3, no_Transplant
+730,NPM1, no_Transplant
+731,CEBPA_bi, NRAS, TET2, no_Transplant
+732,NPM1, ITD, DNMT3A, FLT3, no_Transplant
+733,ITD, FLT3
+734,EZH2, t_15_17, no_Transplant
+735,NRAS, SF3B1, complex, del_3, del_5, del_20
+736,DNMT3A, KRAS, MLL
+737,PHF6, add_8
+738,FLT3, KIT, NRAS, FLT3_TKD, inv_16, add_8, no_Transplant
+739,DNMT3A, NRAS, RUNX1, inv_3, del_7, no_Transplant
+740,EP300, KDM6A, NRAS, RUNX1, STAG2, TP53, del_5, add_8, no_Transplant
+741,FLT3, FLT3_TKD, complex, del_20
+742,NRAS, del_9
+743,ASXL1, IDH2, NRAS, inv_16, no_Transplant
+744,EP300, TP53, complex, del_5, del_17
+745,IDH1, PHF6, RUNX1, SRSF2, add_8, add_11
+746,IDH2, complex
+747,NPM1, ITD, DNMT3A, FLT3
+748,NF1, NRAS, TET2, inv_16
+749,ITD, FLT3, MLL, STAG2, del_12
+750,FLT3, FLT3_other, t_15_17, no_Transplant
+751,NPM1, ITD, DNMT3A, FLT3
+752,NF1, TET2, WT1, t_8_21
+753,ITD, CBL, FLT3, complex, del_9, del_12, del_17, no_Transplant
+754,NPM1, TET2, no_Transplant
+755,NPM1, DNMT3A, IDH1, no_Transplant
+756,IDH2, NF1, no_Transplant
+757,ITD, FLT3, WT1, no_Transplant
+758,NPM1, ITD, DNMT3A, FLT3
+759,NPM1, DNMT3A, add_8, no_Transplant
+760,BCOR, NRAS, PTPN11, del_5, no_Transplant
+761,NPM1, no_Transplant
+762,NPM1, DNMT3A, IDH2
+763,NPM1, DNMT3A
+764,CEBPA_bi, GATA2, KIT, NRAS, no_Transplant
+765,NPM1, ITD, DNMT3A, FLT3, PHF6
+766,CEBPA_bi, DNMT3A, IDH1, MYC, NRAS
+767,NRAS, inv_16
+768,NPM1, BCOR, FLT3, FLT3_TKD
+769,KRAS, PTPN11
+770,DNMT3A, IDH2, RUNX1
+771,NRAS, RUNX1
+772,NPM1, DNMT3A, IDH2
+773,ITD, FLT3, IDH1, MYC, RUNX1
+774,TP53, no_Transplant
+775,NPM1, ITD, DNMT3A, FLT3, MYC, no_Transplant
+776,NPM1, ITD, DNMT3A, FLT3, PTPN11, no_Transplant
+777,ITD, FLT3, add_8
+778,EZH2, PHF6, complex, del_7, del_9, del_12, add_21, add_22
+779,ITD, FLT3, MLL, RUNX1, complex, del_5
+780,CEBPA_bi, TET2
+781,FLT3, IDH1, NRAS, SRSF2, FLT3_other, add_8
+782,ITD, CREBBP, DNMT3A, FLT3, FLT3_TKD
+783,NPM1
+784,ITD, FLT3, complex, del_5
+785,NPM1, DNMT3A, FLT3, FLT3_TKD, add_8
+786,NPM1, DNMT3A, TET2
+787,RUNX1, SRSF2, del_17, no_Transplant
+788,NPM1, ITD, CBL, FLT3, PTEN, RAD21, TET2, no_Transplant
+789,NPM1, ITD, FLT3, TET2
+790,FLT3, NRAS, FLT3_TKD, inv_16, no_Transplant
+791,ASXL1, IDH2, RUNX1, SRSF2, no_Transplant
+792,BCOR, DNMT3A, EZH2, FLT3, STAG2, FLT3_other
+793,CEBPA_bi, IDH2
+794,NPM1, no_Transplant
+795,NPM1, ITD, FLT3, PTPN11, RAD21, TET2, no_Transplant
+796,DNMT3A, MLL3, TP53, complex, del_3, del_18, del_20
+797,NPM1, EZH2, TET2
+798,BCOR, NRAS, inv_3, del_7
+799,ITD, FLT3, t_8_21, del_9, no_Transplant
+800,PHF6, complex, no_Transplant
+801,NPM1, ITD, DNMT3A, FLT3, NRAS, FLT3_TKD
+802,NPM1, DNMT3A, PTPN11, RAD21
+803,BCOR, GATA2, NF1, inv_3
+804,NPM1, ITD, FLT3
+805,KRAS, ZRSR2, complex, del_12, add_8, no_Transplant
+806,KIT, NRAS, t_8_21
+807,BCOR, IDH2, SRSF2
+808,DNMT3A, NF1, no_Transplant
+809,KIT, MLL3, t_8_21, minusy
+810,NPM1, DNMT3A, GATA2, NRAS
+811,NRAS, inv_16
+812,NRAS, inv_16, minusy, no_Transplant
+813,ITD, NRAS, inv_16, add_8, add_13, add_22, no_Transplant
+814,NRAS, inv_16, no_Transplant
+815,CEBPA_bi, NRAS, PTPN11, del_7, no_Transplant
+816,NRAS
+817,NPM1, KRAS, PTPN11, no_Transplant
+818,DNMT3A, IDH2
+819,NPM1, ITD, DNMT3A, FLT3, IDH2
+820,NRAS
+821,KRAS, inv_3, del_7
+822,NPM1, ITD, FLT3, IDH1, PTPN11, TET2, no_Transplant
+823,NPM1, DNMT3A, NF1, RAD21
+824,DNMT3A, NRAS, SF3B1, U2AF1, inv_3, del_7
+825,ITD, FLT3, no_Transplant
+826,NPM1, CDKN2A, FLT3, FLT3_TKD, complex, del_12, add_8
+827,SRSF2
+828,BRAF, MLL, del_9, no_Transplant
+829,DNMT3A, IDH1, del_7
+830,ITD, FLT3, no_Transplant
+831,ETV6, EZH2, KRAS, SH2B3, no_Transplant
+832,ITD, DNMT3A, FLT3, MLL, RUNX1
+833,NPM1, DNMT3A, NF1, no_Transplant
+834,CEBPA_bi, DNMT3A, no_Transplant
+835,NPM1, ITD, DNMT3A, FLT3
+836,ITD, FLT3, KDM5A, RUNX1
+837,NPM1, DNMT3A, PTPN11
+838,U2AF1, del_12, del_20
+839,NPM1, ITD, DNMT3A, FLT3, IDH1
+840,NPM1, DNMT3A, IDH1, KRAS, NRAS
+841,NPM1, ITD, DNMT3A, FLT3
+842,CEBPA_bi, WT1
+843,CBL, add_8, add_11, no_Transplant
+844,NPM1, DNMT3A, TET2
+845,BRAF, FLT3, SF3B1, TP53, FLT3_other, complex, del_5, del_7, del_9, del_18, add_11, no_Transplant
+846,RUNX1
+847,NPM1, FLT3, IDH1, IDH2, FLT3_TKD
+848,NRAS, no_Transplant
+849,NPM1, ITD, FLT3, no_Transplant
+850,FLT3, FLT3_TKD, inv_16, no_Transplant
+851,CEBPA_bi, del_9
+852,NPM1, IDH1, no_Transplant
+853,BCOR, CREBBP, RUNX1
+854,DNMT3A, MLL, NRAS, TET2, U2AF1, no_Transplant
+855,NPM1, DNMT3A, FLT3, IDH2, PTPN11, FLT3_other, no_Transplant
+856,CEBPA_bi
+857,NPM1, TET2, no_Transplant
+858,NPM1, DNMT3A, IDH1, NRAS, PTPN11, no_Transplant
+859,DNMT3A, IDH2, add_8, no_Transplant
+860,ITD, WT1
+861,NPM1, ITD, DNMT3A, FLT3, TET2, no_Transplant
+862,NPM1, ITD, DNMT3A, FLT3
+863,
+864,SF3B1
+865,NPM1, ITD, DNMT3A, FLT3, no_Transplant
+866,NPM1, FLT3, FLT3_other, add_8
+867,NRAS, inv_16, add_8, add_21, add_22, no_Transplant
+868,FLT3, FLT3_TKD, inv_16, add_22, no_Transplant
+869,NPM1, ITD, IDH2
+870,NPM1, DNMT3A, FLT3, TET2, FLT3_TKD, add_8
+871,TP53, complex, del_3, del_5, del_7, del_9, del_12, del_17
+872,NPM1, DNMT3A, IDH1
+873,WT1, t_8_21, del_9
+874,NPM1, ITD, DNMT3A, FLT3, PHF6
+875,IDH2
+876,IDH1, no_Transplant
+877,NPM1, ITD, DNMT3A, FLT3
+878,NPM1, ITD, FLT3, KRAS, MYC, no_Transplant
+879,NPM1, ITD, FLT3, no_Transplant
+880,ETV6, NRAS, U2AF1, ZRSR2
+881,NPM1, DNMT3A
+882,NPM1, DNMT3A, FLT3, IDH2, FLT3_other
+883,NPM1, DNMT3A, KRAS
+884,PTPN11, inv_3, del_7
+885,KRAS, PHF6, PTPN11, inv_3, del_7, no_Transplant
+886,TP53, complex, del_5, del_7, del_17, no_Transplant
+887,NPM1, ITD, ASXL1, DNMT3A, FLT3, KRAS, RAD21, no_Transplant
+888,FLT3, FLT3_other, inv_16
+889,FLT3, IDH1, MYC, FLT3_TKD, del_9, add_8
+890,ITD, FLT3, NRAS, TET2, no_Transplant
+891,FLT3, PHF6
+892,STAG2, no_Transplant
+893,BCOR, IDH2, add_8, no_Transplant
+894,ITD, FLT3, WT1, add_8
+895,ASXL1, RUNX1, del_7
+896,NPM1, ITD, DNMT3A, FLT3, TET2, add_8
+897,CEBPA_bi, FBXW7, RAD21, no_Transplant
+898,ITD, FLT3, RUNX1
+899,KIT, NRAS, TET2, add_8
+900,CEBPA_bi, TET2, no_Transplant
+901,KIT, NRAS, t_8_21, del_9, minusy, no_Transplant
+902,NPM1, DNMT3A, NF1, NRAS, no_Transplant
+903,ITD, FLT3, IDH1, RUNX1, del_7, no_Transplant
+904,WT1, del_9
+905,NRAS, U2AF1
+906,ITD, FLT3
+907,EZH2, t_8_21, del_9, minusy, no_Transplant
+908,ETV6, FLT3, NRAS, FLT3_other, complex, del_7, del_20
+909,NPM1, ITD, FLT3, GATA2, NRAS
+910,IDH2, no_Transplant
+911,NPM1, FLT3, NRAS, SF1, FLT3_other, no_Transplant
+912,NPM1, ASXL1, no_Transplant
+913,NPM1, IDH1, no_Transplant
+914,ITD, DNMT3A, EZH2, FLT3, NRAS, PTPN11, RUNX1, TET2, del_7
+915,NPM1, IDH1, SRSF2, del_9, no_Transplant
+916,NPM1, DNMT3A, NRAS
+917,CBL, EZH2, KIT, t_8_21, minusy
+918,NPM1, ITD, DNMT3A, FLT3
+919,NPM1, ITD, DNMT3A, FLT3
+920,FLT3, IDH2, FLT3_other
+921,NPM1, FLT3, RAD21, FLT3_TKD, no_Transplant
+922,NPM1, ITD, DNMT3A, FLT3
+923,PHF6, STAG2
+924,SRSF2, STAG2, TET2, no_Transplant
+925,CBL, SF3B1, add_8
+926,NPM1, ITD, FLT3
+927,FLT3, RUNX1, FLT3_TKD
+928,CEBPA_bi, GATA2, PTPN11, no_Transplant
+929,RAD21, t_9_11, no_Transplant
+930,ITD, FLT3
+931,NPM1, CBL, NRAS, no_Transplant
+932,NPM1, DNMT3A, RAD21
+933,ITD, DNMT3A, FLT3
+934,ITD, FLT3, no_Transplant
+935,NPM1, DNMT3A, FLT3, FLT3_TKD
+936,NPM1, ITD, FLT3
+937,FLT3
+938,NPM1, NRAS, TET2, no_Transplant
+939,CEBPA_bi, EP300, NRAS, no_Transplant
+940,NRAS, inv_16, del_7, add_8, add_22
+941,NPM1, DNMT3A, FLT3, IDH1, SRSF2, FLT3_other, no_Transplant
+942,NRAS, PTPN11
+943,ITD, FLT3, TET2
+944,SF3B1
+945,NPM1, ITD, DNMT3A, FLT3, IDH1, IDH2, FLT3_TKD, no_Transplant
+946,NPM1, ITD, FLT3, TET2, FLT3_other
+947,KIT, inv_16
+948,U2AF1
+949,NPM1, DNMT3A, FLT3, FLT3_other
+950,NPM1, ITD, DNMT3A, FLT3, TET2
+951,TP53, no_Transplant
+952,NPM1, ITD, DNMT3A, FLT3
+953,ASXL1, KDM6A, RUNX1, SF3B1, TET2, minusy, no_Transplant
+954,FLT3
+955,DNMT3A, TET2
+956,NPM1, ITD, DNMT3A, FLT3, IDH2
+957,NPM1, NRAS, add_21
+958,FLT3, MYC, RUNX1, SRSF2, FLT3_other, add_13
+959,ITD, DNMT3A, FLT3, PTPN11, FLT3_TKD, del_7
+960,NPM1, ITD, DNMT3A, NRAS, no_Transplant
+961,NPM1, KIT, TET2, complex, add_8, add_21
+962,MLL
+963,NPM1, ITD, DNMT3A, FLT3
+964,NPM1, ITD, DNMT3A, FLT3, IDH1, NRAS
+965,CEBPA_bi, ETV6, MLL, WT1
+966,NPM1, ITD, FLT3, IDH1
+967,PTPN11, STAG2, del_7
+968,NPM1, ITD, FLT3, IDH2, no_Transplant
+969,KIT, t_8_21, del_9
+970,FLT3
+971,NPM1, TET2, add_13, no_Transplant
+972,NPM1, DNMT3A, FLT3, NF1, FLT3_TKD, no_Transplant
+973,NPM1, PTPN11, no_Transplant
+974,NPM1, ITD, DNMT3A, FLT3
+975,DNMT3A, MLL, RUNX1
+976,del_9
+977,SRSF2, TET2, del_3, no_Transplant
+978,KRAS, MLL2, TET2
+979,ASXL1, MLL, TET2
+980,NPM1, ITD, CBL, DNMT3A, FLT3
+981,ASXL1, TP53, no_Transplant
+982,RUNX1
+983,NPM1, DNMT3A, KRAS, NRAS, no_Transplant
+984,ASXL1, FLT3, FLT3_other, t_9_11
+985,NPM1, NRAS, TET2
+986,FLT3, FLT3_TKD
+987,ITD, FLT3, t_15_17, no_Transplant
+988,NPM1, DNMT3A, TET2
+989,NPM1, EP300, FLT3, PTPN11, RAD21
+990,NPM1, ITD, ASXL1, FLT3, IDH2, PTPN11, STAG2, FLT3_TKD, del_9
+991,NPM1, DNMT3A, FLT3, IDH2, FLT3_TKD
+992,FLT3, FLT3_TKD, no_Transplant
+993,CEBPA_bi
+994,FLT3, MLL, NRAS, RUNX1, SRSF2, STAG2, FLT3_TKD, no_Transplant
+995,FLT3, WT1, FLT3_TKD, t_15_17, no_Transplant
+996,NPM1, ITD, FLT3, TET2
+997,JAK2, t_8_21, minusy, no_Transplant
+998,NRAS, inv_16, no_Transplant
+999,ITD, FLT3, MLL2, FLT3_other, del_3
+1000,ITD, FLT3, FLT3_other, t_15_17, no_Transplant
+1001,TP53, complex, del_5, del_17, del_18
+1002,NPM1, ITD, FLT3, TET2
+1003,IDH1, JAK2, PHF6, RUNX1, no_Transplant
+1004,IDH1, RUNX1, SRSF2, add_8, no_Transplant
+1005,DNMT3A, IDH1, KRAS
+1006,NPM1, ASXL1, DNMT3A, IDH1, KDM5A, MLL, NRAS
+1007,NPM1, ITD, DNMT3A, FLT3, IDH2, no_Transplant
+1008,NPM1, DNMT3A, NRAS, PTPN11
+1009,TP53, complex, del_5, del_7, del_12, del_17, del_20, add_8
+1010,NRAS
+1011,NRAS, WT1, t_15_17, add_8, no_Transplant
+1012,IDH1, PHF6, no_Transplant
+1013,FBXW7, KIT
+1014,KDM5A, t_15_17, add_21, no_Transplant
+1015,NPM1, FLT3, FLT3_TKD, no_Transplant
+1016,CEBPA_bi, DNMT3A, IDH2
+1017,MLL, U2AF1
+1018,ITD, FLT3
+1019,JAK2, NRAS, complex, add_21, no_Transplant
+1020,ASXL1, KDM5A, t_9_11, add_8
+1021,ITD, FLT3, WT1, t_15_17, del_3, no_Transplant
+1022,NRAS, inv_16, del_7, add_8
+1023,NPM1, ITD, FLT3, GATA2, no_Transplant
+1024,KIT, TP53, complex, del_7, add_11, no_Transplant
+1025,NPM1, ITD, FLT3, RUNX1
+1026,DNMT3A, SRSF2, add_8
+1027,ITD, DNMT3A, FLT3, no_Transplant
+1028,NPM1, ATRX, DNMT3A, IDH1, KRAS, PTPN11
+1029,NPM1, ITD, FLT3, IDH1, no_Transplant
+1030,BCOR, NF1, RUNX1
+1031,CBL, MLL2, inv_16
+1032,BRAF, ETV6, no_Transplant
+1033,TP53, complex, del_5, del_18, add_8, no_Transplant
+1034,NPM1, DNMT3A, FLT3, FLT3_TKD, no_Transplant
+1035,FLT3, IDH2, TET2, FLT3_other
+1036,NPM1, DNMT3A, NRAS, PTPN11
+1037,NPM1, ITD, DNMT3A, FLT3
+1038,FLT3, NRAS, ZRSR2, FLT3_TKD, FLT3_other, no_Transplant
+1039,NPM1, FLT3, no_Transplant
+1040,CUX1, NRAS, U2AF1, complex, add_8
+1041,NPM1, DNMT3A, MYC, PTPN11
+1042,NPM1, DNMT3A, FLT3, RAD21, FLT3_other
+1043,KRAS, NRAS, t_9_11
+1044,CDKN2A, NRAS, del_5, del_7
+1045,NPM1, DNMT3A, no_Transplant
+1046,TP53, complex, del_12, no_Transplant
+1047,NRAS, TP53, complex, del_7, del_9, del_17, no_Transplant
+1048,DNMT3A, IDH2, TP53, complex, del_7, del_17, no_Transplant
+1049,KIT, t_8_21, minusy
+1050,FLT3, JAK2, MLL, RUNX1, SRSF2, FLT3_TKD, add_8
+1051,NPM1, ITD, DNMT3A, FLT3
+1052,ASXL1, IDH2, MLL, NF1, STAG2
+1053,RUNX1, del_9, add_13
+1054,CEBPA_bi, ITD, FLT3, minusy, no_Transplant
+1055,U2AF1, no_Transplant
+1056,NPM1, NRAS, TET2, no_Transplant
+1057,KIT, inv_16, no_Transplant
+1058,NPM1, ITD, DNMT3A, FLT3, IDH1, NRAS, FLT3_TKD
+1059,FLT3, KIT, inv_16
+1060,DNMT3A, IDH2
+1061,
+1062,ASXL1, KDM5A, U2AF1, WT1, del_7, add_22
+1063,ITD, FLT3, MLL, U2AF1, FLT3_other
+1064,EZH2, RUNX1
+1065,PHF6, PTPN11, inv_3, del_7
+1066,ITD, ASXL1, BCOR, no_Transplant
+1067,PTPN11, del_7
+1068,NPM1, ITD, CBL, PTPN11
+1069,DNMT3A, IDH1, MLL, NRAS
+1070,TP53, complex, del_5, del_17, add_8
+1071,ASXL1, CBLB, DNMT3A, complex, del_3
+1072,CBL, DNMT3A, IDH2, SF3B1
+1073,ASXL1, EP300, MLL2
+1074,CEBPA_bi
+1075,ITD, CUX1, FLT3, RUNX1, WT1, FLT3_TKD
+1076,NRAS, RUNX1, SRSF2
+1077,NPM1, DNMT3A, FLT3, FLT3_TKD, no_Transplant
+1078,CUX1, MLL, TP53, complex, del_5, del_18, del_20, no_Transplant
+1079,ITD, FLT3, NF1, TET2
+1080,FLT3, WT1, FLT3_other, no_Transplant
+1081,ASXL1, NRAS, TP53, complex, del_5, del_12, del_17
+1082,NPM1, DNMT3A, NRAS, RAD21, TET2, no_Transplant
+1083,NPM1, FLT3, IDH1, FLT3_other, no_Transplant
+1084,DNMT3A, SRSF2, del_7, del_18
+1085,KIT, RAD21, t_8_21, no_Transplant
+1086,PTPN11, TP53, complex, del_3, del_5, del_7, del_18, del_20, minusy, add_11
+1087,NPM1, ITD, DNMT3A, FLT3, IDH2, PTPN11
+1088,NPM1, ITD, BRAF, FLT3, WT1, no_Transplant
+1089,GATA2, NRAS, SF3B1, del_3, del_12
+1090,FLT3, NRAS, PTPN11, U2AF1, FLT3_other
+1091,NPM1, DNMT3A, IDH2
+1092,IDH2, MLL, NRAS, STAG2
+1093,RUNX1
+1094,KDM6A, KIT, NF1, t_8_21
+1095,BCOR, DNMT3A, IDH2, RUNX1, SRSF2, STAG2, del_12
+1096,NPM1, IDH2, no_Transplant
+1097,NPM1, ITD, DNMT3A, FLT3, RAD21
+1098,ITD, FLT3, t_6_9
+1099,ITD, FLT3, t_6_9, no_Transplant
+1100,TP53, complex, del_5, del_9, del_12, add_11, no_Transplant
+1101,FLT3, SF3B1, FLT3_other, add_8
+1102,ASXL1, KRAS, NRAS, RUNX1, complex, del_3, del_7, del_12, no_Transplant
+1103,MLL3, t_8_21
+1104,NRAS, TP53, complex, del_12
+1105,NPM1, DNMT3A, FLT3, IDH2, NF1, ZRSR2, FLT3_other
+1106,NF1, complex, del_3, add_8
+1107,NF1, TP53, t_8_21
+1108,TET2, no_Transplant
+1109,NPM1, ITD, DNMT3A
+1110,NPM1, DNMT3A, PTPN11, TET2, no_Transplant
+1111,ITD, ETV6, t_8_21, del_9, no_Transplant
+1112,NRAS, complex, del_7, add_8, add_13, add_21, add_22
+1113,ITD, FLT3, KIT
+1114,NPM1, ITD, DNMT3A, FLT3, KRAS, NRAS, PTPN11
+1115,KRAS, NF1, inv_16
+1116,NPM1, SRSF2, complex, del_3, del_5, del_7, del_9, del_12, del_17
+1117,NPM1, ITD, FLT3
+1118,EZH2, FLT3, RUNX1, ZRSR2, FLT3_other, add_8
+1119,MLL3, complex, del_5, del_12
+1120,FLT3, TET2, FLT3_TKD
+1121,TP53, complex, del_3, del_5, del_7, del_17, del_20
+1122,NPM1, ITD, FLT3, IDH2
+1123,NRAS, PTPN11, inv_16, del_7, add_8, no_Transplant
+1124,JAK2, MLL3, RUNX1, SRSF2, complex, del_5, del_7, no_Transplant
+1125,CBL, SF3B1, TET2
+1126,U2AF1, add_8, no_Transplant
+1127,NPM1, ITD, FLT3, STAG2
+1128,NPM1, FLT3, PTPN11, FLT3_other
+1129,KDM5A
+1130,NPM1, IDH2, PTPN11, SRSF2, no_Transplant
+1131,ASXL1, EZH2, KIT, RUNX1, STAG2, TET2, no_Transplant
+1132,FLT3, PTPN11, FLT3_other, complex, del_5
+1133,CBL, KDM5A, KIT, TP53, complex, del_5, del_7, del_9, del_12, del_17
+1134,NRAS, SF3B1, del_3, del_5
+1135,ITD, MYC, NRAS
+1136,EP300, IDH2, del_7, add_8
+1137,CEBPA_bi, FLT3, GATA2, TP53, add_21
+1138,ITD, DNMT3A, FLT3, RUNX1
+1139,NF1, t_9_11
+1140,NPM1, ITD, FLT3, SF3B1
+1141,ITD, FBXW7, FLT3, SRSF2, WT1
+1142,NPM1, ITD, DNMT3A, FLT3, MLL, TET2
+1143,NPM1, CBL, DNMT3A, PHF6
+1144,ITD, DNMT3A, FLT3, IDH1, MYC, WT1
+1145,CEBPA_bi, MLL3, PRPF40B, del_9, no_Transplant
+1146,ASXL1, IDH1
+1147,KDM6A, PHF6
+1148,NPM1, BCOR, KRAS, no_Transplant
+1149,NPM1, ITD, DNMT3A, FLT3, add_8, no_Transplant
+1150,DNMT3A, FLT3, MLL, NRAS, RUNX1, FLT3_other
+1151,NPM1, ITD, DNMT3A, FLT3, TET2, no_Transplant
+1152,NPM1, IDH2, SRSF2, no_Transplant
+1153,NPM1, ITD, DNMT3A, FLT3
+1154,CEBPA_bi, EP300, NRAS, no_Transplant
+1155,ITD, FLT3, FLT3_other, add_8
+1156,RUNX1, SF3B1
+1157,KIT, RUNX1, complex, del_3, del_5, del_7, del_9, del_17, add_8
+1158,MLL, add_8, no_Transplant
+1159,ITD, DNMT3A, FLT3, t_8_21
+1160,NPM1, SRSF2, TET2, TP53
+1161,ITD, MLL, SF3B1
+1162,NPM1, ITD, DNMT3A, FLT3, no_Transplant
+1163,ITD, FLT3, GATA2, MYC, complex, del_5, del_12
+1164,ITD, CREBBP, DNMT3A, FLT3, add_8
+1165,NPM1, ITD, DNMT3A, FLT3, no_Transplant
+1166,TP53, complex, del_5, del_7, del_18, del_20
+1167,ETV6, SF3B1
+1168,NPM1, ITD, DNMT3A, FLT3, IDH1
+1169,NPM1, ITD, no_Transplant
+1170,ITD, CBL, EZH2, FLT3, t_6_9
+1171,NPM1, BRAF, DNMT3A, NRAS, PTPN11, del_3
+1172,FLT3, MLL, RUNX1, FLT3_TKD, no_Transplant
+1173,NPM1, ITD, FLT3, KIT, MLL5, RAD21, STAG2
+1174,ATRX, CBL, FBXW7, KDM5A, MLL2, PTEN, RB1, RUNX1, SF3B1
+1175,NPM1, ASXL1, DNMT3A, PTPN11, minusy
+1176,IDH1, PTPN11, add_8

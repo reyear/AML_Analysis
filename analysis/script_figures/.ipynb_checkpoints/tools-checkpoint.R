@@ -289,9 +289,9 @@ comp_frequency <- function(df_final,comp){
 }
 
 
-comp_frequency_by_age <- function(df_final,comp){
+comp_frequency_by_age <- function(df_final,comp,age){
     
-    df_tmp <- df_final[,c(comp,"age")]
+    df_tmp <- df_final[,c(comp,age)]
 
     df_tmp_young <- df_tmp[df_tmp$age<60,]
     young <- data.frame(freq = 100*colSums(df_tmp_young[,comp])/nrow(df_final),age="<60")
